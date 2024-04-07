@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="1080" height="702" viewBox="0 0 1080 702">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        font-size: 72px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: "Como-Bold";
+        font-weight: bold;
+      }
+    </style>
+  </defs>
+  <text transform="translate(36 635) scale(7.08)" class="cls-1"><tspan class="cls-2">M</tspan></text>
+  <text transform="translate(455 415) scale(2.97)" class="cls-1"><tspan class="cls-2">uscle</tspan></text>
+  <text transform="matrix(3.8585, -0.0001, 0.0001, 3.7438, 455, 583)" class="cls-1"><tspan class="cls-2">app</tspan></text>
+</svg>
