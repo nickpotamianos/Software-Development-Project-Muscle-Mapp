@@ -1,0 +1,370 @@
+<mxfile host="Electron" modified="2024-04-27T14:42:20.168Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="m3326uzM49pbG7fO4Zh7" version="24.2.5" type="device">
+  <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="1195" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hgokkog4G-5Mr9UN06CT-58" value="Owner" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;horizontal=1;verticalAlign=middle;align=center;spacingTop=0;spacing=2;spacingBottom=60;fontFamily=comfortaa;" vertex="1" parent="1">
+          <mxGeometry x="92" y="127" width="19.83" height="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-59" value="Owner App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fontFamily=comfortaa;" vertex="1" parent="1">
+          <mxGeometry x="251" y="127" width="100" height="1033" as="geometry" />
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-60" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fontFamily=comfortaa;" vertex="1" parent="1">
+          <mxGeometry x="475" y="125" width="100" height="1035" as="geometry" />
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-61" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="120" y="206" as="sourcePoint" />
+            <mxPoint x="280" y="206" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-62" value="Επιλογή συγκεκριμένου&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-61">
+          <mxGeometry x="0.0435" y="1" relative="1" as="geometry">
+            <mxPoint x="-13" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-63" value="establishment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-61">
+          <mxGeometry x="0.0608" y="-3" relative="1" as="geometry">
+            <mxPoint x="-25" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-64" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="334" y="224" as="sourcePoint" />
+            <mxPoint x="494" y="224" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-65" value="Αναζήτηση στη βάση δεδομένων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-64">
+          <mxGeometry x="-0.1875" y="2" relative="1" as="geometry">
+            <mxPoint x="9" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-66" value="για ημερομηνίες και στατιστικά" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-64">
+          <mxGeometry x="0.0366" relative="1" as="geometry">
+            <mxPoint x="-8" y="16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-67" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="121" y="352" as="sourcePoint" />
+            <mxPoint x="281" y="352" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-68" value="Επιλογή αναλυτικών" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-67">
+          <mxGeometry x="0.1293" y="1" relative="1" as="geometry">
+            <mxPoint x="-8" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-69" value="στατιστικών" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-67">
+          <mxGeometry x="0.1724" y="-2" relative="1" as="geometry">
+            <mxPoint x="-15" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-70" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="119" y="521" as="sourcePoint" />
+            <mxPoint x="279" y="521" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-71" value="Επιλογή συγκεκριμένου" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=none;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-70">
+          <mxGeometry x="0.2625" y="2" relative="1" as="geometry">
+            <mxPoint x="-20" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-72" value="στατιστικού" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-70">
+          <mxGeometry x="0.7607" relative="1" as="geometry">
+            <mxPoint x="-60" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-79" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="327" y="378" as="sourcePoint" />
+            <mxPoint x="487" y="378" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-80" value="Αίτημα για φόρτωση του" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-79">
+          <mxGeometry x="0.3" y="-1" relative="1" as="geometry">
+            <mxPoint x="-27" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-81" value="κάθε στατιστικού" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-79">
+          <mxGeometry x="0.231" y="-3" relative="1" as="geometry">
+            <mxPoint x="-19" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-82" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;dashed=1;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="318" y="276" as="sourcePoint" />
+            <mxPoint x="478" y="276" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-83" value="Επιστροφή σχετικών αποτελεσμάτων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-82">
+          <mxGeometry x="-0.3237" y="2" relative="1" as="geometry">
+            <mxPoint x="41" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-86" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="118" y="466" as="sourcePoint" />
+            <mxPoint x="278" y="466" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-87" value="&lt;font&gt;Εμφάνιση αναλυτικών στατιστικών&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=none;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-86">
+          <mxGeometry x="-0.1325" relative="1" as="geometry">
+            <mxPoint x="16" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-88" value="&lt;font&gt;στον owner&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-86">
+          <mxGeometry x="0.2525" y="-1" relative="1" as="geometry">
+            <mxPoint x="-16" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-89" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;dashed=1;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="332" y="432" as="sourcePoint" />
+            <mxPoint x="492" y="432" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-90" value="Επιστροφή πληροφοριών αναλυτικών" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-89">
+          <mxGeometry x="-0.1246" relative="1" as="geometry">
+            <mxPoint x="23" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-91" value="στατιστικών establishment" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-89">
+          <mxGeometry x="0.4185" y="-2" relative="1" as="geometry">
+            <mxPoint x="-21" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-92" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="121" y="301" as="sourcePoint" />
+            <mxPoint x="281" y="301" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-93" value="Εμφάνιση σχετικών αποτελεσμάτων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-92">
+          <mxGeometry x="0.2586" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-94" value="στον owner" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-92">
+          <mxGeometry x="0.0086" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-95" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Βασική ροή&lt;/font&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fontFamily=comfortaa;" vertex="1" parent="1">
+          <mxGeometry x="24" y="183" width="574" height="312" as="geometry" />
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-96" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Εναλλακτική ροή 1&lt;/font&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fontFamily=comfortaa;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="24" y="500" width="574" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-97" value="&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Εναλλακτική ροή 2&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fontFamily=comfortaa;" vertex="1" parent="1">
+          <mxGeometry x="24" y="790" width="574" height="257" as="geometry" />
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-98" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="121" y="638" as="sourcePoint" />
+            <mxPoint x="281" y="638" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-99" value="Επιλογή διαγραφή από τα&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-98">
+          <mxGeometry x="0.1293" y="1" relative="1" as="geometry">
+            <mxPoint x="-21" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-100" value="σχετικά αποτελέσματα" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-98">
+          <mxGeometry x="0.1724" y="-2" relative="1" as="geometry">
+            <mxPoint x="-25" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-112" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="121" y="587" as="sourcePoint" />
+            <mxPoint x="281" y="587" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-113" value="Εμφάνιση σχετικών αποτελεσμάτων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBorderColor=none;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-112">
+          <mxGeometry x="0.2586" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-114" value="στον owner" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-112">
+          <mxGeometry x="0.0086" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-104" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;dashed=1;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="319" y="556" as="sourcePoint" />
+            <mxPoint x="479" y="556" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-105" value="Επιστροφή σχετικών στατιστικων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-104">
+          <mxGeometry x="-0.3237" y="2" relative="1" as="geometry">
+            <mxPoint x="46" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-124" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="120" y="750" as="sourcePoint" />
+            <mxPoint x="280" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-125" value="Εμφάνιση επιβεβαίωσης και&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBorderColor=none;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-124">
+          <mxGeometry x="0.2586" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-126" value="άμεση ανανέωση" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-124">
+          <mxGeometry x="0.0086" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-127" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="330" y="670" as="sourcePoint" />
+            <mxPoint x="490" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-128" value="Αίτημα διαγραφής" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-127">
+          <mxGeometry x="0.1293" y="1" relative="1" as="geometry">
+            <mxPoint x="-21" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-130" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;dashed=1;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="319" y="710" as="sourcePoint" />
+            <mxPoint x="479" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-131" value="Επιστροφή αιτήματος διαγραφής" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-130">
+          <mxGeometry x="-0.3237" y="2" relative="1" as="geometry">
+            <mxPoint x="37" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-132" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="120" y="820" as="sourcePoint" />
+            <mxPoint x="280" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-133" value="Επιλογή συγκεκριμένου" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=none;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-132">
+          <mxGeometry x="0.2625" y="2" relative="1" as="geometry">
+            <mxPoint x="-20" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-134" value="αρχειου" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-132">
+          <mxGeometry x="0.7607" relative="1" as="geometry">
+            <mxPoint x="-60" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-135" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="122" y="930" as="sourcePoint" />
+            <mxPoint x="282" y="930" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-136" value="Επιλογή διαγραφή από τα&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-135">
+          <mxGeometry x="0.1293" y="1" relative="1" as="geometry">
+            <mxPoint x="-21" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-137" value="σχετικά αποτελέσματα" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-135">
+          <mxGeometry x="0.1724" y="-2" relative="1" as="geometry">
+            <mxPoint x="-25" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-138" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="122" y="886" as="sourcePoint" />
+            <mxPoint x="282" y="886" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-139" value="Εμφάνιση σχετικών αποτελεσμάτων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBorderColor=none;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-138">
+          <mxGeometry x="0.2586" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-140" value="στον owner" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-138">
+          <mxGeometry x="0.0086" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-141" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;dashed=1;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="320" y="855" as="sourcePoint" />
+            <mxPoint x="480" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-142" value="Επιστροφή σχετικών στατιστικων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-141">
+          <mxGeometry x="-0.3237" y="2" relative="1" as="geometry">
+            <mxPoint x="46" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-143" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="121" y="1030" as="sourcePoint" />
+            <mxPoint x="281" y="1030" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-144" value="Εμφάνιση επιβεβαίωσης και&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBorderColor=none;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-143">
+          <mxGeometry x="0.2586" y="1" relative="1" as="geometry">
+            <mxPoint x="-17" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-145" value="άμεση ανανέωση" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-143">
+          <mxGeometry x="0.0086" y="2" relative="1" as="geometry">
+            <mxPoint x="-1" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-146" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="331" y="960" as="sourcePoint" />
+            <mxPoint x="491" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-147" value="Αίτημα διαγραφής" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-146">
+          <mxGeometry x="0.1293" y="1" relative="1" as="geometry">
+            <mxPoint x="-21" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-148" value="" style="endArrow=none;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;startArrow=classic;startFill=1;fontFamily=comfortaa;dashed=1;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="320" y="990" as="sourcePoint" />
+            <mxPoint x="480" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-149" value="Επιστροφή αιτήματος διαγραφής" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=default;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-148">
+          <mxGeometry x="-0.3237" y="2" relative="1" as="geometry">
+            <mxPoint x="37" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-150" value="&lt;p style=&quot;line-height: 100%;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Εναλλακτική ροή 3&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/p&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;fontFamily=comfortaa;" vertex="1" parent="1">
+          <mxGeometry x="24" y="1047" width="574" height="113" as="geometry" />
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-151" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="120" y="1080" as="sourcePoint" />
+            <mxPoint x="280" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-152" value="κλικ επιβεβαιωσης" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=none;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-151">
+          <mxGeometry x="0.2625" y="2" relative="1" as="geometry">
+            <mxPoint x="-20" y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-154" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;fontFamily=comfortaa;" edge="1" parent="1">
+          <mxGeometry x="-1" relative="1" as="geometry">
+            <mxPoint x="270" y="1131" as="sourcePoint" />
+            <mxPoint x="130" y="1131" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hgokkog4G-5Mr9UN06CT-155" value="μήνυμα επιβεβαίωσης" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=comfortaa;labelBackgroundColor=none;" connectable="0" vertex="1" parent="hgokkog4G-5Mr9UN06CT-154">
+          <mxGeometry x="0.2625" y="2" relative="1" as="geometry">
+            <mxPoint x="12" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
