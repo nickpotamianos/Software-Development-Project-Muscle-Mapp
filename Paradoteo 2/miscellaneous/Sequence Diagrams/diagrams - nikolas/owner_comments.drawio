@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2024-04-28T13:03:31.476Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ohryLCnwEVCdzOtB4Swm" version="24.2.5" type="device" pages="2">
+<mxfile host="Electron" modified="2024-04-28T13:09:54.439Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="54wcaB0XUQqfvybPb_UY" version="24.2.5" type="device" pages="2">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="819" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -369,7 +369,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Kdmxx6mo2VDTszddEweq-2" value="Client" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;horizontal=1;verticalAlign=middle;align=center;spacingTop=0;spacing=2;spacingBottom=60;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontFamily=comfortaa;" vertex="1" parent="1">
+        <mxCell id="Kdmxx6mo2VDTszddEweq-2" value="trainer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;horizontal=1;verticalAlign=middle;align=center;spacingTop=0;spacing=2;spacingBottom=60;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontFamily=comfortaa;" vertex="1" parent="1">
           <mxGeometry x="288" y="32" width="20" height="588" as="geometry" />
         </mxCell>
         <mxCell id="Kdmxx6mo2VDTszddEweq-3" value="Client App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;fontFamily=comfortaa;" vertex="1" parent="1">
