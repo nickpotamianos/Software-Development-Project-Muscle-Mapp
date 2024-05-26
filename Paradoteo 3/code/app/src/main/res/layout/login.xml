@@ -66,7 +66,6 @@
 				android:textColor="#ADADAD"
 				android:hint="Email"
 				android:textColorHint="#9CA3AF"
-				android:inputType="phone"
 				android:imeOptions="actionGo" />
 		</LinearLayout>
 		<LinearLayout
@@ -91,12 +90,10 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:padding="8dp"
-				android:text="Password"
 				android:textSize="18sp"
 				android:textColor="#ADADAD"
-				android:hint="Email"
+				android:hint="Password"
 				android:textColorHint="#9CA3AF"
-				android:inputType="phone"
 				android:imeOptions="actionGo" />
 			<ImageView
 				android:id="@+id/imageview4"
