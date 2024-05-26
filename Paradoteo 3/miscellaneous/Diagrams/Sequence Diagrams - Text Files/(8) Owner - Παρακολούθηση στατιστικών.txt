@@ -1,0 +1,22 @@
+actor Owner
+
+participant Establishmentpage(UI)
+participant Statistics(UI)
+
+participant Owner(Class)
+participant Establishment(Class)
+
+== Βασική ροή (Άνοιγμα στατιστικών) ==
+Owner -> Establishmentpage(UI): Selects statistics icon
+Establishmentpage(UI) -> Owner(Class): show_statistics()
+Owner(Class) -> Establishment(Class): get_establishment_statistics()
+Establishment(Class) --> Owner(Class): return(establishment_statistics)
+Owner(Class) --> Establishmentpage(UI): return(establishment_statistics)
+Establishmentpage(UI) -> Statistics(UI): Opens Statistics(UI)
+Statistics(UI) -> Owner: Displays statistics
+Owner -> Statistics(UI): Applies statistic filters and options
+Statistics(UI) -> Owner: Displays updated/filtered statistics
+
+== Εναλλακτική ροή 1 (Καθαρισμός στατιστικών) ==
+Owner -> Statistics(UI): Selects to remove statistics filters and options
+Statistics(UI) -> Owner: Clears filters and options and displays original statistics

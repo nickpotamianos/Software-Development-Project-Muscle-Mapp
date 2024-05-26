@@ -1,0 +1,21 @@
+actor Owner
+
+participant EstablishmentPage(UI)
+participant DetailEdit(UI)
+
+participant Establishment(Class)
+
+== Βασική ροή (Άνοιγμα πληροφοριών) ==
+Owner -> EstablishmentPage(UI): Selects establishment establishment_details
+EstablishmentPage(UI) -> Establishment(Class): get_establishment_details()
+Establishment(Class) --> EstablishmentPage(UI): return(establishment_details)
+EstablishmentPage(UI) -> Owner: Displays establishment details
+
+== Εναλλακτική ροή 1 (Τροποποίηση στοιχείων) ==
+Owner -> EstablishmentPage(UI): Selects an info field
+EstablishmentPage(UI) -> DetailEdit(UI): Opens DetailEdit(UI)
+DetailEdit(UI) -> Owner: Displays current data
+Owner -> DetailEdit(UI): Enters new data
+DetailEdit(UI) -> Owner: Asks for confirmation
+Owner -> DetailEdit(UI): Confirms selection
+DetailEdit(UI) -> Owner: Displays success message

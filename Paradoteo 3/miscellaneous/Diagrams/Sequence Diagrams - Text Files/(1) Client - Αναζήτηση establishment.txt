@@ -1,0 +1,35 @@
+actor Client
+participant Home(UI)
+participant SearchBar(UI)
+participant MapView(UI)
+participant Database(Class)
+
+== Βασική ροή (Αναζήτηση establishment μέσω πεδίου αναζήτησης) ==
+Client -> Home(UI): Clicks on Search Bar
+Home(UI) -> Client: Opens Search Bar
+Client -> SearchBar(UI): Inputs Search Keywords
+SearchBar(UI) -> Database(Class):search_establishments()
+Database(Class) --> SearchBar(UI): return(results)
+SearchBar(UI) -> Client: Displays results
+Client -> SearchBar(UI): Selects a result
+SearchBar(UI) -> Database(Class):get_data_base_establishment()
+Database(Class) --> SearchBar(UI): return(establishmentObject)
+SearchBar(UI) -> Client: Opens Establishment Page
+
+== Εναλλακτική ροή 1 (Εφαρμογή φίλτρων για πιο στοχευμένη αναζήτηση) ==
+Client -> SearchBar(UI): Applies filters
+SearchBar(UI) -> Database(Class):search_establishments()
+Database(Class) --> SearchBar(UI): return(results)
+SearchBar(UI) -> Client: Displays filtered results
+Client -> SearchBar(UI): Selects a result
+SearchBar(UI) -> Database(Class):get_data_base_establishment()
+Database(Class) --> SearchBar(UI): return(establishmentObject)
+SearchBar(UI) -> Client: Opens Establishment Page
+
+== Εναλλακτική ροή 2 (Αναζήτηση establishment μέσω χάρτη) ==
+Client -> Home(UI): Selects "Search on map" option
+Home(UI) -> Client: Opens Map
+Client -> MapView(UI): Selects a result from the map
+MapView(UI) -> Database(Class):get_data_base_establishment()
+Database(Class) --> MapView(UI): return(establishmentObject)
+MapView(UI) -> Client: Opens Establishment Page
