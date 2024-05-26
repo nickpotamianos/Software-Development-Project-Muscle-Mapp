@@ -11,20 +11,19 @@
 		android:layout_height="match_parent"
 		android:padding="8dp"
 		android:background="#0D0D0D"
-		android:gravity="center_horizontal|center_vertical"
+		android:gravity="center_horizontal"
 		android:orientation="vertical">
 		<LinearLayout
 			android:id="@+id/linear3"
 			android:layout_width="match_parent"
 			android:layout_height="120dp"
-			android:layout_marginTop="70dp"
+			android:layout_marginTop="200dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="vertical">
 			<TextView
 				android:id="@+id/textview1"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="20dp"
 				android:padding="8dp"
 				android:gravity="center_horizontal|center_vertical"
 				android:text="Welcome!"

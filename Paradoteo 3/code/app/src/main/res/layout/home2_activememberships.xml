@@ -33,47 +33,53 @@
 				android:layout_height="wrap_content"
 				android:gravity="right|center_vertical"
 				android:orientation="horizontal">
-				<LinearLayout
-					android:id="@+id/linear25"
-					android:layout_width="50dp"
-					android:layout_height="50dp"
-					android:layout_marginRight="8dp"
-					android:padding="8dp"
-					android:background="#1A1A1A"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical">
+				<androidx.cardview.widget.CardView
+					android:id="@+id/notification"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="10dp"
+					android:background="#00E53535"
+					android:orientation="vertical"
+					android:padding="4dp"
+					app:cardBackgroundColor="#1A1A1A"
+					app:cardCornerRadius="50dp"
+					app:cardElevation="10dp">
+
 					<ImageView
-						android:id="@+id/imageview2"
-						android:layout_width="30dp"
-						android:layout_height="35dp"
-						android:src="@drawable/notification"
-						android:scaleType="fitCenter" />
-				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear26"
-					android:layout_width="50dp"
-					android:layout_height="50dp"
-					android:layout_marginRight="8dp"
-					android:padding="8dp"
-					android:background="#1A1A1A"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical">
+						android:id="@+id/notbell"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:padding="12dp"
+						android:scaleType="centerCrop"
+						android:src="@drawable/notification" />
+				</androidx.cardview.widget.CardView>
+				<androidx.cardview.widget.CardView
+					android:id="@+id/notification"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="10dp"
+					android:background="#00E53535"
+					android:orientation="vertical"
+					android:padding="4dp"
+					app:cardBackgroundColor="#1A1A1A"
+					app:cardCornerRadius="50dp"
+					app:cardElevation="10dp">
+
 					<ImageView
-						android:id="@+id/imageview7"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:src="@drawable/fav"
-						android:scaleType="fitCenter" />
-				</LinearLayout>
-				<de.hdodenhof.circleimageview.CircleImageView
-					android:id="@+id/circleimageview1"
+						android:id="@+id/notbell"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:padding="12dp"
+						android:scaleType="centerInside"
+						android:src="@drawable/fav" />
+				</androidx.cardview.widget.CardView>
+				<ImageView
+					android:id="@+id/imageview39"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
 					android:src="@drawable/profpic"
-					app:civ_border_width="3dp"
-					app:civ_border_color="#008DCD"
-					app:civ_circle_background_color="#FFFFFF"
-					app:civ_border_overlay="true" />
+					android:scaleType="centerCrop"
+					tools:ignore="DuplicateIds" />
 			</LinearLayout>
 		</LinearLayout>
 		<LinearLayout
@@ -132,7 +138,7 @@
 				android:id="@+id/linear90"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:layout_marginLeft="30dp"
+				android:layout_marginLeft="10dp"
 				android:orientation="vertical">
 				<ImageView
 					android:id="@+id/imageview40"
@@ -170,7 +176,7 @@
 					android:id="@+id/linear96"
 					android:layout_width="wrap_content"
 					android:layout_height="match_parent"
-					android:layout_marginLeft="30dp"
+					android:layout_marginLeft="10dp"
 					android:orientation="vertical">
 					<ImageView
 						android:id="@+id/imageview44"
@@ -185,60 +191,68 @@
 			android:id="@+id/linear79"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="60dp"
-			android:padding="8dp"
+			android:layout_marginTop="100dp"
 			android:gravity="center_horizontal|center_vertical"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:padding="8dp">
+
 			<LinearLayout
 				android:id="@+id/linear83"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:layout_marginRight="80dp"
+				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview35"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/home"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/home" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear84"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:layout_marginRight="80dp"
+				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview36"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/calendar"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/calendar" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear85"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:layout_marginRight="80dp"
+				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview37"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/location_1"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/location_1" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear86"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview38"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/bytesize_car"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/bytesize_car" />
 			</LinearLayout>
 		</LinearLayout>
 	</LinearLayout>

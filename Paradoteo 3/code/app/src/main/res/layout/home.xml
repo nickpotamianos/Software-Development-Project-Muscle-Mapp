@@ -34,22 +34,21 @@
 				android:gravity="right|center_vertical"
 				android:orientation="horizontal">
 				<androidx.cardview.widget.CardView
-					android:id="@+id/notification"
+					android:id="@+id/notification12"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginEnd="10dp"
 					android:background="#00E53535"
 					android:orientation="vertical"
-					android:padding="4dp"
+					android:padding="8dp"
 					app:cardBackgroundColor="#1A1A1A"
 					app:cardCornerRadius="50dp"
 					app:cardElevation="10dp">
-
 					<ImageView
 						android:id="@+id/notbell"
 						android:layout_width="50dp"
 						android:layout_height="50dp"
-						android:padding="10dp"
+						android:padding="12dp"
 						android:scaleType="centerCrop"
 						android:src="@drawable/notification" />
 				</androidx.cardview.widget.CardView>
@@ -60,16 +59,16 @@
 					android:layout_marginEnd="10dp"
 					android:background="#00E53535"
 					android:orientation="vertical"
-					android:padding="4dp"
+					android:padding="6dp"
 					app:cardBackgroundColor="#1A1A1A"
 					app:cardCornerRadius="50dp"
 					app:cardElevation="10dp">
 
 					<ImageView
-						android:id="@+id/notbell"
+						android:id="@+id/favorite1"
 						android:layout_width="50dp"
 						android:layout_height="50dp"
-						android:padding="10dp"
+						android:padding="12dp"
 						android:scaleType="centerCrop"
 						android:src="@drawable/fav" />
 				</androidx.cardview.widget.CardView>
@@ -120,6 +119,8 @@
 		</androidx.cardview.widget.CardView>
 
 		<androidx.cardview.widget.CardView
+			android:layout_marginStart="5dp"
+			android:layout_marginEnd="5dp"
 			android:id="@+id/cardview5"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
@@ -141,6 +142,8 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:orientation="vertical"
+					android:layout_marginStart="10dp"
+					android:layout_marginTop="10dp"
 					android:padding="8dp">
 
 					<TextView
@@ -202,10 +205,13 @@
 						android:layout_width="100dp"
 						android:layout_height="150dp"
 						android:scaleType="centerInside"
+						android:translationX="50.0dp"
+						android:translationZ="90dp"
 						android:src="@drawable/palladion_small" />
 
 					<ImageView
 						android:id="@+id/imageview16"
+						android:layout_marginTop="5dp"
 						android:layout_width="100dp"
 						android:layout_height="150dp"
 						android:scaleType="centerInside"
@@ -270,7 +276,7 @@
 
 				<LinearLayout
 					android:id="@+id/linear50"
-					android:layout_width="wrap_content"
+					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:background="#1D1D1D"
 					android:gravity="center_horizontal|center_vertical"
@@ -295,9 +301,10 @@
 
 					<LinearLayout
 						android:id="@+id/linear51"
-						android:layout_width="wrap_content"
+						android:layout_width="match_parent"
 						android:layout_height="match_parent"
 						android:orientation="horizontal"
+						android:layout_gravity=""
 						android:padding="1dp">
 
 						<LinearLayout
@@ -311,7 +318,7 @@
 								android:id="@+id/gym_tag"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:layout_marginRight="70dp"
+								android:layout_marginRight="50dp"
 								android:padding="8dp"
 								android:text="Palladion Gym"
 								android:textColor="#FFFFFF"
@@ -319,10 +326,10 @@
 						</LinearLayout>
 
 						<androidx.cardview.widget.CardView
-							android:id="@+id/favoritebutton"
+							android:id="@+id/favoritebutton12"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:layout_marginEnd="20dp"
+							android:layout_marginEnd="0dp"
 							android:background="#00E53535"
 							android:orientation="vertical"
 							android:padding="4dp"
@@ -331,9 +338,9 @@
 							app:cardElevation="10dp">
 
 							<ImageView
-								android:id="@+id/favorite"
-								android:layout_width="30dp"
-								android:layout_height="30dp"
+								android:id="@+id/favorite12"
+								android:layout_width="35dp"
+								android:layout_height="35dp"
 								android:padding="8dp"
 								android:scaleType="centerCrop"
 								android:src="@drawable/favw" />
@@ -627,7 +634,7 @@
 			android:id="@+id/linear79"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="140dp"
+			android:layout_marginTop="130dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal"
 			android:padding="8dp">

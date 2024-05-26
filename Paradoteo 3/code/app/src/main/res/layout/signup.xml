@@ -31,108 +31,135 @@
 				android:textStyle="bold"
 				android:textColor="#FFFFFF" />
 		</LinearLayout>
-		<LinearLayout
+		<androidx.cardview.widget.CardView
+			android:id="@+id/mob_text12"
+			android:layout_width="380dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="25dp"
+			android:background="#121212"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+			app:cardBackgroundColor="#121212"
+			app:cardCornerRadius="16dp"
+			app:cardElevation="4dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@android:color/transparent"
+				android:gravity="start|center_vertical"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:id="@+id/imageview1"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="20dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/mail" />
+
+				<EditText
+					android:id="@+id/edittext2"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Email"
+					android:imeOptions="actionGo"
+					android:padding="8dp"
+					android:textColor="#ADADAD"
+					android:textColorHint="#9CA3AF"
+					android:textSize="18sp" />
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+
+		<androidx.cardview.widget.CardView
+			android:id="@+id/mob_text12"
+			android:layout_width="380dp"
+			android:layout_height="60dp"
+			android:layout_marginTop="25dp"
+			android:background="#121212"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+			app:cardBackgroundColor="#121212"
+			app:cardCornerRadius="16dp"
+			app:cardElevation="4dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@android:color/transparent"
+				android:gravity="start|center_vertical"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:id="@+id/usernameicon"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="20dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/usericon" />
+
+				<EditText
+					android:id="@+id/usernamebox"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Username"
+					android:imeOptions="actionGo"
+					android:padding="8dp"
+					android:textColor="#ADADAD"
+					android:textColorHint="#9CA3AF"
+					android:textSize="18sp" />
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+		<androidx.cardview.widget.CardView
 			android:id="@+id/mob_text"
-			android:layout_width="300dp"
-			android:layout_height="wrap_content"
+			android:layout_width="380dp"
+			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
-			android:padding="8dp"
 			android:background="#121212"
 			android:gravity="left|center_vertical"
-			android:orientation="horizontal">
-			<ImageView
-				android:id="@+id/imageview1"
-				android:layout_width="35dp"
-				android:layout_height="35dp"
-				android:layout_marginLeft="20dp"
-				android:layout_marginRight="20dp"
-				android:src="@drawable/mail"
-				android:scaleType="centerCrop" />
-			<EditText
-				android:id="@+id/edittext2"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="18sp"
-				android:textColor="#ADADAD"
-				android:hint="Email"
-				android:textColorHint="#9CA3AF"
-				android:inputType="phone"
-				android:imeOptions="actionGo" />
-		</LinearLayout>
-		<LinearLayout
-			android:id="@+id/linear15"
-			android:layout_width="300dp"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="25dp"
-			android:padding="8dp"
-			android:background="#121212"
-			android:gravity="left|center_vertical"
-			android:orientation="horizontal">
-			<ImageView
-				android:id="@+id/imageview6"
-				android:layout_width="35dp"
-				android:layout_height="35dp"
-				android:layout_marginLeft="20dp"
-				android:layout_marginRight="20dp"
-				android:src="@drawable/usericon"
-				android:scaleType="fitCenter" />
-			<EditText
-				android:id="@+id/edittext5"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:textSize="18sp"
-				android:textColor="#ADADAD"
-				android:hint="Username"
-				android:textColorHint="#9CA3AF"
-				android:inputType="phone"
-				android:imeOptions="actionGo" />
-			<ImageView
-				android:id="@+id/imageview7"
-				android:layout_width="35dp"
-				android:layout_height="35dp"
-				android:layout_marginLeft="260dp"
-				android:src="@drawable/eyeoff"
-				android:scaleType="centerCrop" />
-		</LinearLayout>
-		<LinearLayout
-			android:id="@+id/linear4"
-			android:layout_width="300dp"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="25dp"
-			android:padding="8dp"
-			android:background="#121212"
-			android:gravity="left|center_vertical"
-			android:orientation="horizontal">
-			<ImageView
-				android:id="@+id/imageview3"
-				android:layout_width="35dp"
-				android:layout_height="35dp"
-				android:layout_marginLeft="20dp"
-				android:layout_marginRight="20dp"
-				android:src="@drawable/lock"
-				android:scaleType="centerCrop" />
-			<EditText
-				android:id="@+id/edittext3"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="Password"
-				android:textSize="18sp"
-				android:textColor="#ADADAD"
-				android:hint="Email"
-				android:textColorHint="#9CA3AF"
-				android:inputType="phone"
-				android:imeOptions="actionGo" />
-			<ImageView
-				android:id="@+id/imageview4"
-				android:layout_width="35dp"
-				android:layout_height="35dp"
-				android:layout_marginLeft="260dp"
-				android:src="@drawable/eyeoff"
-				android:scaleType="centerCrop" />
-		</LinearLayout>
+			android:orientation="horizontal"
+			app:cardBackgroundColor="#121212"
+			app:cardCornerRadius="16dp"
+			app:cardElevation="4dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@android:color/transparent"
+				android:gravity="start|center_vertical"
+				android:orientation="horizontal">
+
+				<ImageView
+					android:id="@+id/imageview3"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginLeft="20dp"
+					android:layout_marginRight="20dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/lock" />
+
+				<EditText
+					android:id="@+id/edittext3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="Password"
+					android:imeOptions="actionGo"
+					android:padding="8dp"
+					android:textColor="#ADADAD"
+					android:textColorHint="#9CA3AF"
+					android:textSize="18sp" />
+
+				<ImageView
+					android:id="@+id/imageview4"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_marginStart="160dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/eyeoff" />
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
 		<LinearLayout
 			android:id="@+id/linear5"
 			android:layout_width="match_parent"
@@ -143,30 +170,43 @@
 				android:id="@+id/textview7"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="40dp"
+				android:layout_marginLeft="20dp"
 				android:padding="8dp"
 				android:text="Forgot password\?"
 				android:textSize="18sp"
 				android:textColor="#FFFFFF" />
 		</LinearLayout>
-		<LinearLayout
+		<androidx.cardview.widget.CardView
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
 			android:id="@+id/btn"
-			android:layout_width="350dp"
-			android:layout_height="wrap_content"
+			android:layout_width="380dp"
+			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
-			android:padding="8dp"
 			android:background="#E53535"
 			android:gravity="center_horizontal|center_vertical"
-			android:orientation="horizontal">
-			<TextView
-				android:id="@+id/textview3"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:padding="8dp"
-				android:text="Sign in"
-				android:textSize="25sp"
-				android:textColor="#FFFFFF" />
-		</LinearLayout>
+			android:orientation="horizontal"
+			app:cardBackgroundColor="#E53535"
+			app:cardCornerRadius="16dp"
+			app:cardElevation="4dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@android:color/transparent"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Sign in"
+					android:textSize="25sp"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
 		<LinearLayout
 			android:id="@+id/linear6"
 			android:layout_width="match_parent"
