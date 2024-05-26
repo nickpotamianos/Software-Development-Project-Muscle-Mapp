@@ -33,160 +33,186 @@
 				android:layout_height="wrap_content"
 				android:gravity="right|center_vertical"
 				android:orientation="horizontal">
-				<LinearLayout
-					android:id="@+id/linear25"
-					android:layout_width="50dp"
-					android:layout_height="50dp"
-					android:layout_marginRight="8dp"
-					android:padding="8dp"
-					android:background="#1A1A1A"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical">
+				<androidx.cardview.widget.CardView
+					android:id="@+id/notification"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="10dp"
+					android:background="#00E53535"
+					android:orientation="vertical"
+					android:padding="4dp"
+					app:cardBackgroundColor="#1A1A1A"
+					app:cardCornerRadius="50dp"
+					app:cardElevation="10dp">
+
 					<ImageView
-						android:id="@+id/imageview2"
-						android:layout_width="30dp"
-						android:layout_height="35dp"
-						android:src="@drawable/notification"
-						android:scaleType="fitCenter" />
-				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear26"
-					android:layout_width="50dp"
-					android:layout_height="50dp"
-					android:layout_marginRight="8dp"
-					android:padding="8dp"
-					android:background="#1A1A1A"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical">
+						android:id="@+id/notbell"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:padding="10dp"
+						android:scaleType="centerCrop"
+						android:src="@drawable/notification" />
+				</androidx.cardview.widget.CardView>
+				<androidx.cardview.widget.CardView
+					android:id="@+id/notification"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="10dp"
+					android:background="#00E53535"
+					android:orientation="vertical"
+					android:padding="4dp"
+					app:cardBackgroundColor="#1A1A1A"
+					app:cardCornerRadius="50dp"
+					app:cardElevation="10dp">
+
 					<ImageView
-						android:id="@+id/imageview7"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:src="@drawable/fav"
-						android:scaleType="fitCenter" />
-				</LinearLayout>
-				<de.hdodenhof.circleimageview.CircleImageView
-					android:id="@+id/circleimageview1"
+						android:id="@+id/notbell"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:padding="10dp"
+						android:scaleType="centerCrop"
+						android:src="@drawable/fav" />
+				</androidx.cardview.widget.CardView>
+				<ImageView
+					android:id="@+id/imageview39"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
 					android:src="@drawable/profpic"
-					app:civ_border_width="3dp"
-					app:civ_border_color="#008DCD"
-					app:civ_circle_background_color="#FFFFFF"
-					app:civ_border_overlay="true" />
+					android:scaleType="centerCrop" />
 			</LinearLayout>
 		</LinearLayout>
-		<LinearLayout
-			android:id="@+id/linear27"
-			android:layout_width="400dp"
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cardview6"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:padding="8dp"
-			android:background="#1A1A1A"
-			android:gravity="center_vertical"
-			android:orientation="horizontal">
-			<EditText
-				android:id="@+id/edittext1"
-				android:layout_width="wrap_content"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="20dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="vertical"
+			app:cardElevation="10dp"
+			app:cardCornerRadius="20dp">
+			<LinearLayout
+				android:id="@+id/linear27"
+				android:layout_width="400dp"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="8dp"
 				android:padding="8dp"
-				android:textSize="16sp"
-				android:textColor="#000000"
-				android:hint="Search"
-				android:textColorHint="#A4A4A4" />
-			<ImageView
-				android:id="@+id/imageview10"
-				android:layout_width="25dp"
-				android:layout_height="25dp"
-				android:layout_marginLeft="280dp"
-				android:src="@drawable/search"
-				android:scaleType="fitCenter" />
-		</LinearLayout>
-		<LinearLayout
-			android:id="@+id/linear32"
+				android:background="#1A1A1A"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+				<EditText
+					android:id="@+id/edittext1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="8dp"
+					android:padding="8dp"
+					android:textSize="16sp"
+					android:textColor="#000000"
+					android:hint="Search"
+					android:textColorHint="#A4A4A4" />
+				<ImageView
+					android:id="@+id/imageview10"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:layout_marginLeft="280dp"
+					android:src="@drawable/search"
+					android:scaleType="fitCenter" />
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cardview5"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginLeft="10dp"
-			android:layout_marginTop="20dp"
-			android:layout_marginRight="10dp"
-			android:layout_marginBottom="20dp"
 			android:background="#1A1A1A"
-			android:orientation="horizontal">
+			android:orientation="vertical"
+			android:padding="8dp"
+			app:cardBackgroundColor="#1D1D1D"
+			app:cardCornerRadius="20dp"
+			app:cardElevation="10dp">
+
 			<LinearLayout
 				android:id="@+id/linear41"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:orientation="horizontal">
+
 				<LinearLayout
 					android:id="@+id/linear42"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:orientation="vertical">
+					android:orientation="vertical"
+					android:padding="8dp">
+
 					<TextView
 						android:id="@+id/textview27"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
 						android:text="Active Memberships"
+						android:textColor="#FFFFFF"
 						android:textSize="18sp"
-						android:textStyle="bold"
-						android:textColor="#FFFFFF" />
+						android:textStyle="bold" />
+
 					<TextView
 						android:id="@+id/textview26"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
 						android:text="renew or cancel anytime"
-						android:textSize="12sp"
-						android:textColor="#FFFFFF" />
+						android:textColor="#FFFFFF"
+						android:textSize="12sp" />
+
 					<LinearLayout
 						android:id="@+id/linear43"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="17dp"
-						android:padding="8dp"
 						android:gravity="center_vertical"
-						android:orientation="horizontal">
+						android:orientation="horizontal"
+						android:padding="8dp">
+
 						<TextView
 							android:id="@+id/textview28"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
 							android:text="Check"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
+							android:textColor="#FFFFFF"
+							android:textSize="12sp" />
+
 						<ImageView
 							android:id="@+id/imageview14"
 							android:layout_width="15dp"
 							android:layout_height="15dp"
-							android:src="@drawable/arrow"
-							android:scaleType="centerCrop" />
+							android:scaleType="centerCrop"
+							android:src="@drawable/arrow" />
 					</LinearLayout>
 				</LinearLayout>
+
 				<LinearLayout
 					android:id="@+id/linear44"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
 					android:gravity="right|center_vertical"
-					android:orientation="horizontal">
+					android:orientation="horizontal"
+					android:padding="8dp">
+
 					<ImageView
 						android:id="@+id/imageview13"
 						android:layout_width="100dp"
 						android:layout_height="150dp"
-						android:src="@drawable/palladion_small"
-						android:scaleType="centerInside" />
+						android:scaleType="centerInside"
+						android:src="@drawable/palladion_small" />
+
 					<ImageView
 						android:id="@+id/imageview16"
 						android:layout_width="100dp"
 						android:layout_height="150dp"
-						android:src="@drawable/altersmall"
-						android:scaleType="centerInside" />
+						android:scaleType="centerInside"
+						android:src="@drawable/altersmall" />
 				</LinearLayout>
 			</LinearLayout>
-		</LinearLayout>
+		</androidx.cardview.widget.CardView>
 		<LinearLayout
 			android:id="@+id/linear30"
 			android:layout_width="match_parent"
@@ -230,47 +256,57 @@
 			android:layout_height="wrap_content"
 			android:padding="8dp"
 			android:orientation="horizontal">
-			<LinearLayout
-				android:id="@+id/linear49"
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview12"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginRight="30dp"
-				android:background="#1D1D1D"
-				android:orientation="vertical">
+				android:layout_marginRight="20dp"
+				android:orientation="vertical"
+				android:padding="8dp"
+				app:cardBackgroundColor="#1D1D1D"
+				app:cardCornerRadius="20dp"
+				app:cardElevation="10dp">
+
 				<LinearLayout
 					android:id="@+id/linear50"
-					android:layout_width="225dp"
+					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:padding="2dp"
 					android:background="#1D1D1D"
 					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical">
+					android:orientation="vertical"
+					android:padding="2dp">
+
 					<ImageView
 						android:id="@+id/imageview20"
 						android:layout_width="150dp"
 						android:layout_height="150dp"
-						android:src="@drawable/palladio_logo"
-						android:scaleType="fitCenter" />
+						android:scaleType="fitCenter"
+						android:src="@drawable/palladio_logo" />
+
 					<LinearLayout
 						android:id="@+id/linear52"
 						android:layout_width="match_parent"
 						android:layout_height="3dp"
-						android:padding="8dp"
 						android:background="#A4A4A4"
 						android:orientation="horizontal"
+						android:padding="8dp"
 						android:translationY="-5.0dp" />
+
 					<LinearLayout
 						android:id="@+id/linear51"
 						android:layout_width="wrap_content"
 						android:layout_height="match_parent"
-						android:padding="1dp"
-						android:orientation="horizontal">
+						android:orientation="horizontal"
+						android:padding="1dp">
+
 						<LinearLayout
 							android:id="@+id/linear53"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="1dp"
-							android:orientation="vertical">
+							android:orientation="vertical"
+							android:padding="1dp">
+
 							<TextView
 								android:id="@+id/gym_tag"
 								android:layout_width="wrap_content"
@@ -278,133 +314,170 @@
 								android:layout_marginRight="70dp"
 								android:padding="8dp"
 								android:text="Palladion Gym"
-								android:textSize="14sp"
-								android:textColor="#FFFFFF" />
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
 						</LinearLayout>
-						<LinearLayout
-							android:id="@+id/linear58"
-							android:layout_width="match_parent"
+
+						<androidx.cardview.widget.CardView
+							android:id="@+id/favoritebutton"
+							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:background="#333333"
-							android:orientation="horizontal">
+							android:layout_marginEnd="20dp"
+							android:background="#00E53535"
+							android:orientation="vertical"
+							android:padding="4dp"
+							app:cardBackgroundColor="#333333"
+							app:cardCornerRadius="50dp"
+							app:cardElevation="10dp">
+
 							<ImageView
-								android:id="@+id/imageview21"
-								android:layout_width="20dp"
-								android:layout_height="20dp"
-								android:src="@drawable/favw"
-								android:scaleType="centerCrop" />
-						</LinearLayout>
+								android:id="@+id/favorite"
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:padding="8dp"
+								android:scaleType="centerCrop"
+								android:src="@drawable/favw" />
+						</androidx.cardview.widget.CardView>
 					</LinearLayout>
+
 					<LinearLayout
 						android:id="@+id/linear57"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:padding="2dp"
-						android:orientation="horizontal">
+						android:orientation="horizontal"
+						android:padding="2dp">
+
 						<TextView
 							android:id="@+id/price_tag_gym"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
 							android:text="from 5€/day pass"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
+							android:textColor="#FFFFFF"
+							android:textSize="12sp" />
+
 						<TextView
 							android:id="@+id/locatio_tag"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
 							android:text="Hlioupoli, Attiki"
-							android:textSize="12sp"
-							android:textColor="#A4A4A4" />
+							android:textColor="#A4A4A4"
+							android:textSize="12sp" />
 					</LinearLayout>
 				</LinearLayout>
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear59"
-				android:layout_width="240dp"
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview13"
+				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:padding="2dp"
-				android:background="#1D1D1D"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical">
-				<ImageView
-					android:id="@+id/imageview22"
-					android:layout_width="150dp"
-					android:layout_height="150dp"
-					android:src="@drawable/alterlifelogo1"
-					android:scaleType="fitCenter" />
+				android:orientation="vertical"
+				android:padding="8dp"
+				app:cardBackgroundColor="#1D1D1D"
+				app:cardCornerRadius="20dp"
+				app:cardElevation="10dp">
+
 				<LinearLayout
-					android:id="@+id/linear60"
-					android:layout_width="match_parent"
-					android:layout_height="3dp"
-					android:padding="8dp"
-					android:background="#A4A4A4"
-					android:orientation="horizontal"
-					android:translationY="-5.0dp" />
-				<LinearLayout
-					android:id="@+id/linear61"
-					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
-					android:padding="1dp"
-					android:orientation="horizontal">
+					android:id="@+id/linear59"
+					android:layout_width="240dp"
+					android:layout_height="wrap_content"
+					android:background="#1D1D1D"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical"
+					android:padding="2dp">
+
+					<ImageView
+						android:id="@+id/imageview22"
+						android:layout_width="150dp"
+						android:layout_height="150dp"
+						android:scaleType="fitCenter"
+						android:src="@drawable/alterlifelogo1" />
+
 					<LinearLayout
-						android:id="@+id/linear63"
+						android:id="@+id/linear60"
+						android:layout_width="match_parent"
+						android:layout_height="3dp"
+						android:background="#A4A4A4"
+						android:orientation="horizontal"
+						android:padding="8dp"
+						android:translationY="-5.0dp" />
+
+					<LinearLayout
+						android:id="@+id/linear61"
 						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="1dp"
-						android:gravity="left|center_vertical"
-						android:orientation="vertical">
-						<TextView
-							android:id="@+id/textview29"
+						android:layout_height="match_parent"
+						android:orientation="horizontal"
+						android:padding="1dp">
+
+						<LinearLayout
+							android:id="@+id/linear63"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:layout_marginRight="55dp"
-							android:padding="8dp"
-							android:text="Alterlife Argyroupoli"
-							android:textSize="14sp"
-							android:textColor="#FFFFFF" />
+							android:gravity="left|center_vertical"
+							android:orientation="vertical"
+							android:padding="1dp">
+
+							<TextView
+								android:id="@+id/textview29"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="55dp"
+								android:padding="8dp"
+								android:text="Alterlife Argyroupoli"
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
+						</LinearLayout>
+
+						<androidx.cardview.widget.CardView
+							android:id="@+id/favoritebutton"
+							android:layout_width="30dp"
+							android:layout_height="wrap_content"
+							android:layout_marginEnd="20dp"
+							android:background="#00E53535"
+							android:orientation="vertical"
+							android:padding="4dp"
+							app:cardBackgroundColor="#333333"
+							app:cardCornerRadius="50dp"
+							app:cardElevation="10dp">
+
+							<ImageView
+								android:id="@+id/favorite"
+								android:layout_width="30dp"
+								android:layout_height="30dp"
+								android:padding="8dp"
+								android:scaleType="centerCrop"
+								android:src="@drawable/favw" />
+						</androidx.cardview.widget.CardView>
 					</LinearLayout>
+
 					<LinearLayout
-						android:id="@+id/linear64"
-						android:layout_width="match_parent"
+						android:id="@+id/linear62"
+						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:background="#333333"
-						android:orientation="horizontal">
-						<ImageView
-							android:id="@+id/imageview23"
-							android:layout_width="20dp"
-							android:layout_height="20dp"
-							android:src="@drawable/favw"
-							android:scaleType="centerCrop" />
+						android:orientation="horizontal"
+						android:padding="2dp">
+
+						<TextView
+							android:id="@+id/textview30"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="from 10€/day pass"
+							android:textColor="#FFFFFF"
+							android:textSize="12sp" />
+
+						<TextView
+							android:id="@+id/textview31"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text="Argyroupoli, Attiki"
+							android:textColor="#A4A4A4"
+							android:textSize="12sp" />
 					</LinearLayout>
 				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear62"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:orientation="horizontal">
-					<TextView
-						android:id="@+id/textview30"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="from 10€/day pass"
-						android:textSize="12sp"
-						android:textColor="#FFFFFF" />
-					<TextView
-						android:id="@+id/textview31"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="8dp"
-						android:text="Argyroupoli, Attiki"
-						android:textSize="12sp"
-						android:textColor="#A4A4A4" />
-				</LinearLayout>
-			</LinearLayout>
+			</androidx.cardview.widget.CardView>
 		</LinearLayout>
 		<LinearLayout
 			android:id="@+id/linear65"
@@ -427,167 +500,195 @@
 			android:layout_height="wrap_content"
 			android:padding="8dp"
 			android:orientation="horizontal">
-			<LinearLayout
-				android:id="@+id/linear67"
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview9"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginRight="20dp"
-				android:padding="4dp"
+				android:layout_marginEnd="20dp"
 				android:background="#E53535"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical">
+				android:orientation="vertical"
+				android:padding="4dp"
+				app:cardBackgroundColor="#E53535"
+				app:cardCornerRadius="11dp"
+				app:cardElevation="10dp">
+
 				<ImageView
 					android:id="@+id/imageview24"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:padding="4dp"
-					android:src="@drawable/star"
-					android:scaleType="centerCrop" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear73"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginRight="20dp"
-				android:padding="4dp"
-				android:background="#121212"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical">
-				<ImageView
-					android:id="@+id/imageview26"
-					android:layout_width="50dp"
-					android:layout_height="50dp"
 					android:padding="6dp"
-					android:src="@drawable/weightlifting"
-					android:scaleType="centerCrop" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear74"
+					android:scaleType="centerCrop"
+					android:src="@drawable/star" />
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview11"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginRight="20dp"
+				android:layout_marginEnd="20dp"
+				android:background="#00E53535"
+				android:orientation="vertical"
 				android:padding="4dp"
-				android:background="#121212"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical">
-				<ImageView
-					android:id="@+id/imageview27"
-					android:layout_width="50dp"
-					android:layout_height="50dp"
-					android:padding="6dp"
-					android:src="@drawable/teamwork"
-					android:scaleType="centerCrop" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear75"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginRight="20dp"
-				android:padding="4dp"
-				android:background="#121212"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical">
+				app:cardBackgroundColor="#121212"
+				app:cardCornerRadius="11dp"
+				app:cardElevation="10dp">
+
 				<ImageView
 					android:id="@+id/imageview28"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:padding="6dp"
-					android:src="@drawable/wheelchair"
-					android:scaleType="centerCrop" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear76"
+					android:padding="8dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/weightlifting" />
+			</androidx.cardview.widget.CardView>
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview16"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginRight="20dp"
+				android:layout_marginEnd="20dp"
+				android:background="#00E53535"
+				android:orientation="vertical"
 				android:padding="4dp"
-				android:background="#121212"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical">
+				app:cardBackgroundColor="#121212"
+				app:cardCornerRadius="11dp"
+				app:cardElevation="10dp">
+
 				<ImageView
 					android:id="@+id/imageview29"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:padding="6dp"
-					android:src="@drawable/physiotherapy"
-					android:scaleType="centerCrop" />
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear78"
+					android:padding="8dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/teamwork" />
+			</androidx.cardview.widget.CardView>
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview18"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginRight="20dp"
+				android:layout_marginEnd="20dp"
+				android:background="#00E53535"
+				android:orientation="vertical"
 				android:padding="4dp"
-				android:background="#121212"
-				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical">
+				app:cardBackgroundColor="#121212"
+				app:cardCornerRadius="11dp"
+				app:cardElevation="10dp">
+
 				<ImageView
-					android:id="@+id/imageview31"
+					android:id="@+id/imageview30"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:padding="6dp"
-					android:src="@drawable/tennis"
-					android:scaleType="centerCrop" />
-			</LinearLayout>
+					android:padding="8dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/wheelchair" />
+			</androidx.cardview.widget.CardView>
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview10"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="20dp"
+				android:background="#00E53535"
+				android:orientation="vertical"
+				android:padding="4dp"
+				app:cardBackgroundColor="#121212"
+				app:cardCornerRadius="11dp"
+				app:cardElevation="10dp">
+
+				<ImageView
+					android:id="@+id/imageview27"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/physiotherapy" />
+			</androidx.cardview.widget.CardView>
+			<androidx.cardview.widget.CardView
+				android:id="@+id/tennis12"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="#00E53535"
+				android:orientation="vertical"
+				android:padding="4dp"
+				app:cardBackgroundColor="#121212"
+				app:cardCornerRadius="11dp"
+				app:cardElevation="10dp">
+
+				<ImageView
+					android:id="@+id/tennis1"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:padding="8dp"
+					android:scaleType="centerCrop"
+					android:src="@drawable/tennis" />
+			</androidx.cardview.widget.CardView>
 		</LinearLayout>
+
 		<LinearLayout
 			android:id="@+id/linear79"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="100dp"
-			android:padding="8dp"
+			android:layout_marginTop="140dp"
 			android:gravity="center_horizontal|center_vertical"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:padding="8dp">
+
 			<LinearLayout
 				android:id="@+id/linear83"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:layout_marginRight="80dp"
+				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview35"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/homered"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/homered" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear84"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:layout_marginRight="80dp"
+				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview36"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/calendar"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/calendar" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear85"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
-				android:layout_marginRight="80dp"
+				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview37"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/location_1"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/location_1" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear86"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview38"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/bytesize_car"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/bytesize_car" />
 			</LinearLayout>
 		</LinearLayout>
 	</LinearLayout>
