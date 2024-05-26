@@ -1,0 +1,6 @@
+checked all the robustness diagrams to see if they follow the syntax rules.
+checked the previous feedback on eclass, sequence needs changing but it is getting worked on.
+risk assessments seem ok.
+team risk needs feedback.
+This week feedback is necessary to finalize all work.
+ 
