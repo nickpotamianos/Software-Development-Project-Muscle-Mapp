@@ -1,0 +1,26 @@
+actor Owner
+
+participant EstablishmentPage(UI)
+
+participant Establishment(Class)
+participant Order(Class)
+
+== Βασική ροή (Επιβεβαίωση παραγγελίας) ==
+Owner -> EstablishmentPage(UI): Selects establishment orders
+EstablishmentPage(UI) -> Establishment(Class): get_establishment_orders()
+Establishment(Class) --> EstablishmentPage(UI): return(establishment_orders)
+EstablishmentPage(UI) -> Owner: Displays list of establishment orders
+Owner -> EstablishmentPage(UI): Selects "Confirm Order"
+EstablishmentPage(UI) -> Establishment(Class):confirm_order()
+Establishment(Class) ->  Order(Class):change_status_confirmed()
+Order(Class) --> Establishment(Class): return(success)
+Establishment(Class) --> EstablishmentPage(UI): return(success)
+EstablishmentPage(UI) -> Owner: Displays success message
+
+== Εναλλακτική ροή 1 (Ακύρωση παραγγελίας) ==
+Owner -> EstablishmentPage(UI): Selects "Cancel Order"
+EstablishmentPage(UI) -> Establishment(Class):cancel_order()
+Establishment(Class) ->  Order(Class):change_status_canceled()
+Order(Class) --> Establishment(Class): return(success)
+Establishment(Class) --> EstablishmentPage(UI): return(success)
+EstablishmentPage(UI) -> Owner: Displays success message

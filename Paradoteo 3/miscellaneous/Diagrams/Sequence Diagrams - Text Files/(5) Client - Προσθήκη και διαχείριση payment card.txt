@@ -1,0 +1,45 @@
+actor Client
+
+participant MainMenu(UI)
+participant Wallet(UI)
+participant NewCard(UI)
+participant CardDetails(UI)
+participant Wallet(Class)
+participant Payment_Card(Class)
+
+== Βασική ροή (Προσθήκη νέας payment card) ==
+Client -> MainMenu(UI): Opens personal wallet
+MainMenu(UI) -> Wallet(Class): get_wallet_cards()
+Wallet(Class) --> MainMenu(UI): return(wallet_cards)
+MainMenu(UI) -> Wallet(UI): Opens Wallet(UI)
+Wallet(UI) -> Client: Displays personal wallet
+Client -> Wallet(UI): Selects "Add new payment card"
+Wallet(UI) -> NewCard(UI): OpensNewCard(UI)
+NewCard(UI) -> Client: Asks for required card info
+Client -> NewCard(UI): Fills required card info and selects "Add card"
+NewCard(UI) -> Wallet(Class): add_payment_card()
+Wallet(Class) --> NewCard(UI): return(success)
+NewCard(UI) -> Client: Displays success message
+
+== Εναλλακτική ροή 1 (Σφάλμα εισαγωγής λόγω λανθασμένων στοιχείων) ==
+Wallet(Class) --> NewCard(UI): return(failure)
+NewCard(UI) -> Wallet(UI): Opens Wallet(UI)
+Wallet(UI) -> Client: Displays personal wallet
+
+== Εναλλακτική ροή 2 (Αφαίρεση payment card) ==
+Client -> MainMenu(UI): Opens personal wallet
+MainMenu(UI) -> Wallet(Class): get_wallet_cards()
+Wallet(Class) --> MainMenu(UI): return(wallet_cards)
+MainMenu(UI) -> Wallet(UI): Opens Wallet(UI)
+Wallet(UI) -> Client: Displays personal wallet
+Client -> Wallet(UI): Selects an existing payment card
+Wallet(UI) -> Payment_Card(Class): get_payment_card_details()
+Payment_Card(Class) --> Wallet(UI): return(card_details)
+Wallet(UI) -> CardDetails(UI): Opens CardDetails(UI)
+CardDetails(UI) -> Client: Displays selected cards details
+Client -> CardDetails(UI): Selects "Remove card"
+CardDetails(UI) -> Client: Asks for confirmation
+Client -> CardDetails(UI): Confirms selection
+CardDetails(UI) -> Wallet(Class): delete_payment_card()
+Wallet(Class) --> CardDetails(UI): return(success)
+CardDetails(UI) -> Client: Displays success message

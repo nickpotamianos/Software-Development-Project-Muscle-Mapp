@@ -1,0 +1,31 @@
+actor Client
+
+participant EstablishmentPage(UI)
+participant ReviewComposition(UI)
+participant Establishment(Class)
+
+== Βασική ροή (Συγγραφή κριτικής) ==
+Client -> EstablishmentPage(UI): Selects "Write a review"
+EstablishmentPage(UI) -> ReviewComposition(UI): Opens ReviewComposition(UI)
+ReviewComposition(UI) -> Client: Displays window for review composition
+Client -> ReviewComposition(UI): Writes the review and selects "Publish"
+ReviewComposition(UI) -> Establishment(Class): create_review()
+Establishment(Class) --> ReviewComposition(UI): return(success)
+ReviewComposition(UI) -> Client: Displays success message 
+
+== Εναλλακτική ροή 1 (Επεξεργασία κριτικής) ==
+Client -> EstablishmentPage(UI): Selects "Edit my review"
+EstablishmentPage(UI) -> ReviewComposition(UI): Opens ReviewComposition(UI)
+ReviewComposition(UI) -> Client: Displays window for review composition
+Client -> ReviewComposition(UI): Edits the review and selects "Publish"
+ReviewComposition(UI) -> Establishment(Class): modify_review()
+Establishment(Class) --> ReviewComposition(UI): return(success)
+ReviewComposition(UI) -> Client: Displays success message 
+
+== Εναλλακτική ροή 2 (Διαγραφή κριτικής) ==
+Client -> EstablishmentPage(UI): Selects "Delete my review"
+ReviewComposition(UI) -> Client: Asks for confirmation
+Client -> ReviewComposition(UI): Confirms selection
+ReviewComposition(UI) -> Establishment(Class): delete_review()
+Establishment(Class) --> ReviewComposition(UI): return(success)
+ReviewComposition(UI) -> Client: Displays success message 
