@@ -1,5 +1,7 @@
 # MuscleMapp - Gym and Workout Management Platform
 
+![Screenshot 2024-05-29 000751](https://github.com/nickpotamianos/Software-Development-Project-2024-Muscle-Mapp/assets/85500667/66feb525-962d-40a3-8321-e8dab37be90e)
+
 Welcome to MuscleMapp, your ultimate solution for managing gym memberships, workout schedules, and fitness progress. This project aims to provide a seamless and personalized fitness experience for gym owners, personal trainers, and fitness enthusiasts. Whether you're looking to find the perfect gym nearby, manage your training sessions, or keep track of your fitness goals, MuscleMapp has you covered.
 
 ## Table of Contents
