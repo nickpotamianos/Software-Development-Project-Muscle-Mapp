@@ -1,17 +1,20 @@
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:background="#9C4E3939"
+	android:backgroundTint="#373030"
 	android:orientation="vertical">
+
 	<LinearLayout
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:padding="8dp"
 		android:background="#0D0D0D"
-		android:orientation="vertical">
+		android:orientation="vertical"
+		android:padding="8dp">
+
 		<LinearLayout
 			android:id="@+id/linear110"
 			android:layout_width="match_parent"
@@ -20,49 +23,61 @@
 			android:layout_marginBottom="25dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal">
+
 			<TextView
 				android:id="@+id/textview39"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:padding="8dp"
+				android:padding="4dp"
 				android:text="Group Classes Schedule"
-				android:textSize="25sp"
-				android:textColor="#FFFFFF" />
+				android:textColor="#FFFFFF"
+				android:textSize="30sp"
+				android:textStyle="bold" />
 		</LinearLayout>
+
 		<androidx.cardview.widget.CardView
 			android:id="@+id/cardview6"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:layout_marginStart="30dp"
+			android:layout_marginEnd="30dp"
 			android:layout_marginBottom="25dp"
-			android:background="#191919"
 			android:orientation="vertical"
-			app:cardElevation="10dp"
-			app:cardCornerRadius="20dp">
+			app:cardBackgroundColor="#191919"
+			app:cardCornerRadius="20dp"
+			app:cardElevation="10dp">
+
 			<LinearLayout
 				android:id="@+id/linear124"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="horizontal">
+
 				<androidx.cardview.widget.CardView
 					android:id="@+id/cardview7"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:background="#E53535"
 					android:orientation="vertical"
-					app:cardElevation="10dp"
-					app:cardCornerRadius="20dp">
+					android:padding="8dp"
+					app:cardBackgroundColor="#E53535"
+					app:cardCornerRadius="20dp"
+					app:cardElevation="10dp">
+
 					<TextView
 						android:id="@+id/textview45"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:paddingLeft="20dp"
+						android:paddingTop="7dp"
 						android:paddingRight="20dp"
+						android:paddingBottom="7dp"
 						android:text="All"
+						android:textColor="#000000"
 						android:textSize="14sp"
-						android:textColor="#000000" />
+						android:textStyle="bold" />
 				</androidx.cardview.widget.CardView>
+
 				<TextView
 					android:id="@+id/textview46"
 					android:layout_width="wrap_content"
@@ -71,8 +86,10 @@
 					android:layout_marginRight="20dp"
 					android:padding="8dp"
 					android:text="Beginner"
-					android:textSize="14sp"
-					android:textColor="#FFFFFF" />
+
+					android:textColor="#FFFFFF"
+					android:textSize="14sp" />
+
 				<TextView
 					android:id="@+id/textview47"
 					android:layout_width="wrap_content"
@@ -80,8 +97,9 @@
 					android:layout_marginRight="20dp"
 					android:padding="8dp"
 					android:text="Intermediate"
-					android:textSize="14sp"
-					android:textColor="#FFFFFF" />
+					android:textColor="#FFFFFF"
+					android:textSize="14sp" />
+
 				<TextView
 					android:id="@+id/textview48"
 					android:layout_width="wrap_content"
@@ -89,329 +107,399 @@
 					android:layout_marginRight="10dp"
 					android:padding="8dp"
 					android:text="Advanced"
-					android:textSize="14sp"
-					android:textColor="#FFFFFF" />
+					android:textColor="#FFFFFF"
+					android:textSize="14sp" />
 			</LinearLayout>
 		</androidx.cardview.widget.CardView>
+
 		<LinearLayout
 			android:id="@+id/linear111"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
 			android:layout_marginBottom="30dp"
 			android:orientation="horizontal">
+
 			<LinearLayout
 				android:id="@+id/linear112"
 				android:layout_width="match_parent"
 				android:layout_height="200dp"
-				android:padding="8dp"
 				android:background="@drawable/first"
 				android:gravity="bottom"
-				android:orientation="horizontal">
+				android:orientation="horizontal"
+				android:padding="8dp">
+
 				<LinearLayout
 					android:id="@+id/linear125"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:orientation="horizontal">
+					android:orientation="horizontal"
+					android:padding="4dp">
+
 					<LinearLayout
 						android:id="@+id/linear126"
 						android:layout_width="wrap_content"
 						android:layout_height="match_parent"
-						android:padding="8dp"
-						android:orientation="vertical">
+						android:background="#77D6C2C2"
+						android:backgroundTint="#1C1B1B"
+						android:orientation="vertical"
+						android:paddingLeft="8dp"
+						android:paddingRight="8dp">
+
 						<TextView
 							android:id="@+id/clasname"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
 							android:text="Yoga Class"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
+							android:textColor="#FFFFFF"
+							android:textSize="12sp" />
+
 						<LinearLayout
 							android:id="@+id/linear128"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="horizontal">
+
 							<LinearLayout
 								android:id="@+id/linear129"
 								android:layout_width="4dp"
-								android:layout_height="wrap_content"
-								android:padding="8dp"
+								android:layout_height="30dp"
 								android:background="#E53535"
-								android:orientation="horizontal" />
+								android:orientation="horizontal"
+								android:padding="8dp" />
+
 							<TextView
 								android:id="@+id/class_description"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
 								android:text="13:00 - 14:00, Κατερίνα Π."
-								android:textSize="12sp"
-								android:textColor="#FFFFFF" />
+								android:textColor="#FFFFFF"
+								android:textSize="12sp" />
 						</LinearLayout>
 					</LinearLayout>
+
 					<LinearLayout
 						android:id="@+id/linear131"
 						android:layout_width="match_parent"
 						android:layout_height="match_parent"
-						android:padding="8dp"
 						android:gravity="right|bottom"
-						android:orientation="vertical">
+						android:orientation="vertical"
+						android:padding="8dp">
+
 						<androidx.cardview.widget.CardView
 							android:id="@+id/cardview9"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="4dp"
 							android:background="#E53535"
 							android:gravity="right"
 							android:orientation="vertical"
-							app:cardElevation="10dp"
-							app:cardCornerRadius="20dp">
+							android:padding="4dp"
+							app:cardBackgroundColor="#E53535"
+							app:cardCornerRadius="4dp"
+							app:cardElevation="10dp">
+
 							<TextView
 								android:id="@+id/textview51"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:padding="8dp"
+								android:layout_gravity="right"
+								android:paddingLeft="8dp"
+								android:paddingTop="2dp"
+								android:paddingRight="8dp"
+								android:paddingBottom="2dp"
 								android:text="Intermediate"
-								android:textSize="12sp"
 								android:textColor="#FFFFFF"
-								android:layout_gravity="right" />
+								android:textSize="12sp"
+								android:textStyle="bold" />
 						</androidx.cardview.widget.CardView>
 					</LinearLayout>
 				</LinearLayout>
 			</LinearLayout>
 		</LinearLayout>
+
 		<LinearLayout
 			android:id="@+id/linear144"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
 			android:layout_marginBottom="30dp"
 			android:orientation="horizontal">
+
 			<LinearLayout
 				android:id="@+id/linear145"
 				android:layout_width="match_parent"
 				android:layout_height="200dp"
-				android:padding="8dp"
 				android:background="@drawable/second"
 				android:gravity="bottom"
-				android:orientation="horizontal">
+				android:orientation="horizontal"
+				android:padding="8dp">
+
 				<LinearLayout
 					android:id="@+id/linear146"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:orientation="horizontal">
+					android:orientation="horizontal"
+					android:padding="8dp">
+
 					<LinearLayout
 						android:id="@+id/linear147"
 						android:layout_width="wrap_content"
 						android:layout_height="match_parent"
-						android:padding="8dp"
-						android:orientation="vertical">
+						android:background="#77D6C2C2"
+						android:backgroundTint="#373030"
+						android:orientation="vertical"
+						android:paddingLeft="8dp"
+						android:paddingRight="8dp">
+
 						<TextView
 							android:id="@+id/textview58"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
 							android:text="Trx Class"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
+							android:textColor="#FFFFFF"
+							android:textSize="12sp" />
+
 						<LinearLayout
 							android:id="@+id/linear149"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="horizontal">
+
 							<LinearLayout
 								android:id="@+id/linear150"
 								android:layout_width="4dp"
-								android:layout_height="wrap_content"
-								android:padding="8dp"
+								android:layout_height="30dp"
 								android:background="#E53535"
-								android:orientation="horizontal" />
+								android:orientation="horizontal"
+								android:padding="8dp" />
+
 							<TextView
 								android:id="@+id/textview59"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
 								android:text="14:00 - 15:00, Δημήτρης Κ."
-								android:textSize="12sp"
-								android:textColor="#FFFFFF" />
+								android:textColor="#FFFFFF"
+								android:textSize="12sp" />
 						</LinearLayout>
 					</LinearLayout>
+
 					<LinearLayout
 						android:id="@+id/linear148"
 						android:layout_width="match_parent"
 						android:layout_height="match_parent"
-						android:padding="8dp"
 						android:gravity="right|bottom"
-						android:orientation="vertical">
+						android:orientation="vertical"
+						android:padding="8dp">
+
 						<androidx.cardview.widget.CardView
 							android:id="@+id/cardview12"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="4dp"
-							android:background="#E53535"
 							android:gravity="right"
 							android:orientation="vertical"
-							app:cardElevation="10dp"
-							app:cardCornerRadius="20dp">
+							android:padding="4dp"
+							app:cardBackgroundColor="#E53535"
+							app:cardCornerRadius="4dp"
+							app:cardElevation="10dp">
+
 							<TextView
 								android:id="@+id/textview60"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:padding="8dp"
+								android:layout_gravity="right"
+								android:paddingLeft="8dp"
+								android:paddingTop="2dp"
+								android:paddingRight="8dp"
+								android:paddingBottom="2dp"
 								android:text="Beginner"
-								android:textSize="12sp"
 								android:textColor="#FFFFFF"
-								android:layout_gravity="right" />
+								android:textSize="12sp"
+								android:textStyle="bold" />
 						</androidx.cardview.widget.CardView>
 					</LinearLayout>
 				</LinearLayout>
 			</LinearLayout>
 		</LinearLayout>
+
 		<LinearLayout
 			android:id="@+id/linear151"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
 			android:layout_marginBottom="30dp"
 			android:orientation="horizontal">
+
 			<LinearLayout
 				android:id="@+id/linear152"
 				android:layout_width="match_parent"
 				android:layout_height="200dp"
-				android:padding="8dp"
 				android:background="@drawable/third"
 				android:gravity="bottom"
-				android:orientation="horizontal">
+				android:orientation="horizontal"
+				android:padding="8dp">
+
 				<LinearLayout
 					android:id="@+id/linear153"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:orientation="horizontal">
+					android:orientation="horizontal"
+					android:padding="8dp">
+
 					<LinearLayout
 						android:id="@+id/linear154"
 						android:layout_width="wrap_content"
 						android:layout_height="match_parent"
-						android:padding="8dp"
-						android:orientation="vertical">
+						android:background="#77D6C2C2"
+						android:backgroundTint="#1C1B1B"
+						android:orientation="vertical"
+						android:paddingLeft="8dp"
+						android:paddingRight="8dp">
+
 						<TextView
 							android:id="@+id/textview61"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
 							android:text="Trampoline Class"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
+							android:textColor="#FFFFFF"
+							android:textSize="12sp" />
+
 						<LinearLayout
 							android:id="@+id/linear156"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="horizontal">
+
 							<LinearLayout
 								android:id="@+id/linear157"
 								android:layout_width="4dp"
-								android:layout_height="wrap_content"
-								android:padding="8dp"
+								android:layout_height="30dp"
 								android:background="#E53535"
-								android:orientation="horizontal" />
+								android:orientation="horizontal"
+								android:padding="8dp" />
+
 							<TextView
 								android:id="@+id/textview62"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
 								android:text="15:00 - 16:00, Γιώργος Λ."
-								android:textSize="12sp"
-								android:textColor="#FFFFFF" />
+								android:textColor="#FFFFFF"
+								android:textSize="12sp" />
 						</LinearLayout>
 					</LinearLayout>
+
 					<LinearLayout
 						android:id="@+id/linear155"
 						android:layout_width="match_parent"
 						android:layout_height="match_parent"
-						android:padding="8dp"
 						android:gravity="right|bottom"
-						android:orientation="vertical">
+						android:orientation="vertical"
+						android:padding="8dp">
+
 						<androidx.cardview.widget.CardView
 							android:id="@+id/cardview13"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="4dp"
-							android:background="#E53535"
 							android:gravity="right"
 							android:orientation="vertical"
-							app:cardElevation="10dp"
-							app:cardCornerRadius="20dp">
+							android:padding="4dp"
+							app:cardBackgroundColor="#E53535"
+							app:cardCornerRadius="4dp"
+							app:cardElevation="10dp">
+
 							<TextView
 								android:id="@+id/textview63"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:padding="8dp"
+								android:layout_gravity="right"
+								android:paddingLeft="8dp"
+								android:paddingTop="2dp"
+								android:paddingRight="8dp"
+								android:paddingBottom="2dp"
 								android:text="Beginner"
-								android:textSize="12sp"
 								android:textColor="#FFFFFF"
-								android:layout_gravity="right" />
+								android:textSize="12sp"
+								android:textStyle="bold" />
 						</androidx.cardview.widget.CardView>
 					</LinearLayout>
 				</LinearLayout>
 			</LinearLayout>
 		</LinearLayout>
+
 		<LinearLayout
 			android:id="@+id/linear79"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="40dp"
-			android:padding="8dp"
 			android:gravity="center_horizontal|center_vertical"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:padding="8dp">
+
 			<LinearLayout
 				android:id="@+id/linear83"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview35"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/home"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/home" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear84"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview36"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/calendarred"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/calendarred" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear85"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:layout_marginRight="60dp"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview37"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/location_1"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/location_1" />
 			</LinearLayout>
+
 			<LinearLayout
 				android:id="@+id/linear86"
 				android:layout_width="wrap_content"
 				android:layout_height="match_parent"
 				android:orientation="vertical">
+
 				<ImageView
 					android:id="@+id/imageview38"
 					android:layout_width="50dp"
 					android:layout_height="50dp"
-					android:src="@drawable/bytesize_car"
-					android:scaleType="centerCrop" />
+					android:scaleType="centerCrop"
+					android:src="@drawable/bytesize_car" />
 			</LinearLayout>
 		</LinearLayout>
 	</LinearLayout>
