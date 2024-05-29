@@ -151,10 +151,10 @@
 							android:id="@+id/clasname"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="8dp"
+							android:padding="3dp"
 							android:text="Yoga Class"
 							android:textColor="#FFFFFF"
-							android:textSize="12sp" />
+							android:textSize="20dp" />
 
 						<LinearLayout
 							android:id="@+id/linear128"
@@ -259,10 +259,10 @@
 							android:id="@+id/textview58"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="8dp"
+							android:padding="3dp"
 							android:text="Trx Class"
 							android:textColor="#FFFFFF"
-							android:textSize="12sp" />
+							android:textSize="20dp" />
 
 						<LinearLayout
 							android:id="@+id/linear149"
@@ -366,10 +366,10 @@
 							android:id="@+id/textview61"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="8dp"
+							android:padding="3dp"
 							android:text="Trampoline Class"
 							android:textColor="#FFFFFF"
-							android:textSize="12sp" />
+							android:textSize="20dp" />
 
 						<LinearLayout
 							android:id="@+id/linear156"
@@ -438,7 +438,7 @@
 			android:id="@+id/linear79"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="40dp"
+			android:layout_marginTop="60dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal"
 			android:padding="8dp">
