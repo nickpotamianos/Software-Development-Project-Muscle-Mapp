@@ -379,6 +379,8 @@
 			android:layout_height="match_parent"
 			android:padding="8dp"
 			android:background="#0D0D0D"
+			android:layout_marginStart="10dp"
+			android:layout_marginEnd="10dp"
 			android:orientation="vertical">
 			<androidx.cardview.widget.CardView
 				android:layout_width="match_parent"
