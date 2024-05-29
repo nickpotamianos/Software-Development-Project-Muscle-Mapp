@@ -84,8 +84,7 @@
 			android:paddingBottom="12dp"
 			app:cardBackgroundColor="#121212"
 			app:cardCornerRadius="8dp"
-			app:cardElevation="4dp"
-			app:gravity="center">
+			app:cardElevation="4dp">
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/linear112"
@@ -147,8 +146,7 @@
 			android:paddingBottom="12dp"
 			app:cardBackgroundColor="#121212"
 			app:cardCornerRadius="8dp"
-			app:cardElevation="4dp"
-			app:gravity="center">
+			app:cardElevation="4dp">
 
 			<androidx.cardview.widget.CardView
 				android:id="@+id/linear112"

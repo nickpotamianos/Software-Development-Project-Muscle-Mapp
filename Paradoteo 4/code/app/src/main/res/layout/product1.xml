@@ -79,7 +79,7 @@
 								android:id="@+id/imageview45"
 								android:layout_width="30dp"
 								android:layout_height="30dp"
-								android:padding="4"
+								android:padding="4dp"
 								android:src="@drawable/favw"
 								android:layout_gravity="center"
 								android:scaleType="centerCrop" />
