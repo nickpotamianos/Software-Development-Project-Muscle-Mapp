@@ -2,6 +2,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
@@ -32,7 +33,6 @@
 				android:textColor="#FFFFFF" />
 		</LinearLayout>
 		<androidx.cardview.widget.CardView
-			android:id="@+id/mob_text12"
 			android:layout_width="380dp"
 			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
@@ -246,10 +246,6 @@
 			android:padding="8dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal">
-			<com.google.android.gms.common.SignInButton
-				android:id="@+id/signinbutton1"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content" />
 		</LinearLayout>
 		<LinearLayout
 			android:id="@+id/linear7"
