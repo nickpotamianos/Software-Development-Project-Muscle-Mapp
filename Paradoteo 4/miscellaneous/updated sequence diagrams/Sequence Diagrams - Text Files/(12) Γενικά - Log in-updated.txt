@@ -1,0 +1,35 @@
+actor User
+
+participant UserSelection(UI)
+participant LoginScreen(UI)
+participant PasswordReset(UI)
+
+participant DataBase(Class)
+
+== Βασική ροή (Log in) ==
+
+
+User->UserSelection(UI):Opens app
+User<-UserSelection(UI):Asks for selection of user type
+User->UserSelection(UI):Selects user type
+UserSelection(UI)->LoginScreen(UI):Opens LoginScreen(UI)
+User<-LoginScreen(UI):Asks for login credentials
+User->LoginScreen(UI):Provides login credentials and selects "Sign in"
+LoginScreen(UI)->DataBase(Class):validate_user()
+LoginScreen(UI)<--DataBase(Class):return(success)
+User<-LoginScreen(UI): Displays success message
+== Εναλλακτική ροή 1 (Λάθος στοιχεία εισόδου) ==
+LoginScreen(UI)<--DataBase(Class):return(failure)
+User<-LoginScreen(UI): Displays failure message and asks again for login credentials
+
+== Εναλλακτική ροή 2 (Ξεχάστηκε ο κωδικός) ==
+
+User->LoginScreen(UI):Selects "Forgot Password"
+LoginScreen(UI)->PasswordReset(UI):Opens PasswordReset(UI)
+User<-PasswordReset(UI):Asks user for email
+User->PasswordReset(UI):Fills email and selects "Reset email"
+User<-PasswordReset(UI):Sends instruction for password reset
+User->PasswordReset(UI):Follows instructions and resets password
+PasswordReset(UI)->DataBase(Class):reset_user_password()
+PasswordReset(UI)<--DataBase(Class):return(success)
+User<-PasswordReset(UI):Displays success message and asks again for login credentials
