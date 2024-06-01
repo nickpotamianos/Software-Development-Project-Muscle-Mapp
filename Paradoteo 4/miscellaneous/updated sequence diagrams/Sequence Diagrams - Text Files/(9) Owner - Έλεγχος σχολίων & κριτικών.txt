@@ -7,17 +7,22 @@ participant Establishment(Class)
 
 == Βασική ροή (Προβολή σχολίων/κριτικών) ==
 Owner -> EstablishmentPage(UI): Selects reviews
-EstablishmentPage(UI) -> Establishment(Class): get_establishment_reviews()
-Establishment(Class) --> EstablishmentPage(UI): return(establishment_reviews)
 EstablishmentPage(UI) -> ReviewsList(UI): Opens ReviewsList(UI)
-ReviewsList(UI) -> Owner: Displays list of establishment reviews
+ReviewsList(UI) -> Owner: Displays sorting and filtering options
+Owner -> ReviewsList(UI): Selects sorting and filtering options
+ReviewsList(UI) -> Establishment(Class): get_filtered_reviews(criteria)
+Establishment(Class) --> ReviewsList(UI): return(filtered_reviews)
+ReviewsList(UI) -> Owner: Displays list of filtered reviews
 Owner -> ReviewsList(UI): Selects a review
-ReviewsList(UI) -> Owner: Displays the review
+ReviewsList(UI) -> Owner: Displays the full content of the review
+Owner -> ReviewsList(UI): Reads and optionally replies to the review
 
 == Εναλλακτική ροή 1 (Καρφίτσωμα σχολίων) ==
-Owner -> ReviewsList(UI): Selects a review
-ReviewsList(UI) -> Owner: Displays the review
-Owner -> ReviewsList(UI): Selects "Pin review"
+Owner -> ReviewsList(UI): Selects a review to pin
+ReviewsList(UI) -> Owner: Displays the full content of the review
+Owner -> ReviewsList(UI): Selects "Pin Review"
 ReviewsList(UI) -> Owner: Asks for confirmation
 Owner -> ReviewsList(UI): Confirms selection
-ReviewsList(UI) -> Owner: Displays success message
+ReviewsList(UI) -> Establishment(Class): pin_review()
+Establishment(Class) --> ReviewsList(UI): return(success)
+ReviewsList(UI) -> Owner: Displays success message and pinned review at the top of the list

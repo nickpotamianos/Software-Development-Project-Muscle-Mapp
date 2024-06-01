@@ -6,16 +6,22 @@ participant DetailEdit(UI)
 participant Establishment(Class)
 
 == Βασική ροή (Άνοιγμα πληροφοριών) ==
-Owner -> EstablishmentPage(UI): Selects establishment establishment_details
+Owner -> EstablishmentPage(UI): Selects establishment details
 EstablishmentPage(UI) -> Establishment(Class): get_establishment_details()
 Establishment(Class) --> EstablishmentPage(UI): return(establishment_details)
-EstablishmentPage(UI) -> Owner: Displays establishment details
+EstablishmentPage(UI) -> Owner: Displays selection options for info fields
+Owner -> EstablishmentPage(UI): Selects info fields to view
+EstablishmentPage(UI) -> Establishment(Class): get_selected_info(fields)
+Establishment(Class) --> EstablishmentPage(UI): return(selected_info)
+EstablishmentPage(UI) -> Owner: Displays selected info fields
 
 == Εναλλακτική ροή 1 (Τροποποίηση στοιχείων) ==
-Owner -> EstablishmentPage(UI): Selects an info field
+Owner -> EstablishmentPage(UI): Selects info field to edit
 EstablishmentPage(UI) -> DetailEdit(UI): Opens DetailEdit(UI)
-DetailEdit(UI) -> Owner: Displays current data
-Owner -> DetailEdit(UI): Enters new data
-DetailEdit(UI) -> Owner: Asks for confirmation
-Owner -> DetailEdit(UI): Confirms selection
+DetailEdit(UI) -> Establishment(Class): get_field_details(field)
+Establishment(Class) --> DetailEdit(UI): return(field_details)
+DetailEdit(UI) -> Owner: Displays current data for the field
+Owner -> DetailEdit(UI): Enters new data and selects "Confirm"
+DetailEdit(UI) -> Establishment(Class): update_field(new_data)
+Establishment(Class) --> DetailEdit(UI): return(success)
 DetailEdit(UI) -> Owner: Displays success message
