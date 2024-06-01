@@ -1,5 +1,6 @@
 package com.example.musclemapp
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,12 @@ class LoginScreen : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val pressForLogin = findViewById<androidx.cardview.widget.CardView>(R.id.SignInButton)
+        pressForLogin.setOnClickListener{
+            val intent = Intent(this, OpeningScreen2::class.java)
+            startActivity(intent)
         }
     }
 }

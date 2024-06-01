@@ -61,8 +61,8 @@
 
 				<EditText
 					android:id="@+id/edittext2"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
+					android:layout_width="306dp"
+					android:layout_height="60dp"
 					android:hint="Email"
 					android:imeOptions="actionGo"
 					android:padding="8dp"
@@ -102,8 +102,8 @@
 
 				<EditText
 					android:id="@+id/usernamebox"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
+					android:layout_width="306dp"
+					android:layout_height="60dp"
 					android:hint="Username"
 					android:imeOptions="actionGo"
 					android:padding="8dp"
@@ -143,7 +143,7 @@
 				<EditText
 					android:id="@+id/edittext3"
 					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
+					android:layout_height="60dp"
 					android:hint="Password"
 					android:imeOptions="actionGo"
 					android:padding="8dp"
@@ -179,7 +179,7 @@
 		<androidx.cardview.widget.CardView
 			xmlns:android="http://schemas.android.com/apk/res/android"
 			xmlns:app="http://schemas.android.com/apk/res-auto"
-			android:id="@+id/btn"
+			android:id="@+id/SignInButton"
 			android:layout_width="380dp"
 			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
