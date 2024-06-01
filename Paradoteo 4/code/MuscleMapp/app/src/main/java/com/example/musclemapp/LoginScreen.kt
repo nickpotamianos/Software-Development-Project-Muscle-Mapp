@@ -2,12 +2,13 @@ package com.example.musclemapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class LoginScreen : AppCompatActivity() {
+class LoginScreen : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,6 +22,12 @@ class LoginScreen : AppCompatActivity() {
         val pressForLogin = findViewById<androidx.cardview.widget.CardView>(R.id.LogInButton)
         pressForLogin.setOnClickListener{
             val intent = Intent(this, OpeningScreen2::class.java)
+            startActivity(intent)
+        }
+
+        val goToSignUp = findViewById<TextView>(R.id.textview10)
+        goToSignUp.setOnClickListener{
+            val intent = Intent(this, SignUpScreen::class.java)
             startActivity(intent)
         }
     }
