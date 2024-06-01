@@ -20,7 +20,7 @@ class OpeningScreen3 : AppCompatActivity() {
 
         val nextScreen = findViewById<androidx.cardview.widget.CardView>(R.id.IntroScreenButton3)
         nextScreen.setOnClickListener{
-            val intent = Intent(this, LoginScreen::class.java)
+            val intent = Intent(this, SignUpScreen::class.java)
             startActivity(intent)
         }
     }
