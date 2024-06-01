@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
@@ -5,6 +6,8 @@
     android:layout_height="match_parent">
 
     <!-- Background Image -->
+
+    <!-- Overlay for Darkening -->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
@@ -12,7 +15,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/welcomescreen1" />
 
-    <!-- Overlay for Darkening -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +27,7 @@
         android:orientation="vertical"
         android:padding="32dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="450dp"> <!-- Adjust this margin as needed -->
+        android:layout_marginBottom="600dp">
 
         <!-- Title Text -->
         <TextView

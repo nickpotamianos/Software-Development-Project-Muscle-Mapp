@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
@@ -5,14 +6,15 @@
     android:layout_height="match_parent">
 
     <!-- Background Image -->
+
+    <!-- Overlay for Darkening -->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/welcomescreen1" />
+        android:src="@drawable/welcomescreen2" />
 
-    <!-- Overlay for Darkening -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,14 +27,14 @@
         android:orientation="vertical"
         android:padding="32dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="450dp"> <!-- Adjust this margin as needed -->
+        android:layout_marginBottom="600dp">
 
         <!-- Title Text -->
         <TextView
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Discover Gyms Around You"
+            android:text="Select Your Fitness Space"
             android:textColor="#FFFFFF"
             android:textSize="38sp"
             android:textStyle="bold" />
@@ -42,7 +44,7 @@
             android:id="@+id/subtitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Browse a wide selection of nearby gyms and find the one that fits your workout style. Start your fitness journey with MuscleMapp."
+            android:text="From high-energy group classes to serene yoga studios, MuscleMapp guides you to your ideal workout environment."
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:layout_marginTop="8dp" />
@@ -59,14 +61,14 @@
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/indicator_active" />
+                android:background="@drawable/indicator_inactive" />
 
             <!-- Circle 2 -->
             <View
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/indicator_inactive" />
+                android:background="@drawable/indicator_active" />
 
             <!-- Circle 3 -->
             <View
@@ -85,7 +87,7 @@
         android:gravity="center">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/IntroScreenButton1"
+            android:id="@+id/IntroScreenButton2"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_centerHorizontal="true"

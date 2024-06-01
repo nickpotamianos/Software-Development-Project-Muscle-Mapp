@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
@@ -5,14 +6,15 @@
     android:layout_height="match_parent">
 
     <!-- Background Image -->
+
+    <!-- Overlay for Darkening -->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/welcomescreen1" />
+        android:src="@drawable/welcomescreen3" />
 
-    <!-- Overlay for Darkening -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,14 +27,14 @@
         android:orientation="vertical"
         android:padding="32dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="450dp"> <!-- Adjust this margin as needed -->
+        android:layout_marginBottom="600dp">
 
         <!-- Title Text -->
         <TextView
             android:id="@+id/titleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Discover Gyms Around You"
+            android:text="Join a Community of Fitness"
             android:textColor="#FFFFFF"
             android:textSize="38sp"
             android:textStyle="bold" />
@@ -42,7 +44,7 @@
             android:id="@+id/subtitleText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Browse a wide selection of nearby gyms and find the one that fits your workout style. Start your fitness journey with MuscleMapp."
+            android:text="Get connected with local fitness enthusiasts and join the MuscleMapp community. A better workout experience awaits."
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:layout_marginTop="8dp" />
@@ -59,7 +61,7 @@
                 android:layout_width="15dp"
                 android:layout_height="15dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/indicator_active" />
+                android:background="@drawable/indicator_inactive" />
 
             <!-- Circle 2 -->
             <View
@@ -72,7 +74,7 @@
             <View
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:background="@drawable/indicator_inactive" />
+                android:background="@drawable/indicator_active" />
         </LinearLayout>
     </LinearLayout>
 
@@ -85,21 +87,32 @@
         android:gravity="center">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/IntroScreenButton1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="16dp"
-            app:cardCornerRadius="40dp"
-            app:cardBackgroundColor="#e53535"
-            app:cardElevation="1dp">
+            android:id="@+id/IntroScreenButton3"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#E53535"
+            android:gravity="center_horizontal|center_vertical">
 
-            <ImageView
-                android:id="@+id/arrowImage"
+            <TextView
+                android:id="@+id/textview8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="8dp"
                 android:layout_gravity="center"
-                android:src="@drawable/welcome_arrow" />
+                android:text="Find Gyms Now"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000" />
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 </RelativeLayout>

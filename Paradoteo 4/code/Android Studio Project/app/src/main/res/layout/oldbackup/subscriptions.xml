@@ -64,15 +64,15 @@
 			android:background="#121212"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
-			<androidx.cardview.widget.CardView
+			<LinearLayout
 				android:id="@+id/linear110"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
-				app:cardBackgroundColor="#1D1D1D"
+				android:padding="10dp"
+				android:background="#1D1D1D"
 				android:gravity="center_horizontal|center_vertical"
-				android:orientation="vertical"
-				app:cardCornerRadius="5dp">
+				android:orientation="vertical">
 				<androidx.cardview.widget.CardView
 					xmlns:android="http://schemas.android.com/apk/res/android"
 					xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -80,7 +80,6 @@
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="8dp"
-					android:layout_margin="8dp"
 					app:cardBackgroundColor="#E53535"
 					app:cardCornerRadius="40dp"
 					app:cardElevation="4dp"
@@ -96,7 +95,7 @@
 						android:scaleType="centerInside" />
 				</androidx.cardview.widget.CardView>
 
-			</androidx.cardview.widget.CardView>
+			</LinearLayout>
 			<LinearLayout
 				android:id="@+id/linear111"
 				android:layout_width="wrap_content"
@@ -231,15 +230,14 @@
 			android:background="#121212"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
-			<androidx.cardview.widget.CardView
+			<LinearLayout
 				android:id="@+id/linear151"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
 				android:layout_marginRight="10dp"
 				android:padding="10dp"
-				app:cardCornerRadius="5dp"
-				app:cardBackgroundColor="#1D1D1D"
+				android:background="#1D1D1D"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical">
 				<androidx.cardview.widget.CardView
@@ -248,7 +246,7 @@
 					android:id="@+id/linear112"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_margin="8dp"
+					android:padding="8dp"
 					app:cardBackgroundColor="#E53535"
 					app:cardCornerRadius="40dp"
 					app:cardElevation="4dp"
@@ -262,7 +260,7 @@
 						android:padding="8dp"
 						android:src="@drawable/month"
 						android:scaleType="centerInside" />
-				</androidx.cardview.widget.CardView>			</androidx.cardview.widget.CardView>
+				</androidx.cardview.widget.CardView>			</LinearLayout>
 			<LinearLayout
 				android:id="@+id/linear152"
 				android:layout_width="wrap_content"
@@ -395,14 +393,13 @@
 			android:background="#121212"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
-			<androidx.cardview.widget.CardView
+			<LinearLayout
 				android:id="@+id/linear162"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
 				android:padding="10dp"
-				app:cardCornerRadius="5dp"
-				app:cardBackgroundColor="#1D1D1D"
+				android:background="#1D1D1D"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical">
 				<androidx.cardview.widget.CardView
@@ -411,7 +408,7 @@
 					android:id="@+id/linear112"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_margin="8dp"
+					android:padding="8dp"
 					app:cardBackgroundColor="#E53535"
 					app:cardCornerRadius="40dp"
 					app:cardElevation="4dp"
@@ -425,7 +422,7 @@
 						android:padding="8dp"
 						android:src="@drawable/multiple_months"
 						android:scaleType="centerInside" />
-				</androidx.cardview.widget.CardView>			</androidx.cardview.widget.CardView>
+				</androidx.cardview.widget.CardView>			</LinearLayout>
 			<LinearLayout
 				android:id="@+id/linear163"
 				android:layout_width="wrap_content"
@@ -567,15 +564,14 @@
 			android:background="#121212"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
-			<androidx.cardview.widget.CardView
+			<LinearLayout
 				android:id="@+id/linear194"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
 				android:layout_marginRight="10dp"
 				android:padding="10dp"
-				app:cardCornerRadius="5dp"
-				app:cardBackgroundColor="#1D1D1D"
+				android:background="#1D1D1D"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical">
 				<androidx.cardview.widget.CardView
@@ -584,7 +580,7 @@
 					android:id="@+id/linear112"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_margin="8dp"
+					android:padding="8dp"
 					app:cardBackgroundColor="#E53535"
 					app:cardCornerRadius="40dp"
 					app:cardElevation="4dp"
@@ -598,7 +594,7 @@
 						android:padding="8dp"
 						android:src="@drawable/multiple_months"
 						android:scaleType="centerInside" />
-				</androidx.cardview.widget.CardView>			</androidx.cardview.widget.CardView>
+				</androidx.cardview.widget.CardView>			</LinearLayout>
 			<LinearLayout
 				android:id="@+id/linear195"
 				android:layout_width="wrap_content"
@@ -739,15 +735,14 @@
 			android:background="#121212"
 			android:gravity="center_vertical"
 			android:orientation="horizontal">
-			<androidx.cardview.widget.CardView
+			<LinearLayout
 				android:id="@+id/linear173"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginLeft="20dp"
 				android:layout_marginRight="10dp"
 				android:padding="10dp"
-				app:cardBackgroundColor="#1D1D1D"
-				app:cardCornerRadius="5dp"
+				android:background="#1D1D1D"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="vertical">
 				<androidx.cardview.widget.CardView
@@ -756,7 +751,7 @@
 					android:id="@+id/linear112"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_margin="8dp"
+					android:padding="8dp"
 					app:cardBackgroundColor="#E53535"
 					app:cardCornerRadius="40dp"
 					app:cardElevation="4dp"
@@ -770,7 +765,7 @@
 						android:padding="8dp"
 						android:src="@drawable/year"
 						android:scaleType="centerInside" />
-				</androidx.cardview.widget.CardView>			</androidx.cardview.widget.CardView>
+				</androidx.cardview.widget.CardView>			</LinearLayout>
 			<LinearLayout
 				android:id="@+id/linear174"
 				android:layout_width="wrap_content"
