@@ -267,7 +267,7 @@
                 android:textSize="14sp"
                 android:textColor="#A4A4A4" />
             <TextView
-                android:id="@+id/textview10"
+                android:id="@+id/textview11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="8dp"
