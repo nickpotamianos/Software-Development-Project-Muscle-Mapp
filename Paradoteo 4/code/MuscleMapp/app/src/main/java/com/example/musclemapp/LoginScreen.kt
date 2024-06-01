@@ -21,8 +21,8 @@ class LoginScreen : BaseActivity() {
 
         val pressForLogin = findViewById<androidx.cardview.widget.CardView>(R.id.LogInButton)
         pressForLogin.setOnClickListener{
-            val intent = Intent(this, OpeningScreen2::class.java)
-            startActivity(intent)
+            Database.print_all_users()
+
         }
 
         val goToSignUp = findViewById<TextView>(R.id.textview10)

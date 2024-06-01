@@ -2,7 +2,40 @@ package com.example.musclemapp
 
 object Database {
     val database_users: ArrayList<User> = ArrayList()
+    var database_user_count: Int = 0
     val database_establishments: ArrayList<Establishment> = ArrayList()
+
+    init {
+        database_users.add(Client(1, "john_doe", "john.doe@example.com", "password123", Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList()))
+        database_users.add(Client(2, "jane_smith", "jane.smith@example.com", "password456", Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList()))
+        database_users.add(Client(3, "alice_johnson", "alice.johnson@example.com", "password789", Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList()))
+        database_users.add(Client(4, "bob_brown", "bob.brown@example.com", "password101", Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList()))
+        database_users.add(Client(5, "eve_white", "eve.white@example.com", "password202", Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList()))
+
+        database_user_count = 5;
+    }
+
+    fun print_all_users() {
+        for (user in Database.database_users) {
+            println("User ID: ${user.user_id}, Username: ${user.user_username}")
+        }
+    }
+
+    fun register_user(new_username: String, new_email: String, new_password: String): Boolean {
+        for (user in Database.database_users) {
+            if (user.user_username == new_username || user.user_email == new_email) {
+                println("Username or email already exists.")
+                return false
+            }
+        }
+
+        Database.database_user_count += 1
+
+        val new_user = Client(Database.database_user_count, new_username, new_email, new_password, Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList())
+        Database.add_user(new_user)
+        println("User registered successfully.")
+        return true
+    }
 
     fun add_user(user: User) {
         database_users.add(user)
