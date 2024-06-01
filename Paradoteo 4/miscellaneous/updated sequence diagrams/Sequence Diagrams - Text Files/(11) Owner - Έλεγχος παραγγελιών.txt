@@ -1,3 +1,4 @@
+@startuml
 actor Owner
 
 participant EstablishmentPage(UI)
@@ -6,21 +7,37 @@ participant Establishment(Class)
 participant Order(Class)
 
 == Βασική ροή (Επιβεβαίωση παραγγελίας) ==
-Owner -> EstablishmentPage(UI): Selects establishment orders
+Owner -> EstablishmentPage(UI): Navigates to establishment page and selects to view orders
 EstablishmentPage(UI) -> Establishment(Class): get_establishment_orders()
 Establishment(Class) --> EstablishmentPage(UI): return(establishment_orders)
 EstablishmentPage(UI) -> Owner: Displays list of establishment orders
+Owner -> EstablishmentPage(UI): Selects an order
+EstablishmentPage(UI) -> Establishment(Class): get_order_details()
+Establishment(Class) --> EstablishmentPage(UI): return(order_details)
+EstablishmentPage(UI) -> Owner: Displays order details
 Owner -> EstablishmentPage(UI): Selects "Confirm Order"
-EstablishmentPage(UI) -> Establishment(Class):confirm_order()
-Establishment(Class) ->  Order(Class):change_status_confirmed()
+EstablishmentPage(UI) -> Establishment(Class): confirm_order()
+Establishment(Class) ->  Order(Class): change_status_confirmed()
 Order(Class) --> Establishment(Class): return(success)
 Establishment(Class) --> EstablishmentPage(UI): return(success)
 EstablishmentPage(UI) -> Owner: Displays success message
+EstablishmentPage(UI) -> Establishment(Class): update_order_status_in_db()
+Establishment(Class) --> EstablishmentPage(UI): return(updated_order_status)
+EstablishmentPage(UI) -> Owner: Displays updated order list
 
 == Εναλλακτική ροή 1 (Ακύρωση παραγγελίας) ==
+Owner -> EstablishmentPage(UI): Selects an order to cancel due to stock unavailability
+EstablishmentPage(UI) -> Establishment(Class): get_order_details()
+Establishment(Class) --> EstablishmentPage(UI): return(order_details)
+EstablishmentPage(UI) -> Owner: Displays order details
 Owner -> EstablishmentPage(UI): Selects "Cancel Order"
-EstablishmentPage(UI) -> Establishment(Class):cancel_order()
-Establishment(Class) ->  Order(Class):change_status_canceled()
+EstablishmentPage(UI) -> Establishment(Class): cancel_order()
+Establishment(Class) ->  Order(Class): change_status_canceled()
 Order(Class) --> Establishment(Class): return(success)
 Establishment(Class) --> EstablishmentPage(UI): return(success)
 EstablishmentPage(UI) -> Owner: Displays success message
+EstablishmentPage(UI) -> Establishment(Class): notify_user_order_canceled()
+Establishment(Class) --> EstablishmentPage(UI): return(notification_success)
+EstablishmentPage(UI) -> Owner: Displays notification confirmation
+
+@enduml
