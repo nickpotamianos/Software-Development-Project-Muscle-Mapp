@@ -1,0 +1,115 @@
+actor Client
+
+participant EstablishmentPage(UI)
+participant EstablishmentShop(UI)
+participant Cart(UI)
+participant PaymentOptions(UI)
+participant MainMenu(UI)
+participant ClientOrderHistory(UI)
+participant OrderDetails(UI)
+
+participant Establishment(Class)
+participant Cart(Class)
+participant Wallet(Class)
+participant Client(Class)
+participant Order(Class)
+participant Bank(External System)
+participant GoogleMapsAPI(External System)
+
+== Βασική ροή (Προσθήκη product στο καλάθι και αγορά) ==
+Client -> EstablishmentPage(UI): Selects shop icon
+EstablishmentPage(UI) -> Establishment(Class): getEstablishmentProducts()
+Establishment(Class) --> EstablishmentPage(UI): return(establishmentProductList)
+EstablishmentPage(UI) -> EstablishmentShop(UI): Opens EstablishmentShop(UI)
+EstablishmentShop(UI) -> Client: Displays list of available products
+Client -> EstablishmentShop(UI): Adds a product to cart
+EstablishmentShop(UI) -> Cart(Class): add_to_cart()
+Cart(Class) --> EstablishmentShop(UI): return(success)
+EstablishmentShop(UI) -> Client: Displays success message
+Client -> EstablishmentShop(UI): Selects cart icon
+EstablishmentShop(UI) -> Cart(Class): getCartContents()
+Cart(Class) --> EstablishmentShop(UI): return(cartProductList)
+EstablishmentShop(UI) -> Cart(Class): calculate_total_cost()
+Cart(Class) --> EstablishmentShop(UI): return(totalCartCost)
+EstablishmentShop(UI) -> Cart(UI): Opens Cart(UI)
+Cart(UI) -> Client: Displays cart contents and total cost
+Client -> Cart(UI): Selects "Proceed to Checkout"
+Cart(UI) -> GoogleMapsAPI(External System): request_location()
+GoogleMapsAPI(External System) --> Cart(UI): return(location)
+Cart(UI) -> PaymentOptions(UI): Opens payment card selection
+PaymentOptions(UI) -> Wallet(Class): GetWalletCards()
+Wallet(Class) --> PaymentOptions(UI): return(cardList)
+PaymentOptions(UI) -> Client: Displays Available Cards
+Client -> PaymentOptions(UI): Selects payment card or enters new payment method
+PaymentOptions(UI) -> Bank(External System): verify_payment_method()
+Bank(External System) --> PaymentOptions(UI): return(verification_status)
+PaymentOptions(UI) -> Client: Asks for confirmation
+Client -> PaymentOptions(UI): Confirms selection
+PaymentOptions(UI) -> Bank(External System): process_payment()
+Bank(External System) --> PaymentOptions(UI): return(payment_status)
+PaymentOptions(UI) -> Client(Class): create_order()
+Client(Class) --> PaymentOptions(UI): return(success)
+PaymentOptions(UI) -> Client: Displays success message and order details
+Client -> Order(Class): update_order_history()
+Order(Class) --> Client: return(update_status)
+Client -> OrderDetails(UI): View order details
+
+== Εναλλακτική ροή 1 (Αποτυχία λόγω σφάλματος payment card) ==
+Bank(External System) --> PaymentOptions(UI): return(failure)
+PaymentOptions(UI) -> Client: Displays error message
+Client -> PaymentOptions(UI): Enters new payment method or selects another card
+PaymentOptions(UI) -> Bank(External System): verify_payment_method()
+Bank(External System) --> PaymentOptions(UI): return(verification_status)
+PaymentOptions(UI) -> Client: Asks for confirmation
+Client -> PaymentOptions(UI): Confirms selection
+PaymentOptions(UI) -> Bank(External System): process_payment()
+Bank(External System) --> PaymentOptions(UI): return(payment_status)
+PaymentOptions(UI) -> Client(Class): create_order()
+Client(Class) --> PaymentOptions(UI): return(success)
+PaymentOptions(UI) -> Client: Displays success message
+
+== Εναλλακτική ροή 2 (Τροποποίηση καλαθιού) ==
+Client -> Cart(UI): Inputs wanted changes for a product
+Cart(UI) -> Cart(Class): modify_quantity() / remove_from_cart()
+Cart(Class) --> Cart(UI): return(success)
+Cart(UI) -> Client: Displays updated cart contents and total cost
+Client -> Cart(UI): Selects "Proceed to Checkout"
+Cart(UI) -> GoogleMapsAPI(External System): request_location()
+GoogleMapsAPI(External System) --> Cart(UI): return(location)
+Cart(UI) -> PaymentOptions(UI): Opens payment card selection
+PaymentOptions(UI) -> Wallet(Class): GetWalletCards()
+Wallet(Class) --> PaymentOptions(UI): return(cardList)
+PaymentOptions(UI) -> Client: Displays Available Cards
+Client -> PaymentOptions(UI): Selects payment card or enters new payment method
+PaymentOptions(UI) -> Bank(External System): verify_payment_method()
+Bank(External System) --> PaymentOptions(UI): return(verification_status)
+PaymentOptions(UI) -> Client: Asks for confirmation
+Client -> PaymentOptions(UI): Confirms selection
+PaymentOptions(UI) -> Bank(External System): process_payment()
+Bank(External System) --> PaymentOptions(UI): return(payment_status)
+PaymentOptions(UI) -> Client(Class): create_order()
+Client(Class) --> PaymentOptions(UI): return(success)
+PaymentOptions(UI) -> Client: Displays success message
+
+== Εναλλακτική ροή 3 (Παρακολούθηση order) ==
+Client -> MainMenu(UI): Opens personal order list
+MainMenu(UI) -> Client(Class): get_client_orders()
+Client(Class) --> MainMenu(UI): return(client_orders)
+MainMenu(UI) -> ClientOrderHistory(UI): Opens ClientOrderHistory(UI)
+ClientOrderHistory(UI) -> Client: Displays history of orders and their status
+Client -> ClientOrderHistory(UI): Chooses an order from the list
+ClientOrderHistory(UI) -> Order(Class): get_order_details()
+Order(Class) --> ClientOrderHistory(UI): return(Order_details)
+ClientOrderHistory(UI) -> OrderDetails(UI): Opens OrderDetails(UI)
+OrderDetails(UI) -> Client: Displays order details and progress
+
+== Εναλλακτική ροή 4 (Ακύρωση order) ==
+Client -> ClientOrderHistory(UI): Chooses an active order to cancel
+ClientOrderHistory(UI) -> OrderDetails(UI): Opens OrderDetails(UI)
+OrderDetails(UI) -> Client: Displays order details with cancel option
+Client -> OrderDetails(UI): Selects "Cancel order"
+OrderDetails(UI) -> Client: Asks for confirmation
+Client -> OrderDetails(UI): Confirms selection
+OrderDetails(UI) -> Client(Class): cancel_order()
+Client(Class) --> OrderDetails(UI): return(success)
+OrderDetails(UI) -> Client: Displays success message

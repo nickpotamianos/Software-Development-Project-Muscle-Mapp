@@ -1,0 +1,24 @@
+actor User
+
+participant MainMenu(UI)
+participant FeedbackForm(UI)
+
+participant DataBase(Class)
+
+== Βασική ροή (Αποστολή μηνύματος Feedback) ==
+
+User->MainMenu(UI):Selects "Send Feedback"
+MainMenu(UI)->FeedbackForm(UI):Opens participant FeedbackForm(UI)
+User<-FeedbackForm(UI):Displays feedback form
+User->FeedbackForm(UI):Fills feedback form and selects "Send Feedback"
+FeedbackForm(UI)->DataBase(Class):add_new_feedback()
+FeedbackForm(UI)<--DataBase(Class):return(success)
+User<-FeedbackForm(UI):Displays success message and thanks the user
+
+== Εναλλακτική ροή 2 (Λείπουν στοιχεία από τη φόρμα) ==
+
+User<-FeedbackForm(UI):Informs the user of missing information in the feedback form
+User->FeedbackForm(UI):Corrects feedback form and selects "Send Feedback"
+FeedbackForm(UI)->DataBase(Class):add_new_feedback()
+FeedbackForm(UI)<--DataBase(Class):return(success)
+User<-FeedbackForm(UI):Displays success message and thanks the user

@@ -1,0 +1,23 @@
+actor Owner
+
+participant EstablishmentPage(UI)
+participant ReviewsList(UI)
+
+participant Establishment(Class)
+
+== Βασική ροή (Προβολή σχολίων/κριτικών) ==
+Owner -> EstablishmentPage(UI): Selects reviews
+EstablishmentPage(UI) -> Establishment(Class): get_establishment_reviews()
+Establishment(Class) --> EstablishmentPage(UI): return(establishment_reviews)
+EstablishmentPage(UI) -> ReviewsList(UI): Opens ReviewsList(UI)
+ReviewsList(UI) -> Owner: Displays list of establishment reviews
+Owner -> ReviewsList(UI): Selects a review
+ReviewsList(UI) -> Owner: Displays the review
+
+== Εναλλακτική ροή 1 (Καρφίτσωμα σχολίων) ==
+Owner -> ReviewsList(UI): Selects a review
+ReviewsList(UI) -> Owner: Displays the review
+Owner -> ReviewsList(UI): Selects "Pin review"
+ReviewsList(UI) -> Owner: Asks for confirmation
+Owner -> ReviewsList(UI): Confirms selection
+ReviewsList(UI) -> Owner: Displays success message

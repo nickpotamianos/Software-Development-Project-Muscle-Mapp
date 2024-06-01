@@ -1,0 +1,92 @@
+actor Client
+
+participant EstablishmentPage(UI)
+participant EstablishmentMembershipPlans(UI)
+participant MembershipDetails(UI)
+participant PaymentOptions(UI)
+participant MainMenu(UI)
+participant ClientMembershipList(UI)
+participant EstablishmentOptions(UI)
+
+participant Establishment(Class)
+participant Wallet(Class)
+participant Client(Class)
+participant Bank(External System)
+
+== Βασική ροή (Έναρξη membership plan) ==
+Client -> EstablishmentPage(UI): Selects membership plan icon
+EstablishmentPage(UI) -> Establishment(Class): get_membership_plans()
+Establishment(Class) --> EstablishmentPage(UI): return(establishment_membership_plans)
+EstablishmentPage(UI) -> EstablishmentMembershipPlans(UI): Opens Establishment Membership Plans
+EstablishmentMembershipPlans(UI) -> Client: Displays list of membership plans
+Client -> EstablishmentMembershipPlans(UI): Selects a membership plan
+EstablishmentMembershipPlans(UI) -> MembershipDetails(UI): Opens membership plan details
+MembershipDetails(UI) -> Client: Displays Membership Plan Details
+Client -> MembershipDetails(UI): Selects "Start Membership"
+MembershipDetails(UI) -> PaymentOptions(UI): Opens payment card selection
+PaymentOptions(UI) -> Wallet(Class): get_cards()
+Wallet(Class) --> PaymentOptions(UI): return(wallet_cards)
+PaymentOptions(UI) -> Client: Displays Available Cards
+Client -> PaymentOptions(UI): Selects payment card or enters new payment method
+PaymentOptions(UI) -> Bank(External System): verify_payment_method()
+Bank(External System) --> PaymentOptions(UI): return(verification_status)
+PaymentOptions(UI) -> Client: Asks for confirmation
+Client -> PaymentOptions(UI): Confirms selection
+PaymentOptions(UI) -> Bank(External System): process_payment()
+Bank(External System) --> PaymentOptions(UI): return(payment_status)
+PaymentOptions(UI) -> Client(Class): add_membership_plan()
+Client(Class) --> PaymentOptions(UI): return(success)
+PaymentOptions(UI) -> Client: Displays success message
+
+== Εναλλακτική ροή 1 (Αποτυχία λόγω σφάλματος payment card) ==
+Bank(External System) --> PaymentOptions(UI): return(failure)
+PaymentOptions(UI) -> Client: Displays error message
+Client -> PaymentOptions(UI): Enters new payment method or selects another card
+PaymentOptions(UI) -> Bank(External System): verify_payment_method()
+Bank(External System) --> PaymentOptions(UI): return(verification_status)
+PaymentOptions(UI) -> Client: Asks for confirmation
+Client -> PaymentOptions(UI): Confirms selection
+PaymentOptions(UI) -> Bank(External System): process_payment()
+Bank(External System) --> PaymentOptions(UI): return(payment_status)
+PaymentOptions(UI) -> Client(Class): add_membership_plan()
+Client(Class) --> PaymentOptions(UI): return(success)
+PaymentOptions(UI) -> Client: Displays success message
+
+== Εναλλακτική ροή 2 (Αλλαγή membership plan) ==
+Client -> MainMenu(UI): Opens personal membership list
+MainMenu(UI) -> Client(Class): get_membership_plans()
+Client(Class) --> MainMenu(UI): return(client_membership_plans)
+MainMenu(UI) -> ClientMembershipList(UI): Opens Client Membership List
+ClientMembershipList(UI) -> Client: Displays personal membership list
+Client -> ClientMembershipList(UI): Selects membership plan to change
+ClientMembershipList(UI) -> Client: Displays possible actions 
+Client -> ClientMembershipList(UI): Selects "Change Membership"
+ClientMembershipList(UI) -> Establishment(Class): get_membership_plans()
+Establishment(Class) --> ClientMembershipList(UI): return(establishment_membership_plans)
+ClientMembershipList(UI) -> EstablishmentMembershipPlans(UI): Opens Establishment Membership Plans
+EstablishmentMembershipPlans(UI) -> Client: Displays alternative membership plans
+Client -> EstablishmentMembershipPlans(UI): Selects new membership plan
+EstablishmentMembershipPlans(UI) -> MembershipDetails(UI): Opens membership plan details
+MembershipDetails(UI) -> Client: Displays Membership Plan Details
+Client -> MembershipDetails(UI): Selects "Change Membership"
+MembershipDetails(UI) -> Client: Asks for confirmation
+Client -> MembershipDetails(UI): Confirms selection
+MembershipDetails(UI) -> Client(Class): change_membership_plan()
+Client(Class) --> MembershipDetails(UI): return(success)
+MembershipDetails(UI) -> Client: Displays success message
+
+== Εναλλακτική ροή 3 (Πάγωμα membership plan) ==
+Client -> ClientMembershipList(UI): Selects "Pause Membership"
+ClientMembershipList(UI) -> Client: Asks for confirmation and duration
+Client -> ClientMembershipList(UI): Confirms selection and duration
+ClientMembershipList(UI) -> Client(Class): pause_membership_plan()
+Client(Class) --> ClientMembershipList(UI): return(success)
+ClientMembershipList(UI) -> Client: Displays success message
+
+== Εναλλακτική ροή 4 (Ακύρωση membership plan) ==
+Client -> ClientMembershipList(UI): Selects "Cancel Membership"
+ClientMembershipList(UI) -> Client: Asks for confirmation
+Client -> ClientMembershipList(UI): Confirms selection
+ClientMembershipList(UI) -> Client(Class): cancel_membership_plan()
+Client(Class) --> ClientMembershipList(UI): return(success)
+ClientMembershipList(UI) -> Client: Displays success message
