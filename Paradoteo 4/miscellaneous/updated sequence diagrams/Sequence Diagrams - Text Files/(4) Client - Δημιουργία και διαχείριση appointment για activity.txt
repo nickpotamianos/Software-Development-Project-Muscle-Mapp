@@ -23,13 +23,19 @@ EstablishmentActivities(UI) -> Activity(Class): get_activity_details()
 Activity(Class) --> EstablishmentActivities(UI): return(activity_details)
 EstablishmentActivities(UI) -> ActivityDetails(UI): Opens ActivityDetails(UI)
 ActivityDetails(UI) -> Client: Displays details of the selected activity
+Client -> ActivityDetails(UI): Selects to show appointment list
+ActivityDetails(UI) -> Client(Class): check_appointment_list()
+Client(Class) --> ActivityDetails(UI): return(appointment_list_exists)
+ActivityDetails(UI) -> Client: Displays appointment list or option to create new
 Client -> ActivityDetails(UI): Selects "Create appointment"
 ActivityDetails(UI) -> AppointmentCreation(UI): Opens AppointmentCreation(UI)
-AppointmentCreation(UI) -> Client: Displays appointment creation options
-Client -> AppointmentCreation(UI): Selects details of the appointment
+AppointmentCreation(UI) -> Client: Displays available dates and times
+Client -> AppointmentCreation(UI): Selects date and time, and chooses "Complete"
 AppointmentCreation(UI) -> Client(Class): create_appointment()
 Client(Class) --> AppointmentCreation(UI): return(success)
-AppointmentCreation(UI) -> Client: Displays success message
+AppointmentCreation(UI) -> Establishment(Class): update_activity_capacity()
+Establishment(Class) --> AppointmentCreation(UI): return(success)
+AppointmentCreation(UI) -> Client: Displays success message and updates appointment list
 
 == Εναλλακτική ροή 1 (Τροποποίηση appointment) ==
 Client -> MainMenu(UI): Opens personal appointment list
@@ -37,27 +43,33 @@ MainMenu(UI) -> Client(Class): get_client_appointments()
 Client(Class) --> MainMenu(UI): return(client_appointments)
 MainMenu(UI) -> ClientAppointmentList(UI): Opens ClientAppointmentList(UI) 
 ClientAppointmentList(UI) -> Client: Displays personal appointment list
-Client -> ClientAppointmentList(UI): Selects an appointment
-ClientAppointmentList(UI) -> Appointment(Class): get_appointment_details
+Client -> ClientAppointmentList(UI): Selects an appointment to modify
+ClientAppointmentList(UI) -> Appointment(Class): get_appointment_details()
 Appointment(Class) --> ClientAppointmentList(UI): return(appointment_details)
-ClientAppointmentList(UI) -> Client:Displays appointment details and available actions
-Client -> ClientAppointmentList(UI):Selects "Change appointment"
-ClientAppointmentList(UI) -> Activity(Class): get_activity_details()
-Activity(Class) --> ClientAppointmentList(UI): return(activity_details)
-ClientAppointmentList(UI) -> ActivityDetails(UI): Opens ActivityDetails(UI)
-ActivityDetails(UI) -> Client: Displays details of the selected activity
-Client -> AppointmentCreation(UI): Selects details of the appointment
+ClientAppointmentList(UI) -> Client: Displays appointment details and available actions
+Client -> ClientAppointmentList(UI): Selects "Change appointment"
+ClientAppointmentList(UI) -> AppointmentCreation(UI): Opens AppointmentCreation(UI)
+AppointmentCreation(UI) -> Client: Displays available dates and times for the activity
+Client -> AppointmentCreation(UI): Selects new date and time, and chooses "Complete change"
 AppointmentCreation(UI) -> Client: Asks for confirmation
 Client -> AppointmentCreation(UI): Confirms selection
 AppointmentCreation(UI) -> Client(Class): modify_appointment()
 Client(Class) --> AppointmentCreation(UI): return(success)
+AppointmentCreation(UI) -> Establishment(Class): update_activity_capacity()
+Establishment(Class) --> AppointmentCreation(UI): return(success)
 AppointmentCreation(UI) -> Client: Displays success message
 
-
 == Εναλλακτική ροή 2 (Ακύρωση appointment) ==
-Client -> ClientAppointmentList(UI):Selects "Cancel appointment"
+Client -> ClientAppointmentList(UI): Selects an appointment to cancel
+ClientAppointmentList(UI) -> Appointment(Class): get_appointment_details()
+Appointment(Class) --> ClientAppointmentList(UI): return(appointment_details)
+ClientAppointmentList(UI) -> Client: Displays appointment details and option to cancel
+Client -> ClientAppointmentList(UI): Selects "Cancel appointment"
+ClientAppointmentList(UI) -> AppointmentCreation(UI): Opens AppointmentCreation(UI)
 AppointmentCreation(UI) -> Client: Asks for confirmation
 Client -> AppointmentCreation(UI): Confirms selection
 AppointmentCreation(UI) -> Client(Class): cancel_appointment()
 Client(Class) --> AppointmentCreation(UI): return(success)
+AppointmentCreation(UI) -> Establishment(Class): update_activity_capacity()
+Establishment(Class) --> AppointmentCreation(UI): return(success)
 AppointmentCreation(UI) -> Client: Displays success message

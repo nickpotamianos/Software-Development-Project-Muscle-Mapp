@@ -6,6 +6,7 @@ participant NewCard(UI)
 participant CardDetails(UI)
 participant Wallet(Class)
 participant Payment_Card(Class)
+participant Bank(External System)
 
 == Βασική ροή (Προσθήκη νέας payment card) ==
 Client -> MainMenu(UI): Opens personal wallet
@@ -14,17 +15,28 @@ Wallet(Class) --> MainMenu(UI): return(wallet_cards)
 MainMenu(UI) -> Wallet(UI): Opens Wallet(UI)
 Wallet(UI) -> Client: Displays personal wallet
 Client -> Wallet(UI): Selects "Add new payment card"
-Wallet(UI) -> NewCard(UI): OpensNewCard(UI)
-NewCard(UI) -> Client: Asks for required card info
-Client -> NewCard(UI): Fills required card info and selects "Add card"
+Wallet(UI) -> NewCard(UI): Opens NewCard(UI)
+NewCard(UI) -> Client: Asks for required card info (name, card number, expiration date, CVC)
+Client -> NewCard(UI): Fills required card info and selects "Done"
+NewCard(UI) -> Bank(External System): verify_card_info()
+Bank(External System) --> NewCard(UI): return(verification_status)
+NewCard(UI) -> Wallet(Class): add_payment_card()
+Wallet(Class) --> NewCard(UI): return(success)
+NewCard(UI) -> Client: Displays success message with option to set as default
+Client -> NewCard(UI): Selects to set the new card as default (optional)
+NewCard(UI) -> Wallet(Class): set_default_card()
+Wallet(Class) --> NewCard(UI): return(success)
+NewCard(UI) -> Client: Displays updated wallet with the new card
+
+== Εναλλακτική ροή 1 (Σφάλμα εισαγωγής λόγω λανθασμένων στοιχείων) ==
+Bank(External System) --> NewCard(UI): return(failure)
+NewCard(UI) -> Client: Displays error message and asks for corrections
+Client -> NewCard(UI): Corrects the information and resubmits
+NewCard(UI) -> Bank(External System): verify_card_info()
+Bank(External System) --> NewCard(UI): return(verification_status)
 NewCard(UI) -> Wallet(Class): add_payment_card()
 Wallet(Class) --> NewCard(UI): return(success)
 NewCard(UI) -> Client: Displays success message
-
-== Εναλλακτική ροή 1 (Σφάλμα εισαγωγής λόγω λανθασμένων στοιχείων) ==
-Wallet(Class) --> NewCard(UI): return(failure)
-NewCard(UI) -> Wallet(UI): Opens Wallet(UI)
-Wallet(UI) -> Client: Displays personal wallet
 
 == Εναλλακτική ροή 2 (Αφαίρεση payment card) ==
 Client -> MainMenu(UI): Opens personal wallet
@@ -36,7 +48,7 @@ Client -> Wallet(UI): Selects an existing payment card
 Wallet(UI) -> Payment_Card(Class): get_payment_card_details()
 Payment_Card(Class) --> Wallet(UI): return(card_details)
 Wallet(UI) -> CardDetails(UI): Opens CardDetails(UI)
-CardDetails(UI) -> Client: Displays selected cards details
+CardDetails(UI) -> Client: Displays selected card's details
 Client -> CardDetails(UI): Selects "Remove card"
 CardDetails(UI) -> Client: Asks for confirmation
 Client -> CardDetails(UI): Confirms selection
