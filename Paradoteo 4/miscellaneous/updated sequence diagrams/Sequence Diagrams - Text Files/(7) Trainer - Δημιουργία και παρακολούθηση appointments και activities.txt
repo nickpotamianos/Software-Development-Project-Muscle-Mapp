@@ -9,37 +9,67 @@ participant Establishment(Class)
 participant Activity(Class)
 
 == Βασική ροή (Δημιουργία activity) ==
-
-
-Trainer->EstablishmentPage(UI):Selects "Create new activity"
-EstablishmentPage(UI)->ActivityCreation(UI):Opens ActivityCreation(UI)
-Trainer<-ActivityCreation(UI):Displays needed info fields for activity creation
-Trainer->ActivityCreation(UI):Fills necessary info and selects "Create Activity"
-ActivityCreation(UI)->Establishment(Class):create_activity()
-ActivityCreation(UI)<--Establishment(Class):return(success)
-Trainer<-ActivityCreation(UI):Displays success message
+Trainer -> EstablishmentPage(UI): Navigates to gym's page
+EstablishmentPage(UI) -> Establishment(Class): Retrieve trainer's activity catalog
+Establishment(Class) --> EstablishmentPage(UI): Return activity catalog
+Trainer -> EstablishmentPage(UI): Selects "Create new activity"
+EstablishmentPage(UI) -> ActivityCreation(UI): Opens ActivityCreation(UI)
+ActivityCreation(UI) -> Trainer: Displays form for date and time selection
+Trainer -> ActivityCreation(UI): Fills date and time, selects "Weekly Repeat" (optional)
+ActivityCreation(UI) -> Trainer: Displays form for additional activity details (capacity, difficulty)
+Trainer -> ActivityCreation(UI): Fills additional details and selects "Create Activity"
+ActivityCreation(UI) -> Establishment(Class): create_activity()
+Establishment(Class) --> ActivityCreation(UI): return(success)
+ActivityCreation(UI) -> Trainer: Displays success message
+ActivityCreation(UI) -> Establishment(Class): Update trainer's schedule
+Establishment(Class) --> ActivityCreation(UI): return(updated_schedule)
+ActivityCreation(UI) -> Trainer: Displays updated activity list and sends notifications to clients
 
 == Εναλλακτική ροή 1 (Τροποποίηση activity) ==
-
-Trainer->EstablishmentPage(UI):Selects to see establishment activities
-EstablishmentPage(UI)->Establishment(Class):get_establishment_activities()
-EstablishmentPage(UI)<--Establishment(Class):return(establishment_activities)
+Trainer -> EstablishmentPage(UI): Navigates to activity catalog
+EstablishmentPage(UI) -> Establishment(Class): get_establishment_activities()
+Establishment(Class) --> EstablishmentPage(UI): return(establishment_activities)
 EstablishmentPage(UI) -> EstablishmentActivities(UI): Opens EstablishmentActivities(UI)
 EstablishmentActivities(UI) -> Trainer: Displays list of activities
-Trainer->EstablishmentActivities(UI):Selects an activity
+Trainer -> EstablishmentActivities(UI): Selects an activity to modify
 EstablishmentActivities(UI) -> Activity(Class): get_activity_details()
 Activity(Class) --> EstablishmentActivities(UI): return(activity_details)
 EstablishmentActivities(UI) -> ActivityDetails(UI): Opens ActivityDetails(UI)
-ActivityDetails(UI) -> Trainer: Displays details of the selected activity and available actions
-
-Trainer->ActivityDetails(UI):Edits activity details anmd selects "Edit Activity"
-ActivityDetails(UI)->Establishment(Class):modify_activity()
-ActivityDetails(UI)<--Establishment(Class):return(success)
-Trainer<-ActivityDetails(UI):Displays success message
+ActivityDetails(UI) -> Trainer: Displays activity details and modification options
+Trainer -> ActivityDetails(UI): Edits details and selects "Complete Changes"
+ActivityDetails(UI) -> Establishment(Class): modify_activity()
+Establishment(Class) --> ActivityDetails(UI): return(success)
+ActivityDetails(UI) -> Trainer: Displays success message
+ActivityDetails(UI) -> Establishment(Class): Update trainer's schedule
+Establishment(Class) --> ActivityDetails(UI): return(updated_schedule)
+ActivityDetails(UI) -> Trainer: Sends notifications to clients
 
 == Εναλλακτική ροή 2 (Διαγραφή activity) ==
+Trainer -> EstablishmentActivities(UI): Selects an activity to delete
+EstablishmentActivities(UI) -> Activity(Class): get_activity_details()
+Activity(Class) --> EstablishmentActivities(UI): return(activity_details)
+EstablishmentActivities(UI) -> ActivityDetails(UI): Opens ActivityDetails(UI)
+ActivityDetails(UI) -> Trainer: Displays activity details and deletion options
+Trainer -> ActivityDetails(UI): Selects "Delete Activity"
+ActivityDetails(UI) -> Establishment(Class): delete_activity()
+Establishment(Class) --> ActivityDetails(UI): return(success)
+ActivityDetails(UI) -> Trainer: Displays success message
+ActivityDetails(UI) -> Establishment(Class): Update trainer's schedule
+Establishment(Class) --> ActivityDetails(UI): return(updated_schedule)
+ActivityDetails(UI) -> Trainer: Sends notifications to clients
 
-Trainer->ActivityDetails(UI):Selects "Delete Activity"
-ActivityDetails(UI)->Establishment(Class):delete_activity()
-ActivityDetails(UI)<--Establishment(Class):return(success)
-Trainer<-ActivityDetails(UI):Displays success message
+== Εναλλακτική ροή 3 (Διαγραφή activity με αναδρομολόγηση) ==
+Trainer -> EstablishmentActivities(UI): Selects an activity to reschedule
+EstablishmentActivities(UI) -> Activity(Class): get_activity_details()
+Activity(Class) --> EstablishmentActivities(UI): return(activity_details)
+EstablishmentActivities(UI) -> ActivityDetails(UI): Opens ActivityDetails(UI)
+ActivityDetails(UI) -> Trainer: Displays activity details and rescheduling options
+Trainer -> ActivityDetails(UI): Selects "Reschedule Activity"
+ActivityDetails(UI) -> Trainer: Displays available dates and times
+Trainer -> ActivityDetails(UI): Selects new date and time, and chooses "Complete Reschedule"
+ActivityDetails(UI) -> Establishment(Class): reschedule_activity()
+Establishment(Class) --> ActivityDetails(UI): return(success)
+ActivityDetails(UI) -> Trainer: Displays success message and reason for change
+ActivityDetails(UI) -> Establishment(Class): Update trainer's schedule
+Establishment(Class) --> ActivityDetails(UI): return(updated_schedule)
+ActivityDetails(UI) -> Trainer: Sends notifications to clients
