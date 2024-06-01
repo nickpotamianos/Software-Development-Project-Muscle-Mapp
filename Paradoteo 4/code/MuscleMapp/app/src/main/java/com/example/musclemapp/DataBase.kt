@@ -3,6 +3,8 @@ package com.example.musclemapp
 object Database {
     val database_users: ArrayList<User> = ArrayList()
     var database_user_count: Int = 0
+    var database_active_user: User? = null
+
     val database_establishments: ArrayList<Establishment> = ArrayList()
 
     init {
@@ -33,6 +35,8 @@ object Database {
 
         val new_user = Client(Database.database_user_count, new_username, new_email, new_password, Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList())
         database_users.add(new_user)
+        database_active_user = new_user
+
         println("User registered successfully.")
         return true
     }

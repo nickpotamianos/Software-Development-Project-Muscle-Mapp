@@ -172,7 +172,7 @@
 				android:layout_height="wrap_content"
 				android:layout_gravity="center"
 				android:padding="8dp"
-				android:text="Sign in"
+				android:text="Log in"
 				android:textColor="#FFFFFF"
 				android:textSize="25sp" />
 		</androidx.cardview.widget.CardView>
@@ -240,7 +240,7 @@
 				android:paddingTop="2dp"
 				android:paddingRight="8dp"
 				android:paddingBottom="2dp"
-				android:text="Sign up"
+				android:text="Register"
 				android:textColor="#FFFFFF"
 				android:textSize="14sp"
 				android:textStyle="bold" />
@@ -306,7 +306,7 @@
 				android:paddingTop="2dp"
 				android:paddingRight="8dp"
 				android:paddingBottom="2dp"
-				android:text="Sign up here"
+				android:text="Register here"
 				android:textColor="#FFFFFF"
 				android:textSize="14sp"
 				android:textStyle="bold" />
@@ -335,7 +335,7 @@
 				android:id="@+id/textview16"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Sign in / Sign up"
+				android:text="Register / Log in"
 				android:textColor="#FFFFFF"
 				android:textSize="14sp"
 				android:textStyle="bold" />

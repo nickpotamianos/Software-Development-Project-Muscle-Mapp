@@ -204,7 +204,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="Sign Up"
+                    android:text="Register"
                     android:textSize="25sp"
                     android:textColor="#FFFFFF" />
             </LinearLayout>
@@ -274,7 +274,7 @@
                 android:paddingTop="2dp"
                 android:paddingRight="8dp"
                 android:paddingBottom="2dp"
-                android:text="Sign in"
+                android:text="Log in"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF" />

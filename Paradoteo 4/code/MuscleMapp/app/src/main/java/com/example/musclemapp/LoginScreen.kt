@@ -30,5 +30,11 @@ class LoginScreen : BaseActivity() {
             val intent = Intent(this, SignUpScreen::class.java)
             startActivity(intent)
         }
+
+        val pressForGuest = findViewById<TextView>(R.id.textview16)
+        pressForGuest.setOnClickListener{
+            val intent = Intent(this, HomeScreen::class.java)
+            startActivity(intent)
+        }
     }
 }
