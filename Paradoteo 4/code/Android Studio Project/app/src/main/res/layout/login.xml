@@ -76,7 +76,7 @@
 				<EditText
 					android:id="@+id/edittext2"
 					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
+					android:layout_height="60dp"
 					android:hint="Email"
 					android:imeOptions="actionGo"
 					android:padding="8dp"
@@ -117,7 +117,7 @@
 				<EditText
 					android:id="@+id/edittext3"
 					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
+					android:layout_height="60dp"
 					android:hint="Password"
 					android:imeOptions="actionGo"
 					android:padding="8dp"
@@ -154,7 +154,7 @@
 		</LinearLayout>
 
 		<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-			android:id="@+id/btn"
+			android:id="@+id/LogInButton"
 			android:layout_width="380dp"
 			android:layout_height="65dp"
 			android:layout_marginTop="25dp"
