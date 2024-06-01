@@ -1,5 +1,6 @@
 package com.example.musclemapp
 
+import OpeningScreen2
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
