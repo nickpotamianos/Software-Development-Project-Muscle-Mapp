@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MuscleMapp"
         tools:targetApi="31">
         <activity
+            android:name=".NotificationSettings"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsScreen"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
             android:name=".LoginScreen"
             android:exported="false" />
         <activity

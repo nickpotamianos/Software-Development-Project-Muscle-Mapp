@@ -23,11 +23,19 @@ class SignUpScreen : BaseActivity() {
 
         val pressForSignUp = findViewById<androidx.cardview.widget.CardView>(R.id.SignInButton)
         pressForSignUp.setOnClickListener{
-            val new_name:String = findViewById<EditText>(R.id.usernamebox).toString()
-            val new_email:String = findViewById<EditText>(R.id.edittext2).toString()
-            val new_password:String = findViewById<EditText>(R.id.edittext3).toString()
+            val new_name:String = findViewById<EditText>(R.id.usernamebox).text.toString()
+            val new_email:String = findViewById<EditText>(R.id.edittext2).text.toString()
+            val new_password:String = findViewById<EditText>(R.id.edittext3).text.toString()
 
-            println(new_name)
+            if(new_name == "" || new_email == "" || new_password == ""){
+                println("Fill all fields")
+            }
+            else{
+                if(Database.register_user(new_name, new_email, new_password)){
+                    val intent = Intent(this, HomeScreen::class.java)
+                    startActivity(intent)
+                }
+            }
         }
 
         val goToLogIn = findViewById<TextView>(R.id.textview11)

@@ -32,13 +32,9 @@ object Database {
         Database.database_user_count += 1
 
         val new_user = Client(Database.database_user_count, new_username, new_email, new_password, Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList())
-        Database.add_user(new_user)
+        database_users.add(new_user)
         println("User registered successfully.")
         return true
-    }
-
-    fun add_user(user: User) {
-        database_users.add(user)
     }
 
     fun get_user_by_id(user_id: Int): User? {
