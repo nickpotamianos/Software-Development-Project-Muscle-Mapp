@@ -3,16 +3,16 @@ package com.example.musclemapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class HomeScreen : BaseActivity() {
+class CalendarPage : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.home)
+        setContentView(R.layout.select_date)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -31,18 +31,6 @@ class HomeScreen : BaseActivity() {
             startActivity(intent)
         }
 
-        val searchBar = findViewById<LinearLayout>(R.id.linear27)
-        searchBar.setOnClickListener{
-            val intent = Intent(this, SearchBarMenu::class.java)
-            startActivity(intent)
-        }
-
-        val goToMap = findViewById<ImageView>(R.id.imageview37)
-        goToMap.setOnClickListener{
-            val intent = Intent(this, MapScreen::class.java)
-            startActivity(intent)
-        }
-
         val goToSavedSpaces = findViewById<ImageView>(R.id.favorite1)
         goToSavedSpaces.setOnClickListener{
             val intent = Intent(this, SavedSpacesScreen::class.java)
@@ -55,21 +43,15 @@ class HomeScreen : BaseActivity() {
             startActivity(intent)
         }
 
-        val goToMemberships = findViewById<LinearLayout>(R.id.linear41)
-        goToMemberships.setOnClickListener{
-            val intent = Intent(this,  MembershipScreen::class.java)
+        val goToHome = findViewById<ImageView>(R.id.imageview35)
+        goToHome.setOnClickListener{
+            val intent = Intent(this, HomeScreen::class.java)
             startActivity(intent)
         }
 
-        val goToTrending = findViewById<LinearLayout>(R.id.linear31)
-        goToTrending.setOnClickListener{
-            val intent = Intent(this,  TrendingSpacesScreen::class.java)
-            startActivity(intent)
-        }
-
-        val goToCalendar = findViewById<LinearLayout>(R.id.linear84)
-        goToCalendar.setOnClickListener{
-            val intent = Intent(this,  CalendarPage::class.java)
+        val joinClass = findViewById<androidx.cardview.widget.CardView>(R.id.cardview1)
+        joinClass.setOnClickListener{
+            val intent = Intent(this, SelectCalendarMembership::class.java)
             startActivity(intent)
         }
     }

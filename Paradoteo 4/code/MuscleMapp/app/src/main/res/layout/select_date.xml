@@ -2,6 +2,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
@@ -180,7 +181,7 @@
 					android:orientation="horizontal"
 					android:gravity="center">
 					<androidx.cardview.widget.CardView
-						android:id="@+id/cardview2"
+						android:id="@+id/cardview213"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_marginRight="10dp"
@@ -191,14 +192,14 @@
 						app:cardCornerRadius="20dp"
 						app:cardBackgroundColor="#191919">
 						<LinearLayout
-							android:id="@+id/linear111"
+							android:id="@+id/linear1151"
 							android:layout_width="70dp"
 							android:layout_height="70dp"
 							android:padding="2dp"
 							android:gravity="center_horizontal|center_vertical"
 							android:orientation="vertical">
 							<TextView
-								android:id="@+id/textview43"
+								android:id="@+id/textview433"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:text="11"
@@ -206,7 +207,7 @@
 								android:textSize="12sp"
 								android:textColor="#BCBCBC" />
 							<TextView
-								android:id="@+id/textview44"
+								android:id="@+id/textview441"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:text="Mon"
@@ -243,7 +244,7 @@
 								android:textSize="12sp"
 								android:textColor="#BCBCBC" />
 							<TextView
-								android:id="@+id/textview44"
+								android:id="@+id/textview446"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:text="Tue"
@@ -415,7 +416,7 @@
 					app:cardCornerRadius="8dp"
 					app:cardElevation="4dp">
 					<LinearLayout
-						android:id="@+id/linear156"
+						android:id="@+id/linear1576"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="0dp"
@@ -424,7 +425,7 @@
 						android:gravity="center_vertical"
 						android:orientation="horizontal">
 						<androidx.cardview.widget.CardView
-							android:id="@+id/cardview11"
+							android:id="@+id/cardview151"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginLeft="20dp"
@@ -436,7 +437,7 @@
 							app:cardElevation="10dp"
 							app:cardCornerRadius="40dp">
 							<ImageView
-								android:id="@+id/imageview73"
+								android:id="@+id/imageview7352"
 								android:layout_width="70dp"
 								android:layout_height="70dp"
 								android:padding="12dp"
@@ -445,19 +446,19 @@
 								android:layout_gravity="center_horizontal|center_vertical" />
 						</androidx.cardview.widget.CardView>
 						<LinearLayout
-							android:id="@+id/linear157"
+							android:id="@+id/linear1517"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="vertical"
 							android:gravity="center_vertical">
 							<LinearLayout
-								android:id="@+id/linear158"
+								android:id="@+id/linear15816"
 								android:layout_width="match_parent"
 								android:layout_height="wrap_content"
 								android:padding="2dp"
 								android:orientation="horizontal">
 								<TextView
-									android:id="@+id/textview53"
+									android:id="@+id/textview353"
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:padding="8dp"
@@ -466,7 +467,7 @@
 									android:textColor="#FFFFFF" />
 							</LinearLayout>
 							<LinearLayout
-								android:id="@+id/linear159"
+								android:id="@+id/linear1569"
 								android:layout_width="match_parent"
 								android:layout_height="wrap_content"
 								android:layout_marginBottom="00dp"
@@ -474,7 +475,7 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal">
 								<TextView
-									android:id="@+id/textview54"
+									android:id="@+id/textview5414"
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:layout_marginRight="70dp"
@@ -495,7 +496,7 @@
 					app:cardCornerRadius="8dp"
 					app:cardElevation="4dp">
 					<LinearLayout
-						android:id="@+id/linear156"
+						android:id="@+id/linear13156"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="0dp"
@@ -504,7 +505,7 @@
 						android:gravity="center_vertical"
 						android:orientation="horizontal">
 						<androidx.cardview.widget.CardView
-							android:id="@+id/cardview11"
+							android:id="@+id/cardview1961"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginLeft="20dp"
@@ -516,7 +517,7 @@
 							app:cardElevation="10dp"
 							app:cardCornerRadius="40dp">
 							<ImageView
-								android:id="@+id/imageview73"
+								android:id="@+id/imageview7393"
 								android:layout_width="70dp"
 								android:layout_height="70dp"
 								android:padding="12dp"
@@ -525,19 +526,19 @@
 								android:layout_gravity="center_horizontal|center_vertical" />
 						</androidx.cardview.widget.CardView>
 						<LinearLayout
-							android:id="@+id/linear157"
+							android:id="@+id/linear14757"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="vertical"
 							android:gravity="center_vertical">
 							<LinearLayout
-								android:id="@+id/linear158"
+								android:id="@+id/linear15528"
 								android:layout_width="match_parent"
 								android:layout_height="wrap_content"
 								android:padding="2dp"
 								android:orientation="horizontal">
 								<TextView
-									android:id="@+id/textview53"
+									android:id="@+id/textview5483"
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:padding="8dp"
@@ -546,7 +547,7 @@
 									android:textColor="#FFFFFF" />
 							</LinearLayout>
 							<LinearLayout
-								android:id="@+id/linear159"
+								android:id="@+id/linefsvar159"
 								android:layout_width="match_parent"
 								android:layout_height="wrap_content"
 								android:layout_marginBottom="00dp"
@@ -554,7 +555,7 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal">
 								<TextView
-									android:id="@+id/textview54"
+									android:id="@+id/textvdbiew54"
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:layout_marginRight="70dp"
@@ -575,7 +576,7 @@
 					app:cardCornerRadius="8dp"
 					app:cardElevation="4dp">
 					<LinearLayout
-						android:id="@+id/linear156"
+						android:id="@+id/lineaawfr156"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:layout_marginTop="0dp"
@@ -584,7 +585,7 @@
 						android:gravity="center_vertical"
 						android:orientation="horizontal">
 						<androidx.cardview.widget.CardView
-							android:id="@+id/cardview11"
+							android:id="@+id/cardviesaw11"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginLeft="20dp"
@@ -596,7 +597,7 @@
 							app:cardElevation="10dp"
 							app:cardCornerRadius="40dp">
 							<ImageView
-								android:id="@+id/imageview73"
+								android:id="@+id/imageviewxa73"
 								android:layout_width="70dp"
 								android:layout_height="70dp"
 								android:padding="12dp"
@@ -605,19 +606,19 @@
 								android:layout_gravity="center_horizontal|center_vertical" />
 						</androidx.cardview.widget.CardView>
 						<LinearLayout
-							android:id="@+id/linear157"
+							android:id="@+id/linearhy157"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="vertical"
 							android:gravity="center_vertical">
 							<LinearLayout
-								android:id="@+id/linear158"
+								android:id="@+id/lineaxcar158"
 								android:layout_width="match_parent"
 								android:layout_height="wrap_content"
 								android:padding="2dp"
 								android:orientation="horizontal">
 								<TextView
-									android:id="@+id/textview53"
+									android:id="@+id/textvdfiew53"
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:padding="8dp"
@@ -626,7 +627,7 @@
 									android:textColor="#FFFFFF" />
 							</LinearLayout>
 							<LinearLayout
-								android:id="@+id/linear159"
+								android:id="@+id/lineaxar159"
 								android:layout_width="match_parent"
 								android:layout_height="wrap_content"
 								android:layout_marginBottom="00dp"
@@ -634,7 +635,7 @@
 								android:gravity="center_horizontal|center_vertical"
 								android:orientation="horizontal">
 								<TextView
-									android:id="@+id/textview54"
+									android:id="@+id/texdfgtview54"
 									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
 									android:layout_marginRight="70dp"

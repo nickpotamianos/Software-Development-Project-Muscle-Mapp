@@ -13,7 +13,19 @@
         android:theme="@style/Theme.MuscleMapp"
         tools:targetApi="31">
         <activity
+            android:name=".CalendarPage"
+            android:exported="false" />
+        <activity
+            android:name=".SelectCalendarMembership"
+            android:exported="false" />
+        <activity
+            android:name=".SelectClass"
+            android:exported="false" />
+        <activity
             android:name=".ReviewPage"
+            android:exported="false" />
+        <activity
+            android:name=".MakeAppointment"
             android:exported="false" />
         <activity
             android:name=".EstablishmentSubscriptionsPage"

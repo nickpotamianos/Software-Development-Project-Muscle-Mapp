@@ -2,6 +2,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
@@ -40,7 +41,7 @@
 				android:orientation="vertical">
 
 				<LinearLayout
-					android:id="@+id/linear111"
+					android:id="@+id/linear111123"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginBottom="30dp"
@@ -48,14 +49,14 @@
 					android:layout_marginEnd="10dp"
 					android:orientation="horizontal">
 					<LinearLayout
-						android:id="@+id/linear111inside"
+						android:id="@+id/linear111inside14"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:orientation="horizontal"
 						android:background="@drawable/purple_stroke"
 						android:padding="0dp">
 						<LinearLayout
-							android:id="@+id/linear112"
+							android:id="@+id/linear1152"
 							android:layout_width="match_parent"
 							android:layout_height="200dp"
 							android:padding="8dp"
@@ -65,7 +66,7 @@
 							android:gravity="center_vertical"
 							android:orientation="horizontal">
 							<TextView
-								android:id="@+id/textview40"
+								android:id="@+id/textview140"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
@@ -74,7 +75,7 @@
 								android:textColor="#FFFFFF"
 								android:layout_gravity="bottom" />
 							<androidx.cardview.widget.CardView
-								android:id="@+id/cardview1"
+								android:id="@+id/cardview124"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
@@ -84,7 +85,7 @@
 								app:cardElevation="10dp"
 								app:cardCornerRadius="80dp">
 								<ImageView
-									android:id="@+id/imageview1"
+									android:id="@+id/imageview125"
 									android:layout_width="150dp"
 									android:layout_height="150dp"
 									android:src="@drawable/palladionlogo"
@@ -96,7 +97,7 @@
 				</LinearLayout>
 
 				<LinearLayout
-					android:id="@+id/linear111"
+					android:id="@+id/linedfgar111"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginBottom="30dp"
@@ -104,14 +105,14 @@
 					android:layout_marginEnd="10dp"
 					android:orientation="horizontal">
 					<LinearLayout
-						android:id="@+id/linear111inside"
+						android:id="@+id/linear1ag11inside"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:orientation="horizontal"
 						android:background="@drawable/yellow_stroke"
 						android:padding="0dp">
 						<LinearLayout
-							android:id="@+id/linear112"
+							android:id="@+id/linear1g12"
 							android:layout_width="match_parent"
 							android:layout_height="200dp"
 							android:padding="8dp"
@@ -121,7 +122,7 @@
 							android:gravity="center_vertical"
 							android:orientation="horizontal">
 							<TextView
-								android:id="@+id/textview40"
+								android:id="@+id/textviewva40"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="0dp"
@@ -130,7 +131,7 @@
 								android:textColor="#FFFFFF"
 								android:layout_gravity="bottom" />
 							<androidx.cardview.widget.CardView
-								android:id="@+id/cardview1"
+								android:id="@+id/cardviavew1"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
@@ -140,7 +141,7 @@
 								app:cardElevation="10dp"
 								app:cardCornerRadius="80dp">
 								<ImageView
-									android:id="@+id/imageview1"
+									android:id="@+id/imagaeview1"
 									android:layout_width="150dp"
 									android:layout_height="150dp"
 									android:src="@drawable/alterlifelogo1"
