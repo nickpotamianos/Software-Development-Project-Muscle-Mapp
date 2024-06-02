@@ -2,7 +2,6 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:id="@+id/main"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
@@ -57,7 +56,7 @@
 					android:id="@+id/textview33"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_marginLeft="35dp"
+					android:layout_marginLeft="15dp"
 					android:padding="8dp"
 					android:gravity="center_horizontal|center_vertical"
 					android:text="Saved Workout Spaces"
@@ -66,191 +65,204 @@
 			</LinearLayout>
 		</LinearLayout>
 		<LinearLayout
-			android:id="@+id/linear87"
+			android:id="@+id/linear45"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal">
-			<LinearLayout
-				android:id="@+id/linear89"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				android:orientation="vertical">
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview12"
+				android:layout_gravity="center"
+				android:layout_width="180dp"
+				android:layout_height="250dp"
+				android:layout_marginRight="20dp"
+				android:orientation="vertical"
+				android:padding="8dp"
+				app:cardBackgroundColor="#1D1D1D"
+				app:cardCornerRadius="20dp"
+				app:cardElevation="10dp">
+
 				<LinearLayout
 					android:id="@+id/linear50"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
 					android:background="#1D1D1D"
 					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical">
+					android:orientation="vertical"
+					android:padding="2dp">
+
 					<ImageView
 						android:id="@+id/imageview20"
 						android:layout_width="150dp"
 						android:layout_height="150dp"
-						android:src="@drawable/megagymlogo"
-						android:scaleType="fitCenter" />
+						android:layout_gravity="center"
+						android:scaleType="fitCenter"
+						android:src="@drawable/palladio_logo" />
+
 					<LinearLayout
 						android:id="@+id/linear52"
 						android:layout_width="match_parent"
 						android:layout_height="3dp"
-						android:padding="8dp"
 						android:background="#A4A4A4"
 						android:orientation="horizontal"
+						android:padding="8dp"
 						android:translationY="-5.0dp" />
+
 					<LinearLayout
 						android:id="@+id/linear51"
-						android:layout_width="wrap_content"
-						android:layout_height="match_parent"
-						android:padding="1dp"
-						android:orientation="horizontal">
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="1dp">
+
 						<LinearLayout
 							android:id="@+id/linear53"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="1dp"
-							android:orientation="vertical">
+							android:orientation="vertical"
+							android:padding="1dp">
+
 							<TextView
 								android:id="@+id/gym_tag"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:layout_marginRight="90dp"
+								android:layout_marginRight="20dp"
 								android:padding="8dp"
-								android:text="MegaGym"
-								android:textSize="14sp"
-								android:textColor="#FFFFFF" />
-						</LinearLayout>
-						<LinearLayout
-							android:id="@+id/linear58"
-							android:layout_width="match_parent"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:background="#333333"
-							android:orientation="horizontal">
-							<ImageView
-								android:id="@+id/imageview21"
-								android:layout_width="20dp"
-								android:layout_height="20dp"
-								android:src="@drawable/favw"
-								android:scaleType="centerCrop" />
-						</LinearLayout>
-					</LinearLayout>
-					<LinearLayout
-						android:id="@+id/linear57"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="2dp"
-						android:orientation="horizontal">
-						<TextView
-							android:id="@+id/price_tag_gym"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="from 10€/day pass"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
-						<TextView
-							android:id="@+id/locatio_tag"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="Glyfada, Attiki"
-							android:textSize="12sp"
-							android:textColor="#A4A4A4" />
-					</LinearLayout>
-				</LinearLayout>
-			</LinearLayout>
-			<LinearLayout
-				android:id="@+id/linear90"
-				android:layout_width="wrap_content"
-				android:layout_height="match_parent"
-				android:layout_marginLeft="30dp"
-				android:orientation="vertical">
-				<LinearLayout
-					android:id="@+id/linear99"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:padding="2dp"
-					android:background="#1D1D1D"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical">
-					<ImageView
-						android:id="@+id/imageview46"
-						android:layout_width="150dp"
-						android:layout_height="150dp"
-						android:src="@drawable/planetlogo"
-						android:scaleType="fitCenter" />
-					<LinearLayout
-						android:id="@+id/linear100"
-						android:layout_width="match_parent"
-						android:layout_height="3dp"
-						android:padding="8dp"
-						android:background="#A4A4A4"
-						android:orientation="horizontal"
-						android:translationY="-5.0dp" />
-					<LinearLayout
-						android:id="@+id/linear101"
-						android:layout_width="wrap_content"
-						android:layout_height="match_parent"
-						android:padding="1dp"
-						android:orientation="horizontal">
-						<LinearLayout
-							android:id="@+id/linear103"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="1dp"
-							android:orientation="vertical">
+								android:text="Palladion Gym"
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
+
 							<TextView
-								android:id="@+id/textview34"
+								android:id="@+id/locatio_tag"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:layout_marginRight="70dp"
 								android:padding="8dp"
-								android:text="PlanetFitness"
-								android:textSize="14sp"
-								android:textColor="#FFFFFF" />
+								android:text="Hlioupoli, Attiki"
+								android:textColor="#A4A4A4"
+								android:textSize="12sp" />
 						</LinearLayout>
-						<LinearLayout
-							android:id="@+id/linear104"
-							android:layout_width="match_parent"
+
+						<androidx.cardview.widget.CardView
+							android:id="@+id/favoritebutton12"
+							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:background="#333333"
-							android:orientation="horizontal">
+							android:layout_marginEnd="0dp"
+							android:background="#00E53535"
+							android:orientation="vertical"
+							android:padding="4dp"
+							app:cardBackgroundColor="#333333"
+							app:cardCornerRadius="50dp"
+							app:cardElevation="10dp">
+
 							<ImageView
-								android:id="@+id/imageview47"
-								android:layout_width="20dp"
-								android:layout_height="20dp"
-								android:src="@drawable/favw"
-								android:scaleType="centerCrop" />
-						</LinearLayout>
+								android:id="@+id/favorite12"
+								android:layout_width="35dp"
+								android:layout_height="35dp"
+								android:padding="8dp"
+								android:scaleType="centerCrop"
+								android:src="@drawable/favw" />
+						</androidx.cardview.widget.CardView>
 					</LinearLayout>
-					<LinearLayout
-						android:id="@+id/linear102"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:padding="2dp"
-						android:orientation="horizontal">
-						<TextView
-							android:id="@+id/textview35"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="from 5€/day pass"
-							android:textSize="12sp"
-							android:textColor="#FFFFFF" />
-						<TextView
-							android:id="@+id/textview36"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="Alimos, Attiki"
-							android:textSize="12sp"
-							android:textColor="#A4A4A4" />
-					</LinearLayout>
+
 				</LinearLayout>
-			</LinearLayout>
+			</androidx.cardview.widget.CardView>
+
+			<androidx.cardview.widget.CardView
+				android:id="@+id/cardview12"
+				android:layout_gravity="center"
+				android:layout_width="180dp"
+				android:layout_height="250dp"
+				android:layout_marginRight="20dp"
+				android:orientation="vertical"
+				android:padding="8dp"
+				app:cardBackgroundColor="#1D1D1D"
+				app:cardCornerRadius="20dp"
+				app:cardElevation="10dp">
+
+				<LinearLayout
+					android:id="@+id/linear50"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:background="#1D1D1D"
+					android:gravity="center_horizontal|center_vertical"
+					android:orientation="vertical"
+					android:padding="2dp">
+
+					<ImageView
+						android:id="@+id/imageview20"
+						android:layout_width="150dp"
+						android:layout_height="150dp"
+						android:layout_gravity="center"
+						android:scaleType="fitCenter"
+						android:src="@drawable/alterlifelogo" />
+
+					<LinearLayout
+						android:id="@+id/linear52"
+						android:layout_width="match_parent"
+						android:layout_height="3dp"
+						android:background="#A4A4A4"
+						android:orientation="horizontal"
+						android:padding="8dp"
+						android:translationY="-5.0dp" />
+
+					<LinearLayout
+						android:id="@+id/linear51"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="1dp">
+
+						<LinearLayout
+							android:id="@+id/linear53"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:orientation="vertical"
+							android:padding="1dp">
+
+							<TextView
+								android:id="@+id/gym_tag"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginRight="60dp"
+								android:padding="8dp"
+								android:text="Alterlife"
+								android:textColor="#FFFFFF"
+								android:textSize="14sp" />
+
+							<TextView
+								android:id="@+id/locatio_tag"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Argiroupoli, Attiki"
+								android:textColor="#A4A4A4"
+								android:textSize="12sp" />
+						</LinearLayout>
+
+						<androidx.cardview.widget.CardView
+							android:id="@+id/favoritebutton12"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginEnd="0dp"
+							android:background="#00E53535"
+							android:orientation="vertical"
+							android:padding="4dp"
+							app:cardBackgroundColor="#333333"
+							app:cardCornerRadius="50dp"
+							app:cardElevation="10dp">
+
+							<ImageView
+								android:id="@+id/favorite12"
+								android:layout_width="35dp"
+								android:layout_height="35dp"
+								android:padding="8dp"
+								android:scaleType="centerCrop"
+								android:src="@drawable/favw" />
+						</androidx.cardview.widget.CardView>
+					</LinearLayout>
+
+				</LinearLayout>
+			</androidx.cardview.widget.CardView>
 		</LinearLayout>
 		<LinearLayout
 			android:id="@+id/linear111"

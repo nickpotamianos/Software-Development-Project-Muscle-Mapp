@@ -9,12 +9,13 @@
 		android:id="@+id/linear99"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:padding="8dp"
+		android:padding="0dp"
 		android:background="#0D0D0D"
-		android:orientation="vertical">
+		android:orientation="vertical"
+		android:gravity="center_horizontal">
 		<LinearLayout
 			android:id="@+id/linear41"
-			android:layout_width="wrap_content"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="20dp"
 			android:layout_marginBottom="30dp"
@@ -48,7 +49,8 @@
 				android:id="@+id/textview33"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="70dp"
+				android:layout_marginLeft="45dp"
+				android:layout_gravity="center"
 				android:padding="8dp"
 				android:gravity="center_horizontal|center_vertical"
 				android:text="Write a Review"
@@ -78,8 +80,6 @@
 		</LinearLayout>
 
 		<androidx.cardview.widget.CardView
-			xmlns:android="http://schemas.android.com/apk/res/android"
-			xmlns:app="http://schemas.android.com/apk/res-auto"
 			android:id="@+id/linear101"
 			android:layout_width="match_parent"
 			android:layout_height="350dp"
@@ -95,12 +95,13 @@
 
 			<EditText
 				android:id="@+id/edittext1"
+				style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_marginStart="10dp"
+				android:layout_marginTop="8dp"
 				android:hint="Review (Optional)"
 				android:padding="8dp"
-				android:layout_marginTop="8dp"
-				android:layout_marginStart="10dp"
 				android:textColor="#000000"
 				android:textColorHint="#FFFFFF"
 				android:textSize="22sp" />
@@ -108,30 +109,28 @@
 
 
 		<androidx.cardview.widget.CardView
-			xmlns:android="http://schemas.android.com/apk/res/android"
-			xmlns:app="http://schemas.android.com/apk/res-auto"
 			android:id="@+id/linear102"
 			android:layout_width="300dp"
 			android:layout_height="60dp"
 			android:layout_marginLeft="70dp"
 			android:layout_marginTop="30dp"
 			android:layout_marginRight="70dp"
-			android:padding="8dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal"
-			app:cardElevation="2dp"
+			android:padding="8dp"
+			app:cardBackgroundColor="#E53535"
 			app:cardCornerRadius="12dp"
-			app:cardBackgroundColor="#E53535">
+			app:cardElevation="2dp">
 
 			<TextView
 				android:id="@+id/textview34"
-				android:layout_gravity="center"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_gravity="center"
 				android:padding="8dp"
 				android:text="Send"
-				android:textSize="25sp"
-				android:textColor="#FFFFFF" />
+				android:textColor="#FFFFFF"
+				android:textSize="25sp" />
 		</androidx.cardview.widget.CardView>
 
 	</LinearLayout>

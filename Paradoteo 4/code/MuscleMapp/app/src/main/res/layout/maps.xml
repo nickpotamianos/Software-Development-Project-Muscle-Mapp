@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0d0d0d">
@@ -36,7 +35,7 @@
     <LinearLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="79dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="horizontal"
@@ -46,28 +45,28 @@
             android:id="@+id/linear83"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="60dp"
+            android:layout_marginEnd="50dp"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageview35"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/home" />
+                android:src="@drawable/homered" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/linear84"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="60dp"
+            android:layout_marginEnd="50dp"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageview36"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/calendar" />
         </LinearLayout>
@@ -76,15 +75,15 @@
             android:id="@+id/linear85"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="60dp"
+            android:layout_marginEnd="50dp"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageview37"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/locationred" />
+                android:src="@drawable/location_1" />
         </LinearLayout>
 
         <LinearLayout
@@ -95,8 +94,8 @@
 
             <ImageView
                 android:id="@+id/imageview38"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/bytesize_car" />
         </LinearLayout>
@@ -115,10 +114,11 @@
 
         <LinearLayout
             android:layout_width="150dp"
-            android:layout_marginStart="148dp"
+
             android:layout_height="4dp"
             android:layout_marginTop="10dp"
             android:gravity="center"
+            android:layout_gravity="center_horizontal"
             android:background="#CBCBCB" />
     </androidx.cardview.widget.CardView>
 
@@ -142,89 +142,88 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/nav_button1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#e53535"
+                android:layout_marginEnd="10dp"
                 app:cardCornerRadius="40dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/boxingw" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/nav_button2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#e53535"
+                android:layout_marginEnd="10dp"
                 app:cardCornerRadius="40dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/crossfit" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/nav_button3"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#e53535"
+                android:layout_marginEnd="10dp"
                 app:cardCornerRadius="40dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/runningtrack" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/nav_button4"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#e53535"
+                android:layout_marginEnd="10dp"
                 app:cardCornerRadius="40dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/wheelchairw" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/nav_button5"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#e53535"
+                android:layout_marginEnd="10dp"
                 app:cardCornerRadius="40dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/kriki" />
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:id="@+id/nav_button1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:cardBackgroundColor="#e53535"
                 app:cardCornerRadius="40dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/group" />
             </androidx.cardview.widget.CardView>
