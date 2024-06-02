@@ -612,6 +612,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginBottom="10dp"
             android:padding="12dp"
+            android:layout_gravity="center_horizontal"
             android:orientation="horizontal"
             app:cardElevation="2dp"
             app:cardCornerRadius="12dp"
@@ -652,7 +653,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/homered" />
+                android:src="@drawable/home" />
         </LinearLayout>
 
         <LinearLayout
@@ -696,7 +697,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/bytesize_car" />
+                android:src="@drawable/cartred" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
