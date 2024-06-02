@@ -19,7 +19,7 @@
 		<LinearLayout
 			android:id="@+id/linear3"
 			android:layout_width="match_parent"
-			android:layout_height="120dp"
+			android:layout_height="wrap_content"
 			android:layout_marginTop="70dp"
 			android:orientation="vertical">
 
@@ -43,14 +43,34 @@
 				android:padding="8dp"
 				android:text="Sign in to your account"
 				android:textColor="#ADADAD"
-				android:textSize="16sp" />
+				android:textSize="16sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_marginTop="10dp">
+
+			<TextView
+				android:id="@+id/error"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:fontFamily="@font/poppins"
+				android:padding="0dp"
+				android:text="Please fill all the fields correctly"
+				android:textColor="#CF3F3F"
+				android:textSize="13sp"
+				android:textStyle="bold" />
 		</LinearLayout>
 
 		<androidx.cardview.widget.CardView
 			android:id="@+id/mob_text12"
-			android:layout_width="380dp"
+			android:layout_width="320dp"
 			android:layout_height="60dp"
-			android:layout_marginTop="25dp"
 			android:background="#121212"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal"
@@ -76,7 +96,8 @@
 
 				<EditText
 					android:id="@+id/edittext2"
-					android:layout_width="wrap_content"
+					style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+					android:layout_width="200dp"
 					android:layout_height="60dp"
 					android:hint="Email"
 					android:imeOptions="actionGo"
@@ -89,7 +110,7 @@
 
 		<androidx.cardview.widget.CardView
 			android:id="@+id/mob_text"
-			android:layout_width="380dp"
+			android:layout_width="320dp"
 			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
 			android:background="#121212"
@@ -117,7 +138,8 @@
 
 				<EditText
 					android:id="@+id/edittext3"
-					android:layout_width="wrap_content"
+					style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
+					android:layout_width="200dp"
 					android:layout_height="60dp"
 					android:hint="Password"
 					android:imeOptions="actionGo"
@@ -130,8 +152,8 @@
 					android:id="@+id/imageview4"
 					android:layout_width="25dp"
 					android:layout_height="25dp"
-					android:layout_marginStart="160dp"
-					android:scaleType="centerCrop"
+					android:layout_marginStart="0dp"
+					android:scaleType="centerInside"
 					android:src="@drawable/eyeoff" />
 			</LinearLayout>
 		</androidx.cardview.widget.CardView>
@@ -147,7 +169,7 @@
 				android:id="@+id/textview7"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="40dp"
+				android:layout_marginLeft="20dp"
 				android:padding="8dp"
 				android:text="Forgot password\?"
 				android:textColor="#FFFFFF"
@@ -156,7 +178,7 @@
 
 		<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 			android:id="@+id/LogInButton"
-			android:layout_width="380dp"
+			android:layout_width="320dp"
 			android:layout_height="65dp"
 			android:layout_marginTop="25dp"
 			android:background="#E53535"
@@ -226,7 +248,7 @@
 				android:layout_height="wrap_content"
 				android:paddingLeft="8dp"
 				android:paddingTop="2dp"
-				android:paddingRight="8dp"
+				android:paddingRight="4dp"
 				android:paddingBottom="2dp"
 				android:text="Don’t have an account\?"
 				android:textColor="#A4A4A4"
@@ -236,7 +258,7 @@
 				android:id="@+id/textview10"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:paddingLeft="8dp"
+				android:paddingLeft="4dp"
 				android:paddingTop="2dp"
 				android:paddingRight="8dp"
 				android:paddingBottom="2dp"
@@ -259,7 +281,7 @@
 				android:layout_height="wrap_content"
 				android:paddingLeft="8dp"
 				android:paddingTop="2dp"
-				android:paddingRight="8dp"
+				android:paddingRight="4dp"
 				android:paddingBottom="2dp"
 				android:text="Do you own an athletic space\? "
 				android:textColor="#A4A4A4"
@@ -269,7 +291,7 @@
 				android:id="@+id/textview12"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:paddingLeft="8dp"
+				android:paddingLeft="4dp"
 				android:paddingTop="2dp"
 				android:paddingRight="8dp"
 				android:paddingBottom="2dp"
@@ -284,15 +306,16 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:gravity="center_horizontal|center_vertical"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:padding="0dp">
 
 			<TextView
 				android:id="@+id/textview13"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:paddingLeft="8dp"
+				android:paddingLeft="0dp"
 				android:paddingTop="2dp"
-				android:paddingRight="8dp"
+				android:paddingRight="4dp"
 				android:paddingBottom="2dp"
 				android:text="Are you a personal trainer / group trainer\?"
 				android:textColor="#A4A4A4"
@@ -302,9 +325,9 @@
 				android:id="@+id/textview14"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:paddingLeft="8dp"
+				android:paddingLeft="0dp"
 				android:paddingTop="2dp"
-				android:paddingRight="8dp"
+				android:paddingRight="0dp"
 				android:paddingBottom="2dp"
 				android:text="Register here"
 				android:textColor="#FFFFFF"
