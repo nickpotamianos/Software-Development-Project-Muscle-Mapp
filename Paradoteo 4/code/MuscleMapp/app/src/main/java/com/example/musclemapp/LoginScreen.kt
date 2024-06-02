@@ -38,5 +38,11 @@ class LoginScreen : BaseActivity() {
             val intent = Intent(this, HomeScreen::class.java)
             startActivity(intent)
         }
+
+        val forgotPassword = findViewById<TextView>(R.id.textview7)
+        forgotPassword.setOnClickListener{
+            val intent = Intent(this, ForgotPasswordScreen::class.java)
+            startActivity(intent)
+        }
     }
 }
