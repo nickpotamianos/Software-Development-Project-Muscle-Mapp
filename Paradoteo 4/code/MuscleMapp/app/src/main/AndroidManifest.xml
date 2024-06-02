@@ -28,7 +28,7 @@
             android:name=".LoginScreen"
             android:exported="false" />
         <activity
-            android:name=".SignUpScreen"
+            android:name=".RegisterScreen"
             android:exported="false" />
         <activity
             android:name=".OpeningScreen3"

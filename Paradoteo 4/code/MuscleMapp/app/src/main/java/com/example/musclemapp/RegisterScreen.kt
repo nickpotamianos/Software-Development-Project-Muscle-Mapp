@@ -2,13 +2,14 @@ package com.example.musclemapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class SignUpScreen : BaseActivity() {
+class RegisterScreen : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,6 +20,8 @@ class SignUpScreen : BaseActivity() {
             insets
         }
 
+        findViewById<TextView>(R.id.error).visibility = View.INVISIBLE
+
         val pressForSignUp = findViewById<androidx.cardview.widget.CardView>(R.id.SignInButton)
         pressForSignUp.setOnClickListener{
             val new_name:String = findViewById<EditText>(R.id.usernamebox).text.toString()
@@ -26,7 +29,7 @@ class SignUpScreen : BaseActivity() {
             val new_password:String = findViewById<EditText>(R.id.edittext3).text.toString()
 
             if(new_name == "" || new_email == "" || new_password == ""){
-                println("Fill all fields")
+                findViewById<TextView>(R.id.error).visibility = View.VISIBLE
             }
             else{
                 if(Database.register_user(new_name, new_email, new_password)){

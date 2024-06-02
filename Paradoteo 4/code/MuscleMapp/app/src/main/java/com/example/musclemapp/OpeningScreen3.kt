@@ -3,7 +3,6 @@ package com.example.musclemapp
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -20,7 +19,7 @@ class OpeningScreen3 : BaseActivity() {
 
         val nextScreen = findViewById<androidx.cardview.widget.CardView>(R.id.IntroScreenButton3)
         nextScreen.setOnClickListener{
-            val intent = Intent(this, SignUpScreen::class.java)
+            val intent = Intent(this, RegisterScreen::class.java)
             startActivity(intent)
         }
     }

@@ -2,9 +2,9 @@ package com.example.musclemapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -19,6 +19,8 @@ class LoginScreen : BaseActivity() {
             insets
         }
 
+        findViewById<TextView>(R.id.error).visibility = View.INVISIBLE
+
         val pressForLogin = findViewById<androidx.cardview.widget.CardView>(R.id.LogInButton)
         pressForLogin.setOnClickListener{
             Database.print_all_users()
@@ -27,7 +29,7 @@ class LoginScreen : BaseActivity() {
 
         val goToSignUp = findViewById<TextView>(R.id.textview10)
         goToSignUp.setOnClickListener{
-            val intent = Intent(this, SignUpScreen::class.java)
+            val intent = Intent(this, RegisterScreen::class.java)
             startActivity(intent)
         }
 
