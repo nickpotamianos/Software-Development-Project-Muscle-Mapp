@@ -19,6 +19,10 @@ object Database {
         database_user_count = 5;
     }
 
+    fun search_database_establishment(establishment_id: Int): Establishment? {
+        return database_establishments.find { it.get_establishment_id() == establishment_id }
+    }
+
     fun register_user(new_username: String, new_email: String, new_password: String): Boolean {
         for (user in Database.database_users) {
             if (user.get_user_username() == new_username || user.get_user_username() == new_email) {
