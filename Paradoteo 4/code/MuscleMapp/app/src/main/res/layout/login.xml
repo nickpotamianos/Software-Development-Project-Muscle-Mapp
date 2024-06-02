@@ -179,7 +179,7 @@
 		<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
 			android:id="@+id/LogInButton"
 			android:layout_width="320dp"
-			android:layout_height="65dp"
+			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
 			android:background="#E53535"
 			android:gravity="center_horizontal|center_vertical"

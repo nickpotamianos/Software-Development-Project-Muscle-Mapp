@@ -57,8 +57,8 @@
 
 		<androidx.cardview.widget.CardView
 			android:id="@+id/card_view"
-			android:layout_width="380dp"
-			android:layout_height="70dp"
+			android:layout_width="320dp"
+			android:layout_height="60dp"
 			android:layout_gravity="center_horizontal|center_vertical"
 			android:layout_marginTop="35dp"
 			app:cardCornerRadius="20dp"
@@ -76,16 +76,17 @@
 
 				<ImageView
 					android:id="@+id/imageview1"
-					android:layout_width="35dp"
-					android:layout_height="35dp"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
 					android:layout_marginLeft="20dp"
 					android:layout_marginRight="20dp"
-					android:scaleType="centerCrop"
+					android:scaleType="centerInside"
 					android:src="@drawable/mail" />
 
 				<EditText
 					android:layout_gravity="center"
 					android:id="@+id/edittext2"
+					style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:hint="Email"
@@ -120,11 +121,11 @@
 
 		<androidx.cardview.widget.CardView
 			android:id="@+id/send_btn"
-			android:layout_width="350dp"
-			android:layout_height="70dp"
+			android:layout_width="320dp"
+			android:layout_height="60dp"
 			android:layout_gravity="center_horizontal|center_vertical"
 			android:layout_marginTop="50dp"
-			app:cardCornerRadius="20dp"
+			app:cardCornerRadius="12dp"
 			app:cardElevation="4dp"
 			android:padding="8dp"
 			android:translationY="-150.0dp"
