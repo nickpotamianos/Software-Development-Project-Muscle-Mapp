@@ -11,8 +11,4 @@ class Trainer(
     fun get_trainer_sessions(): ArrayList<Session> {
         return trainer_sessions
     }
-
-    override fun user_type(): String {
-        return "Trainer"
-    }
 }

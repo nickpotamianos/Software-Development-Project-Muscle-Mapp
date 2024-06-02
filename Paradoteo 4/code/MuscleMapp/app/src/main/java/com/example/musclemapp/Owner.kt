@@ -11,8 +11,4 @@ class Owner(
     fun get_owner_establishment(): Establishment {
         return owner_establishment
     }
-
-    override fun user_type(): String {
-        return "Owner"
-    }
 }

@@ -7,6 +7,10 @@ class Address(
     private val address_city: String,
     private val address_country: String
 ) {
+    fun return_whole_address(): String {
+        return "$address_street $address_number, $address_postal_code $address_city, $address_country"
+    }
+
     fun get_address_street(): String {
         return address_street
     }

@@ -6,6 +6,10 @@ abstract class User(
     private var user_email: String,
     private var user_password: String
 ) {
+    fun give_feedback(feedback_message: String) {
+        Database.database_feedback.add(feedback_message)
+    }
+
     fun get_user_id(): Int {
         return user_id
     }
@@ -21,6 +25,4 @@ abstract class User(
     fun get_user_password(): String {
         return user_password
     }
-
-    abstract fun user_type(): String
 }

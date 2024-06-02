@@ -7,6 +7,8 @@ object Database {
 
     val database_establishments: ArrayList<Establishment> = ArrayList()
 
+    val database_feedback: ArrayList<String> = ArrayList()
+
     init {
         database_users.add(Client(1, "john_doe", "john.doe@example.com", "password123", Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList()))
         database_users.add(Client(2, "jane_smith", "jane.smith@example.com", "password456", Wallet(ArrayList()), ArrayList(), ArrayList(), ArrayList()))
@@ -17,15 +19,9 @@ object Database {
         database_user_count = 5;
     }
 
-    fun print_all_users() {
-        for (user in Database.database_users) {
-            println("User ID: ${user.user_id}, Username: ${user.user_username}")
-        }
-    }
-
     fun register_user(new_username: String, new_email: String, new_password: String): Boolean {
         for (user in Database.database_users) {
-            if (user.user_username == new_username || user.user_email == new_email) {
+            if (user.get_user_username() == new_username || user.get_user_username() == new_email) {
                 return false
             }
         }
@@ -41,8 +37,8 @@ object Database {
 
     fun login_user(email: String, password: String): Boolean {
         for (user in Database.database_users) {
-            if (user.user_email == email) {
-                if (user.user_password == password) {
+            if (user.get_user_email() == email) {
+                if (user.get_user_password() == password) {
                     Database.database_active_user = user
                     return true
                 } else {
@@ -55,7 +51,7 @@ object Database {
     }
 
     fun get_user_by_id(user_id: Int): User? {
-        return database_users.find { it.user_id == user_id }
+        return database_users.find { it.get_user_id() == user_id }
     }
 
     fun get_all_users(): List<User> {
@@ -67,7 +63,7 @@ object Database {
     }
 
     fun get_establishment_by_id(establishment_id: Int): Establishment? {
-        return database_establishments.find { it.establishment_id == establishment_id }
+        return database_establishments.find { it.get_establishment_id() == establishment_id }
     }
 
     fun get_all_establishments(): List<Establishment> {
