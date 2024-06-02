@@ -2,6 +2,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical"
@@ -87,7 +88,7 @@
 					<androidx.cardview.widget.CardView
 						xmlns:android="http://schemas.android.com/apk/res/android"
 						xmlns:app="http://schemas.android.com/apk/res-auto"
-						android:id="@+id/linear112"
+						android:id="@+id/linear1122"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:padding="8dp"
@@ -99,7 +100,7 @@
 						android:orientation="vertical">
 
 						<ImageView
-							android:id="@+id/imageview51"
+							android:id="@+id/imageview518"
 							android:layout_width="60dp"
 							android:layout_height="60dp"
 							android:padding="8dp"
@@ -146,7 +147,7 @@
 							android:textColor="#FFFFFF" />
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear1058"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -158,7 +159,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview478"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -168,7 +169,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear118"
+							android:id="@+id/linear1128"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -180,7 +181,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview148"
+								android:id="@+id/imageview1418"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -190,7 +191,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear1078"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -202,7 +203,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview418"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -210,7 +211,7 @@
 								android:scaleType="centerInside" />
 						</androidx.cardview.widget.CardView>
 						<androidx.cardview.widget.CardView
-							android:id="@+id/linear108"
+							android:id="@+id/linear1086"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
@@ -221,7 +222,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview4148"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -260,7 +261,7 @@
 					<androidx.cardview.widget.CardView
 						xmlns:android="http://schemas.android.com/apk/res/android"
 						xmlns:app="http://schemas.android.com/apk/res-auto"
-						android:id="@+id/linear112"
+						android:id="@+id/linear1112"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_margin="8dp"
@@ -271,7 +272,7 @@
 						android:orientation="vertical">
 
 						<ImageView
-							android:id="@+id/imageview51"
+							android:id="@+id/imageview511"
 							android:layout_width="60dp"
 							android:layout_height="60dp"
 							android:padding="8dp"
@@ -316,7 +317,7 @@
 							android:textColor="#FFFFFF" />
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear1084"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -328,7 +329,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview348"
 								android:layout_width="40dp"
 								android:layout_height="40dp"
 								android:padding="8dp"
@@ -338,7 +339,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear118"
+							android:id="@+id/linear1148"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -350,7 +351,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview148"
+								android:id="@+id/imageview1487"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -360,7 +361,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear1088"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -372,7 +373,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview448"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -380,7 +381,7 @@
 								android:scaleType="centerInside" />
 						</androidx.cardview.widget.CardView>
 						<androidx.cardview.widget.CardView
-							android:id="@+id/linear108"
+							android:id="@+id/linear10815"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
@@ -391,7 +392,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview43468"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -424,7 +425,7 @@
 					<androidx.cardview.widget.CardView
 						xmlns:android="http://schemas.android.com/apk/res/android"
 						xmlns:app="http://schemas.android.com/apk/res-auto"
-						android:id="@+id/linear112"
+						android:id="@+id/linear11152"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_margin="8dp"
@@ -435,7 +436,7 @@
 						android:orientation="vertical">
 
 						<ImageView
-							android:id="@+id/imageview51"
+							android:id="@+id/imageview51235"
 							android:layout_width="60dp"
 							android:layout_height="60dp"
 							android:padding="8dp"
@@ -489,7 +490,7 @@
 							android:textColor="#A4A4A4" />
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear10124"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -501,7 +502,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview123448"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -511,7 +512,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear118"
+							android:id="@+id/linear1181234"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -523,7 +524,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview148"
+								android:id="@+id/imageview11561648"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -533,7 +534,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear1012438"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -545,7 +546,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview5648"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -553,7 +554,7 @@
 								android:scaleType="centerInside" />
 						</androidx.cardview.widget.CardView>
 						<androidx.cardview.widget.CardView
-							android:id="@+id/linear108"
+							android:id="@+id/linear11308"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
@@ -564,7 +565,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview48235"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -598,7 +599,7 @@
 					<androidx.cardview.widget.CardView
 						xmlns:android="http://schemas.android.com/apk/res/android"
 						xmlns:app="http://schemas.android.com/apk/res-auto"
-						android:id="@+id/linear112"
+						android:id="@+id/linear114312"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_margin="8dp"
@@ -609,7 +610,7 @@
 						android:orientation="vertical">
 
 						<ImageView
-							android:id="@+id/imageview51"
+							android:id="@+id/imageview511256"
 							android:layout_width="60dp"
 							android:layout_height="60dp"
 							android:padding="8dp"
@@ -662,7 +663,7 @@
 							android:textColor="#A4A4A4" />
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear108215"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -674,7 +675,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview482452"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -684,7 +685,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear118"
+							android:id="@+id/linear11518"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -696,7 +697,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview148"
+								android:id="@+id/imageview14123458"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -706,7 +707,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear112418"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -718,7 +719,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview412348"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -726,7 +727,7 @@
 								android:scaleType="centerInside" />
 						</androidx.cardview.widget.CardView>
 						<androidx.cardview.widget.CardView
-							android:id="@+id/linear108"
+							android:id="@+id/linear10148"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
@@ -737,7 +738,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview2648"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -835,7 +836,7 @@
 							android:textColor="#A4A4A4" />
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear10138"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -847,7 +848,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview4814"
 								android:layout_width="40dp"
 								android:layout_height="40dp"
 								android:padding="8dp"
@@ -879,7 +880,7 @@
 
 						<androidx.cardview.widget.CardView
 							xmlns:android="http://schemas.android.com/apk/res/android"
-							android:id="@+id/linear108"
+							android:id="@+id/linear103258"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginRight="5dp"
@@ -891,7 +892,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview41518"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -899,7 +900,7 @@
 								android:scaleType="centerInside" />
 						</androidx.cardview.widget.CardView>
 						<androidx.cardview.widget.CardView
-							android:id="@+id/linear108"
+							android:id="@+id/linear10368"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:padding="8dp"
@@ -910,7 +911,7 @@
 							app:cardBackgroundColor="#E53535">
 
 							<ImageView
-								android:id="@+id/imageview48"
+								android:id="@+id/imageview4768"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"

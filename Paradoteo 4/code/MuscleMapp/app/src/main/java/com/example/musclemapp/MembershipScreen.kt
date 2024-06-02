@@ -47,5 +47,11 @@ class MembershipScreen : BaseActivity() {
             val intent = Intent(this, CartScreen::class.java)
             startActivity(intent)
         }
+
+        val goToEstablishment = findViewById<ImageView>(R.id.imageview39)
+        goToEstablishment.setOnClickListener{
+            val intent = Intent(this, EstablishmentPage::class.java)
+            startActivity(intent)
+        }
     }
 }

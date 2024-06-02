@@ -85,7 +85,7 @@
 				</androidx.cardview.widget.CardView>
 
 				<ImageView
-					android:id="@+id/imageview39"
+					android:id="@+id/imageview3941"
 					android:layout_width="45dp"
 					android:layout_height="45dp"
 					android:src="@drawable/profpic"
@@ -145,7 +145,7 @@
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="horizontal">
 				<androidx.cardview.widget.CardView
-					android:id="@+id/linear89"
+					android:id="@+id/linear8936"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="0dp"
@@ -154,7 +154,7 @@
 					app:cardCornerRadius="23dp"
 					android:orientation="vertical">
 					<ImageView
-						android:id="@+id/imageview39"
+						android:id="@+id/imageview32679"
 						android:padding="0dp"
 						android:layout_width="180dp"
 						android:layout_height="270dp"
@@ -162,7 +162,7 @@
 						android:scaleType="centerInside" />
 				</androidx.cardview.widget.CardView>
 				<androidx.cardview.widget.CardView
-					android:id="@+id/linear89"
+					android:id="@+id/linear87439"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="0dp"
@@ -170,7 +170,7 @@
 					app:cardCornerRadius="23dp"
 					android:orientation="vertical">
 					<ImageView
-						android:id="@+id/imageview39"
+						android:id="@+id/imageview3359"
 						android:padding="0dp"
 						android:layout_width="180dp"
 						android:layout_height="270dp"
@@ -190,7 +190,7 @@
 				android:orientation="horizontal">
 
 				<androidx.cardview.widget.CardView
-					android:id="@+id/linear89"
+					android:id="@+id/linear819"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="0dp"
@@ -199,7 +199,7 @@
 					app:cardCornerRadius="23dp"
 					android:orientation="vertical">
 					<ImageView
-						android:id="@+id/imageview39"
+						android:id="@+id/imageview32569"
 						android:padding="0dp"
 						android:layout_width="180dp"
 						android:layout_height="270dp"
@@ -207,7 +207,7 @@
 						android:scaleType="centerInside" />
 				</androidx.cardview.widget.CardView>
 				<androidx.cardview.widget.CardView
-					android:id="@+id/linear89"
+					android:id="@+id/linear8759"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:padding="0dp"
