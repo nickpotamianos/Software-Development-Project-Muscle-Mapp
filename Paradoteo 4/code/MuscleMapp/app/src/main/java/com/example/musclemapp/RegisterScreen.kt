@@ -34,7 +34,7 @@ class RegisterScreen : BaseActivity() {
             }
             else{
                 if(Database.register_user(new_name, new_email, new_password)){
-                    val intent = Intent(this, HomeScreen::class.java)
+                    val intent = Intent(this, RegistrationSuccess::class.java)
                     startActivity(intent)
                 }
                 else{
