@@ -17,7 +17,7 @@
 			android:id="@+id/linear3"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_marginTop="100dp"
+			android:layout_marginTop="60dp"
 			android:gravity="center_horizontal|center_vertical"
 			android:orientation="vertical">
 			<TextView
@@ -48,11 +48,9 @@
 				android:textColor="#ADADAD" />
 		</LinearLayout>
 		<androidx.cardview.widget.CardView
-			xmlns:android="http://schemas.android.com/apk/res/android"
-			xmlns:app="http://schemas.android.com/apk/res-auto"
 			android:id="@+id/linear4"
-			android:layout_width="350dp"
-			android:layout_height="65dp"
+			android:layout_width="320dp"
+			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
 			android:padding="8dp"
 			android:gravity="left|center_vertical"
@@ -80,23 +78,16 @@
 
 				<EditText
 					android:id="@+id/edittext3"
+					style="@style/Widget.Material3.AutoCompleteTextView.FilledBox"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:padding="8dp"
-					android:textSize="18sp"
-					android:textColor="#ADADAD"
 					android:hint="Enter your location"
-					android:textColorHint="#9CA3AF"
+					android:imeOptions="actionGo"
 					android:inputType="phone"
-					android:imeOptions="actionGo" />
-
-				<ImageView
-					android:id="@+id/imageview4"
-					android:layout_width="35dp"
-					android:layout_height="35dp"
-					android:layout_marginLeft="260dp"
-					android:src="@drawable/eyeoff"
-					android:scaleType="centerCrop" />
+					android:padding="8dp"
+					android:textColor="#ADADAD"
+					android:textColorHint="#9CA3AF"
+					android:textSize="18sp" />
 			</LinearLayout>
 		</androidx.cardview.widget.CardView>
 		<com.google.android.gms.maps.MapView
@@ -107,8 +98,8 @@
 			xmlns:android="http://schemas.android.com/apk/res/android"
 			xmlns:app="http://schemas.android.com/apk/res-auto"
 			android:id="@+id/btn"
-			android:layout_width="350dp"
-			android:layout_height="70dp"
+			android:layout_width="320dp"
+			android:layout_height="60dp"
 			android:layout_marginTop="25dp"
 			android:padding="8dp"
 			android:gravity="center_horizontal|center_vertical"

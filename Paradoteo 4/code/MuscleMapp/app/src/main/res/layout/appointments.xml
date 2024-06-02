@@ -10,7 +10,7 @@
 		android:id="@+id/linear1"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:padding="8dp"
+		android:padding="0dp"
 		android:background="#0D0D0D"
 		android:orientation="vertical">
 
@@ -20,6 +20,8 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginBottom="30dp"
+			android:layout_marginStart="8dp"
+			android:layout_marginEnd="8dp"
 			android:layout_marginTop="40dp"
 			android:background="#0D0D0D"
 			android:gravity="center_vertical"
@@ -47,7 +49,7 @@
 				android:id="@+id/textview1"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:layout_marginLeft="100dp"
+				android:layout_marginLeft="75dp"
 				android:text="Appointment"
 				android:textSize="25sp"
 				android:textColor="#FFFFFF" />
@@ -170,7 +172,7 @@
 					android:layout_height="wrap_content"
 					android:background="#E53535"
 					android:orientation="vertical"
-					android:layout_marginStart="150dp"
+					android:layout_marginStart="120dp"
 					android:padding="8dp"
 					app:cardBackgroundColor="#E53535"
 					app:cardCornerRadius="40dp"
@@ -190,7 +192,7 @@
 					android:gravity="center_horizontal|center_vertical"
 					android:orientation="horizontal"
 					android:padding="8dp"
-					android:layout_marginStart="150dp">
+					android:layout_marginStart="120dp">
 					<TextView
 						android:id="@+id/textview6"
 						android:layout_width="wrap_content"
