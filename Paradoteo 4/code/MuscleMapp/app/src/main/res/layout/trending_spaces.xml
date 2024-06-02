@@ -56,8 +56,8 @@
 					android:id="@+id/textview33"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:layout_marginLeft="60dp"
-					android:padding="8dp"
+					android:layout_marginLeft="15dp"
+					android:padding="0dp"
 					android:gravity="center_horizontal|center_vertical"
 					android:text="Trending Workout Spaces"
 					android:textSize="25sp"
@@ -65,17 +65,17 @@
 			</LinearLayout>
 		</LinearLayout>
 		<LinearLayout
-			android:id="@+id/linear87"
+			android:id="@+id/linear45"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:gravity="center_horizontal|center_vertical"
 			android:orientation="horizontal">
+
 			<androidx.cardview.widget.CardView
 				android:id="@+id/cardview12"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginRight="0dp"
+				android:layout_gravity="center"
+				android:layout_width="180dp"
+				android:layout_height="250dp"
+				android:layout_marginRight="20dp"
 				android:orientation="vertical"
 				android:padding="8dp"
 				app:cardBackgroundColor="#1D1D1D"
@@ -84,8 +84,8 @@
 
 				<LinearLayout
 					android:id="@+id/linear50"
-					android:layout_width="200dp"
-					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
 					android:background="#1D1D1D"
 					android:gravity="center_horizontal|center_vertical"
 					android:orientation="vertical"
@@ -95,6 +95,7 @@
 						android:id="@+id/imageview20"
 						android:layout_width="150dp"
 						android:layout_height="150dp"
+						android:layout_gravity="center"
 						android:scaleType="fitCenter"
 						android:src="@drawable/palladio_logo" />
 
@@ -110,9 +111,8 @@
 					<LinearLayout
 						android:id="@+id/linear51"
 						android:layout_width="match_parent"
-						android:layout_height="match_parent"
+						android:layout_height="wrap_content"
 						android:orientation="horizontal"
-						android:layout_gravity=""
 						android:padding="1dp">
 
 						<LinearLayout
@@ -126,125 +126,20 @@
 								android:id="@+id/gym_tag"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:layout_marginRight="40dp"
+								android:layout_marginRight="20dp"
 								android:padding="8dp"
 								android:text="Palladion Gym"
 								android:textColor="#FFFFFF"
 								android:textSize="14sp" />
-						</LinearLayout>
-
-						<androidx.cardview.widget.CardView
-							android:id="@+id/favoritebutton12"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:layout_marginEnd="0dp"
-							android:background="#00E53535"
-							android:orientation="vertical"
-							android:padding="4dp"
-							app:cardBackgroundColor="#333333"
-							app:cardCornerRadius="50dp"
-							app:cardElevation="10dp">
-
-							<ImageView
-								android:id="@+id/favorite12"
-								android:layout_width="35dp"
-								android:layout_height="35dp"
-								android:padding="8dp"
-								android:scaleType="centerCrop"
-								android:src="@drawable/favw" />
-						</androidx.cardview.widget.CardView>
-					</LinearLayout>
-
-					<LinearLayout
-						android:id="@+id/linear57"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:orientation="horizontal"
-						android:padding="2dp">
-
-						<TextView
-							android:id="@+id/price_tag_gym"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="3dp"
-							android:layout_marginBottom="10dp"
-							android:layout_marginEnd="12dp"
-							android:text="from 5€/day pass"
-							android:textColor="#FFFFFF"
-							android:textSize="12sp" />
-
-						<TextView
-							android:id="@+id/locatio_tag"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="Hlioupoli"
-							android:textColor="#A4A4A4"
-							android:textSize="12sp" />
-					</LinearLayout>
-				</LinearLayout>
-			</androidx.cardview.widget.CardView>
-			<androidx.cardview.widget.CardView
-				xmlns:android="http://schemas.android.com/apk/res/android"
-				xmlns:app="http://schemas.android.com/apk/res-auto"
-				android:id="@+id/cardview99"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_marginLeft="15dp"
-				android:orientation="vertical"
-				android:padding="8dp"
-				app:cardBackgroundColor="#1D1D1D"
-				app:cardCornerRadius="20dp"
-				app:cardElevation="10dp">
-
-				<LinearLayout
-					android:id="@+id/linear99"
-					android:layout_width="200dp"
-					android:layout_height="wrap_content"
-					android:background="#1D1D1D"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="vertical"
-					android:padding="2dp">
-
-					<ImageView
-						android:id="@+id/imageview46"
-						android:layout_width="150dp"
-						android:layout_height="150dp"
-						android:scaleType="fitCenter"
-						android:src="@drawable/fitnessmall_logo" />
-
-					<LinearLayout
-						android:id="@+id/linear100"
-						android:layout_width="match_parent"
-						android:layout_height="3dp"
-						android:background="#A4A4A4"
-						android:orientation="horizontal"
-						android:padding="8dp"
-						android:translationY="-5.0dp" />
-
-					<LinearLayout
-						android:id="@+id/linear101"
-						android:layout_width="match_parent"
-						android:layout_height="match_parent"
-						android:orientation="horizontal"
-						android:padding="1dp">
-
-						<LinearLayout
-							android:id="@+id/linear103"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:orientation="vertical"
-							android:padding="1dp">
 
 							<TextView
-								android:id="@+id/textview34"
+								android:id="@+id/locatio_tag"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:layout_marginRight="60dp"
 								android:padding="8dp"
-								android:text="FitnessMall"
-								android:textColor="#FFFFFF"
-								android:textSize="14sp" />
+								android:text="Hlioupoli, Attiki"
+								android:textColor="#A4A4A4"
+								android:textSize="12sp" />
 						</LinearLayout>
 
 						<androidx.cardview.widget.CardView
@@ -269,47 +164,14 @@
 						</androidx.cardview.widget.CardView>
 					</LinearLayout>
 
-					<LinearLayout
-						android:id="@+id/linear102"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:orientation="horizontal"
-						android:padding="2dp">
-
-						<TextView
-							android:id="@+id/textview35"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="3dp"
-							android:layout_marginEnd="15dp"
-							android:text="from 5€/day pass"
-							android:textColor="#FFFFFF"
-							android:textSize="12sp" />
-
-						<TextView
-							android:id="@+id/textview36"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="8dp"
-							android:text="Patra"
-							android:textColor="#A4A4A4"
-							android:textSize="12sp" />
-					</LinearLayout>
 				</LinearLayout>
 			</androidx.cardview.widget.CardView>
-		</LinearLayout>
-		<LinearLayout
-			android:id="@+id/linear88"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:padding="8dp"
-			android:orientation="horizontal">
+
 			<androidx.cardview.widget.CardView
-				xmlns:android="http://schemas.android.com/apk/res/android"
-				xmlns:app="http://schemas.android.com/apk/res-auto"
 				android:id="@+id/cardview12"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_width="180dp"
+				android:layout_height="250dp"
 				android:layout_marginRight="20dp"
 				android:orientation="vertical"
 				android:padding="8dp"
@@ -319,22 +181,23 @@
 
 				<LinearLayout
 					android:id="@+id/linear50"
-					android:layout_width="200dp"
-					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
 					android:background="#1D1D1D"
 					android:gravity="center_horizontal|center_vertical"
 					android:orientation="vertical"
 					android:padding="2dp">
 
 					<ImageView
-						android:id="@+id/imageview48"
+						android:id="@+id/imageview20"
 						android:layout_width="150dp"
 						android:layout_height="150dp"
+						android:layout_gravity="center"
 						android:scaleType="fitCenter"
-						android:src="@drawable/alterlifelogo1" />
+						android:src="@drawable/alterlifelogo" />
 
 					<LinearLayout
-						android:id="@+id/linear106"
+						android:id="@+id/linear52"
 						android:layout_width="match_parent"
 						android:layout_height="3dp"
 						android:background="#A4A4A4"
@@ -343,28 +206,37 @@
 						android:translationY="-5.0dp" />
 
 					<LinearLayout
-						android:id="@+id/linear107"
+						android:id="@+id/linear51"
 						android:layout_width="match_parent"
-						android:layout_height="match_parent"
+						android:layout_height="wrap_content"
 						android:orientation="horizontal"
 						android:padding="1dp">
 
 						<LinearLayout
-							android:id="@+id/linear109"
+							android:id="@+id/linear53"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="vertical"
 							android:padding="1dp">
 
 							<TextView
-								android:id="@+id/textview37"
+								android:id="@+id/gym_tag"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
-								android:layout_marginRight="20dp"
+								android:layout_marginRight="60dp"
 								android:padding="8dp"
-								android:text="Alterlife Argiroupoli"
+								android:text="Alterlife"
 								android:textColor="#FFFFFF"
 								android:textSize="14sp" />
+
+							<TextView
+								android:id="@+id/locatio_tag"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Argiroupoli, Attiki"
+								android:textColor="#A4A4A4"
+								android:textSize="12sp" />
 						</LinearLayout>
 
 						<androidx.cardview.widget.CardView
@@ -389,35 +261,8 @@
 						</androidx.cardview.widget.CardView>
 					</LinearLayout>
 
-					<LinearLayout
-						android:id="@+id/linear108"
-						android:layout_width="wrap_content"
-						android:layout_height="wrap_content"
-						android:orientation="horizontal"
-						android:padding="2dp">
-
-						<TextView
-							android:id="@+id/textview38"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="2dp"
-							android:layout_marginEnd="10dp"
-							android:text="from 5€/day pass"
-							android:textColor="#FFFFFF"
-							android:textSize="12sp" />
-
-						<TextView
-							android:id="@+id/textview39"
-							android:layout_width="wrap_content"
-							android:layout_height="wrap_content"
-							android:padding="4dp"
-							android:text="Argyroupoli"
-							android:textColor="#A4A4A4"
-							android:textSize="12sp" />
-					</LinearLayout>
 				</LinearLayout>
 			</androidx.cardview.widget.CardView>
-			</LinearLayout>
 		</LinearLayout>
 		<LinearLayout
 			android:id="@+id/linear111"
@@ -440,6 +285,7 @@
 			android:id="@+id/imageview50"
 			android:layout_width="300dp"
 			android:layout_height="300dp"
-			android:src="@drawable/diadromos"
+			android:src="@drawable/eof"
 			android:scaleType="centerCrop" />
 	</LinearLayout>
+</LinearLayout>
