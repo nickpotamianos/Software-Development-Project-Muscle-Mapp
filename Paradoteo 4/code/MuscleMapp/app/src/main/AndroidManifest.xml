@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MuscleMapp"
         tools:targetApi="31">
         <activity
+            android:name=".SavedSpacesScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MapScreen"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SearchBarMenu"
+            android:exported="false" />
+        <activity
             android:name=".NotificationSettings"
             android:exported="false" />
         <activity
