@@ -92,10 +92,10 @@
 					android:layout_height="wrap_content"
 					android:hint="Email"
 					android:imeOptions="actionGo"
-					android:inputType="phone"
+					android:inputType="textEmailAddress"
 					android:padding="8dp"
 					android:textColor="#ADADAD"
-					android:textColorHint="#121212"
+					android:textColorHint="#9CA3AF"
 					android:textSize="18sp"
 					tools:textColorHint="#545964" />
 			</LinearLayout>
