@@ -144,72 +144,84 @@
 				android:paddingBottom="0dp"
 				android:gravity="center_horizontal|center_vertical"
 				android:orientation="horizontal">
-				<LinearLayout
+				<androidx.cardview.widget.CardView
 					android:id="@+id/linear89"
 					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="0dp"
+					android:layout_marginEnd="10dp"
+					app:cardBackgroundColor="#0d0d0d"
+					app:cardCornerRadius="23dp"
 					android:orientation="vertical">
 					<ImageView
 						android:id="@+id/imageview39"
+						android:padding="0dp"
 						android:layout_width="180dp"
-						android:layout_height="280dp"
+						android:layout_height="270dp"
 						android:src="@drawable/palladion"
 						android:scaleType="centerInside" />
-				</LinearLayout>
-				<LinearLayout
-					android:id="@+id/linear90"
+				</androidx.cardview.widget.CardView>
+				<androidx.cardview.widget.CardView
+					android:id="@+id/linear89"
 					android:layout_width="wrap_content"
-					android:layout_height="match_parent"
-					android:layout_marginLeft="10dp"
+					android:layout_height="wrap_content"
+					android:padding="0dp"
+					app:cardBackgroundColor="#0d0d0d"
+					app:cardCornerRadius="23dp"
 					android:orientation="vertical">
 					<ImageView
-						android:id="@+id/imageview40"
+						android:id="@+id/imageview39"
+						android:padding="0dp"
 						android:layout_width="180dp"
-						android:layout_height="280dp"
+						android:layout_height="270dp"
 						android:src="@drawable/alterlifecard"
 						android:scaleType="centerInside" />
-				</LinearLayout>
+				</androidx.cardview.widget.CardView>
 			</LinearLayout>
 
 			<LinearLayout
 				android:id="@+id/linear88"
-				android:layout_width="wrap_content"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:paddingEnd="8dp"
 				android:paddingStart="8dp"
+				android:layout_marginTop="10dp"
+				android:gravity="center_horizontal|center_vertical"
 				android:orientation="horizontal">
-				<LinearLayout
-					android:id="@+id/linear94"
+
+				<androidx.cardview.widget.CardView
+					android:id="@+id/linear89"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:gravity="center_horizontal|center_vertical"
-					android:orientation="horizontal">
-					<LinearLayout
-						android:id="@+id/linear95"
-						android:layout_width="wrap_content"
-						android:layout_height="match_parent"
-						android:orientation="vertical">
-						<ImageView
-							android:id="@+id/imageview43"
-							android:layout_width="180dp"
-							android:layout_height="280dp"
-							android:src="@drawable/yava"
-							android:scaleType="centerInside" />
-					</LinearLayout>
-					<LinearLayout
-						android:id="@+id/linear96"
-						android:layout_width="wrap_content"
-						android:layout_height="match_parent"
-						android:layout_marginLeft="10dp"
-						android:orientation="vertical">
-						<ImageView
-							android:id="@+id/imageview44"
-							android:layout_width="180dp"
-							android:layout_height="280dp"
-							android:src="@drawable/workouthall"
-							android:scaleType="centerInside" />
-					</LinearLayout>
-				</LinearLayout>
+					android:padding="0dp"
+					android:layout_marginEnd="10dp"
+					app:cardBackgroundColor="#0d0d0d"
+					app:cardCornerRadius="23dp"
+					android:orientation="vertical">
+					<ImageView
+						android:id="@+id/imageview39"
+						android:padding="0dp"
+						android:layout_width="180dp"
+						android:layout_height="270dp"
+						android:src="@drawable/yava"
+						android:scaleType="centerInside" />
+				</androidx.cardview.widget.CardView>
+				<androidx.cardview.widget.CardView
+					android:id="@+id/linear89"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="0dp"
+					app:cardBackgroundColor="#0d0d0d"
+					app:cardCornerRadius="23dp"
+					android:orientation="vertical">
+					<ImageView
+						android:id="@+id/imageview39"
+						android:padding="0dp"
+						android:layout_width="180dp"
+						android:layout_height="270dp"
+						android:src="@drawable/workouthall"
+						android:scaleType="centerInside" />
+				</androidx.cardview.widget.CardView>
 			</LinearLayout>
 		</LinearLayout>
 	</ScrollView>
@@ -236,7 +248,7 @@
 				android:layout_width="40dp"
 				android:layout_height="40dp"
 				android:scaleType="centerCrop"
-				android:src="@drawable/homered" />
+				android:src="@drawable/home" />
 		</LinearLayout>
 
 		<LinearLayout
