@@ -10,6 +10,7 @@ open class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         hideNavigationBar()
+        overridePendingTransition(0, 0)
     }
 
     private fun hideNavigationBar() {
