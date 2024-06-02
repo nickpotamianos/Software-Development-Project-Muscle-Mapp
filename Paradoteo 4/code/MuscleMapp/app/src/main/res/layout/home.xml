@@ -434,7 +434,7 @@
 
 						<LinearLayout
 							android:id="@+id/linear59"
-							android:layout_width="240dp"
+							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:background="#1D1D1D"
 							android:gravity="center_horizontal|center_vertical"
@@ -459,7 +459,7 @@
 
 							<LinearLayout
 								android:id="@+id/linear61"
-								android:layout_width="wrap_content"
+								android:layout_width="match_parent"
 								android:layout_height="match_parent"
 								android:orientation="horizontal"
 								android:padding="1dp">
@@ -476,7 +476,7 @@
 										android:id="@+id/textview29"
 										android:layout_width="wrap_content"
 										android:layout_height="wrap_content"
-										android:layout_marginRight="55dp"
+										android:layout_marginRight="35dp"
 										android:padding="8dp"
 										android:text="Alterlife Argyroupoli"
 										android:textColor="#FFFFFF"
@@ -485,9 +485,8 @@
 
 								<androidx.cardview.widget.CardView
 									android:id="@+id/favoritebutton"
-									android:layout_width="30dp"
+									android:layout_width="wrap_content"
 									android:layout_height="wrap_content"
-									android:layout_marginEnd="20dp"
 									android:background="#00E53535"
 									android:orientation="vertical"
 									android:padding="4dp"
@@ -497,8 +496,8 @@
 
 									<ImageView
 										android:id="@+id/favorite"
-										android:layout_width="30dp"
-										android:layout_height="30dp"
+										android:layout_width="35dp"
+										android:layout_height="35dp"
 										android:padding="8dp"
 										android:scaleType="centerCrop"
 										android:src="@drawable/favw" />
