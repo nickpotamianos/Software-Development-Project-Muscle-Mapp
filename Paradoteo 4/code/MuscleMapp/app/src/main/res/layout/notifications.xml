@@ -202,7 +202,7 @@
 				android:id="@+id/imageview46"
 				android:layout_width="250dp"
 				android:layout_height="250dp"
-				android:layout_marginTop="50dp"
+				android:layout_marginTop="0dp"
 				android:src="@drawable/clock"
 				android:scaleType="centerCrop" />
 		</LinearLayout>
