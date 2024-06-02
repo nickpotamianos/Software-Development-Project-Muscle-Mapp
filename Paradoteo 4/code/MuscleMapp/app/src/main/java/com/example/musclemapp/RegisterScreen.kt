@@ -29,12 +29,17 @@ class RegisterScreen : BaseActivity() {
             val new_password:String = findViewById<EditText>(R.id.edittext3).text.toString()
 
             if(new_name == "" || new_email == "" || new_password == ""){
+                findViewById<TextView>(R.id.error).text = "Please fill all the fields correctly"
                 findViewById<TextView>(R.id.error).visibility = View.VISIBLE
             }
             else{
                 if(Database.register_user(new_name, new_email, new_password)){
                     val intent = Intent(this, HomeScreen::class.java)
                     startActivity(intent)
+                }
+                else{
+                    findViewById<TextView>(R.id.error).text = "Username or email already exists"
+                    findViewById<TextView>(R.id.error).visibility = View.VISIBLE
                 }
             }
         }

@@ -26,7 +26,6 @@ object Database {
     fun register_user(new_username: String, new_email: String, new_password: String): Boolean {
         for (user in Database.database_users) {
             if (user.user_username == new_username || user.user_email == new_email) {
-                println("Username or email already exists.")
                 return false
             }
         }
@@ -37,8 +36,22 @@ object Database {
         database_users.add(new_user)
         database_active_user = new_user
 
-        println("User registered successfully.")
         return true
+    }
+
+    fun login_user(email: String, password: String): Boolean {
+        for (user in Database.database_users) {
+            if (user.user_email == email) {
+                if (user.user_password == password) {
+                    Database.database_active_user = user
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+
+        return false
     }
 
     fun get_user_by_id(user_id: Int): User? {

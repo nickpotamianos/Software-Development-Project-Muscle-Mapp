@@ -7,11 +7,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class NotificationScreen : BaseActivity() {
+class TrendingSpacesScreen : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.notification)
+        setContentView(R.layout.trending_spaces)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -20,18 +20,6 @@ class NotificationScreen : BaseActivity() {
 
         val goBack = findViewById<androidx.cardview.widget.CardView>(R.id.linear98)
         goBack.setOnClickListener{
-            val intent = Intent(this, HomeScreen::class.java)
-            startActivity(intent)
-        }
-
-        val goToCart = findViewById<ImageView>(R.id.imageview38)
-        goToCart.setOnClickListener{
-            val intent = Intent(this, CartScreen::class.java)
-            startActivity(intent)
-        }
-
-        val goToHome = findViewById<ImageView>(R.id.imageview35)
-        goToHome.setOnClickListener{
             val intent = Intent(this, HomeScreen::class.java)
             startActivity(intent)
         }

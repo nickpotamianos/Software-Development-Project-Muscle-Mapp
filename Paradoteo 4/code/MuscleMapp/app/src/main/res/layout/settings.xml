@@ -292,7 +292,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:padding="8dp"
-                    android:text="My payment option"
+                    android:text="My payment options"
                     android:textSize="14sp"
                     android:textColor="#FFFFFF" />
                 <LinearLayout
@@ -338,7 +338,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:padding="8dp"
-                    android:text="Notification"
+                    android:text="Notification settings"
                     android:textSize="14sp"
                     android:textColor="#FFFFFF" />
                 <LinearLayout
@@ -445,7 +445,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:padding="8dp"
-                    android:text="My order"
+                    android:text="My orders"
                     android:textSize="14sp"
                     android:textColor="#FFFFFF" />
                 <LinearLayout

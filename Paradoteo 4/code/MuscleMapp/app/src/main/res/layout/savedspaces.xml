@@ -2,6 +2,7 @@
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:orientation="vertical">
@@ -71,7 +72,7 @@
 			android:orientation="horizontal">
 
 			<androidx.cardview.widget.CardView
-				android:id="@+id/cardview12"
+				android:id="@+id/cardview129"
 				android:layout_gravity="center"
 				android:layout_width="180dp"
 				android:layout_height="250dp"
@@ -83,7 +84,7 @@
 				app:cardElevation="10dp">
 
 				<LinearLayout
-					android:id="@+id/linear50"
+					android:id="@+id/linear509"
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
 					android:background="#1D1D1D"
@@ -92,7 +93,7 @@
 					android:padding="2dp">
 
 					<ImageView
-						android:id="@+id/imageview20"
+						android:id="@+id/imageview209"
 						android:layout_width="150dp"
 						android:layout_height="150dp"
 						android:layout_gravity="center"
@@ -100,7 +101,7 @@
 						android:src="@drawable/palladio_logo" />
 
 					<LinearLayout
-						android:id="@+id/linear52"
+						android:id="@+id/linear529"
 						android:layout_width="match_parent"
 						android:layout_height="3dp"
 						android:background="#A4A4A4"
@@ -109,21 +110,21 @@
 						android:translationY="-5.0dp" />
 
 					<LinearLayout
-						android:id="@+id/linear51"
+						android:id="@+id/linear519"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:orientation="horizontal"
 						android:padding="1dp">
 
 						<LinearLayout
-							android:id="@+id/linear53"
+							android:id="@+id/linear539"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:orientation="vertical"
 							android:padding="1dp">
 
 							<TextView
-								android:id="@+id/gym_tag"
+								android:id="@+id/gym_tag3"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:layout_marginRight="20dp"
@@ -133,7 +134,7 @@
 								android:textSize="14sp" />
 
 							<TextView
-								android:id="@+id/locatio_tag"
+								android:id="@+id/locatio_tag2"
 								android:layout_width="wrap_content"
 								android:layout_height="wrap_content"
 								android:padding="8dp"
@@ -143,7 +144,7 @@
 						</LinearLayout>
 
 						<androidx.cardview.widget.CardView
-							android:id="@+id/favoritebutton12"
+							android:id="@+id/favoritebutton129"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
 							android:layout_marginEnd="0dp"
@@ -155,7 +156,7 @@
 							app:cardElevation="10dp">
 
 							<ImageView
-								android:id="@+id/favorite12"
+								android:id="@+id/favorite128"
 								android:layout_width="35dp"
 								android:layout_height="35dp"
 								android:padding="8dp"
@@ -194,7 +195,7 @@
 						android:layout_height="150dp"
 						android:layout_gravity="center"
 						android:scaleType="fitCenter"
-						android:src="@drawable/alterlifelogo" />
+						android:src="@drawable/alterlifelogo1" />
 
 					<LinearLayout
 						android:id="@+id/linear52"

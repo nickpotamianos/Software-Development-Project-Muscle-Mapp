@@ -41,5 +41,17 @@ class SettingsScreen : BaseActivity() {
             val intent = Intent(this, HomeScreen::class.java)
             startActivity(intent)
         }
+
+        val goToCart = findViewById<ImageView>(R.id.imageview38)
+        goToCart.setOnClickListener{
+            val intent = Intent(this, CartScreen::class.java)
+            startActivity(intent)
+        }
+
+        val goToHome = findViewById<ImageView>(R.id.imageview35)
+        goToHome.setOnClickListener{
+            val intent = Intent(this, HomeScreen::class.java)
+            startActivity(intent)
+        }
     }
 }
