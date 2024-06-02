@@ -4,12 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class RegistrationSuccess : BaseActivity() {
+class RegistrationSuccess_UI : BaseActivity_UI() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,7 +22,7 @@ class RegistrationSuccess : BaseActivity() {
         val timeOut:Long = 3000
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, HomeScreen::class.java)
+            val intent = Intent(this, HomePage_UI::class.java)
             startActivity(intent)
         }, timeOut)
     }

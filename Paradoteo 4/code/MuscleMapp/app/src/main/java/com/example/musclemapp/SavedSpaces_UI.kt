@@ -2,17 +2,15 @@ package com.example.musclemapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MakeAppointment : BaseActivity() {
+class SavedSpaces_UI : BaseActivity_UI() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.appointments)
+        setContentView(R.layout.savedspaces)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -21,7 +19,7 @@ class MakeAppointment : BaseActivity() {
 
         val goBack = findViewById<androidx.cardview.widget.CardView>(R.id.linear98)
         goBack.setOnClickListener{
-            val intent = Intent(this, SelectClass::class.java)
+            val intent = Intent(this, HomePage_UI::class.java)
             startActivity(intent)
         }
     }

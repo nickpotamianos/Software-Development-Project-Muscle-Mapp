@@ -13,79 +13,79 @@
         android:theme="@style/Theme.MuscleMapp"
         tools:targetApi="31">
         <activity
-            android:name=".CalendarPage"
+            android:name=".CalendarPage_UI"
             android:exported="false" />
         <activity
-            android:name=".SelectCalendarMembership"
+            android:name=".SelectActiveMembership_UI"
             android:exported="false" />
         <activity
-            android:name=".SelectClass"
+            android:name=".EstablishmentActivities_UI"
             android:exported="false" />
         <activity
-            android:name=".ReviewPage"
+            android:name=".ReviewComposition_UI"
             android:exported="false" />
         <activity
-            android:name=".MakeAppointment"
+            android:name=".AppointmentCreation_UI"
             android:exported="false" />
         <activity
-            android:name=".EstablishmentSubscriptionsPage"
+            android:name=".EstablishmentMembershipPlans_UI"
             android:exported="false" />
         <activity
-            android:name=".EstablishmentPage"
+            android:name=".EstablishmentPage_UI"
             android:exported="false" />
         <activity
-            android:name=".RegistrationSuccess"
+            android:name=".RegistrationSuccess_UI"
             android:exported="false" />
         <activity
-            android:name=".UserTypeSelectScreen"
+            android:name=".UserSelection_UI"
             android:exported="false" />
         <activity
-            android:name=".TrendingSpacesScreen"
+            android:name=".TrendingSpaces_UI"
             android:exported="false" />
         <activity
-            android:name=".CartScreen"
+            android:name=".Cart_UI"
             android:exported="false" />
         <activity
-            android:name=".MembershipScreen"
+            android:name=".ClientMembershipList_UI"
             android:exported="false" />
         <activity
-            android:name=".SavedSpacesScreen"
+            android:name=".SavedSpaces_UI"
             android:exported="false" />
         <activity
-            android:name=".MapScreen"
+            android:name=".MapView_UI"
             android:exported="false" />
         <activity
-            android:name=".ForgotPasswordScreen"
+            android:name=".PasswordReset_UI"
             android:exported="false" />
         <activity
-            android:name=".SearchBarMenu"
+            android:name=".SearchBar_UI"
             android:exported="false" />
         <activity
-            android:name=".NotificationSettings"
+            android:name=".NotificationSettings_UI"
             android:exported="false" />
         <activity
-            android:name=".NotificationScreen"
+            android:name=".Notifications_UI"
             android:exported="false" />
         <activity
-            android:name=".SettingsScreen"
+            android:name=".MainMenu_UI"
             android:exported="false" />
         <activity
-            android:name=".HomeScreen"
+            android:name=".HomePage_UI"
             android:exported="false" />
         <activity
-            android:name=".LoginScreen"
+            android:name=".LoginScreen_UI"
             android:exported="false" />
         <activity
-            android:name=".RegisterScreen"
+            android:name=".RegisterScreen_UI"
             android:exported="false" />
         <activity
-            android:name=".OpeningScreen3"
+            android:name=".OpeningScreen3_UI"
             android:exported="false" />
         <activity
-            android:name=".OpeningScreen2"
+            android:name=".OpeningScreen2_UI"
             android:exported="false" />
         <activity
-            android:name=".OpeningScreen1"
+            android:name=".OpeningScreen1_UI"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

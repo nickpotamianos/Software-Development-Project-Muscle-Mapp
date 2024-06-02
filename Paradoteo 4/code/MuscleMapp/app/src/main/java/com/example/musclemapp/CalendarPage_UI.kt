@@ -7,50 +7,50 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MembershipScreen : BaseActivity() {
+class CalendarPage_UI : BaseActivity_UI() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.home2_activememberships)
+        setContentView(R.layout.select_date)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val goToHome = findViewById<ImageView>(R.id.imageview35)
-        goToHome.setOnClickListener{
-            val intent = Intent(this, HomeScreen::class.java)
-            startActivity(intent)
-        }
-
         val goToSettings = findViewById<ImageView>(R.id.imageview39)
         goToSettings.setOnClickListener{
-            val intent = Intent(this, SettingsScreen::class.java)
+            val intent = Intent(this, MainMenu_UI::class.java)
             startActivity(intent)
         }
 
         val goToNotifications = findViewById<ImageView>(R.id.notbell)
         goToNotifications.setOnClickListener{
-            val intent = Intent(this, NotificationScreen::class.java)
+            val intent = Intent(this, Notifications_UI::class.java)
             startActivity(intent)
         }
 
         val goToSavedSpaces = findViewById<ImageView>(R.id.favorite1)
         goToSavedSpaces.setOnClickListener{
-            val intent = Intent(this, SavedSpacesScreen::class.java)
+            val intent = Intent(this, SavedSpaces_UI::class.java)
             startActivity(intent)
         }
 
         val goToCart = findViewById<ImageView>(R.id.imageview38)
         goToCart.setOnClickListener{
-            val intent = Intent(this, CartScreen::class.java)
+            val intent = Intent(this, Cart_UI::class.java)
             startActivity(intent)
         }
 
-        val goToEstablishment = findViewById<ImageView>(R.id.imageview39)
-        goToEstablishment.setOnClickListener{
-            val intent = Intent(this, EstablishmentPage::class.java)
+        val goToHome = findViewById<ImageView>(R.id.imageview35)
+        goToHome.setOnClickListener{
+            val intent = Intent(this, HomePage_UI::class.java)
+            startActivity(intent)
+        }
+
+        val joinClass = findViewById<androidx.cardview.widget.CardView>(R.id.cardview1)
+        joinClass.setOnClickListener{
+            val intent = Intent(this, SelectActiveMembership_UI::class.java)
             startActivity(intent)
         }
     }

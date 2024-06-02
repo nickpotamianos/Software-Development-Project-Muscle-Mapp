@@ -1,10 +1,10 @@
 package com.example.musclemapp
 
 abstract class User(
-    var user_id: Int,
-    var user_username: String,
-    var user_email: String,
-    var user_password: String
+    private var user_id: Int,
+    private var user_username: String,
+    private var user_email: String,
+    private var user_password: String
 ) {
     fun get_user_id(): Int {
         return user_id

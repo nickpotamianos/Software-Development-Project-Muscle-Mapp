@@ -9,7 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class LoginScreen : BaseActivity() {
+class LoginScreen_UI : BaseActivity_UI() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,7 +33,7 @@ class LoginScreen : BaseActivity() {
             }
             else{
                 if(Database.login_user(new_email, new_password)){
-                    val intent = Intent(this, HomeScreen::class.java)
+                    val intent = Intent(this, HomePage_UI::class.java)
                     startActivity(intent)
                 }
                 else{
@@ -45,19 +45,19 @@ class LoginScreen : BaseActivity() {
 
         val goToSignUp = findViewById<TextView>(R.id.textview10)
         goToSignUp.setOnClickListener{
-            val intent = Intent(this, RegisterScreen::class.java)
+            val intent = Intent(this, RegisterScreen_UI::class.java)
             startActivity(intent)
         }
 
         val pressForGuest = findViewById<TextView>(R.id.textview16)
         pressForGuest.setOnClickListener{
-            val intent = Intent(this, HomeScreen::class.java)
+            val intent = Intent(this, HomePage_UI::class.java)
             startActivity(intent)
         }
 
         val forgotPassword = findViewById<TextView>(R.id.textview7)
         forgotPassword.setOnClickListener{
-            val intent = Intent(this, ForgotPasswordScreen::class.java)
+            val intent = Intent(this, PasswordReset_UI::class.java)
             startActivity(intent)
         }
     }

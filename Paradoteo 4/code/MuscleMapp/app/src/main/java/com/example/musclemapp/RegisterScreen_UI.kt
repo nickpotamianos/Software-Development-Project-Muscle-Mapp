@@ -9,7 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class RegisterScreen : BaseActivity() {
+class RegisterScreen_UI : BaseActivity_UI() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -34,7 +34,7 @@ class RegisterScreen : BaseActivity() {
             }
             else{
                 if(Database.register_user(new_name, new_email, new_password)){
-                    val intent = Intent(this, RegistrationSuccess::class.java)
+                    val intent = Intent(this, RegistrationSuccess_UI::class.java)
                     startActivity(intent)
                 }
                 else{
@@ -46,7 +46,7 @@ class RegisterScreen : BaseActivity() {
 
         val goToLogIn = findViewById<TextView>(R.id.textview11)
         goToLogIn.setOnClickListener{
-            val intent = Intent(this, LoginScreen::class.java)
+            val intent = Intent(this, LoginScreen_UI::class.java)
             startActivity(intent)
         }
     }
